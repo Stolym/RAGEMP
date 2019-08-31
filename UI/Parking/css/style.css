@@ -1,0 +1,70 @@
+.background {
+    background-color: #333333;
+    width: 250px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 2px;
+    border-top: 12px solid #9900ff;
+    box-shadow: 0px 0px 0px 0px #9900ff ;
+}
+
+.background:hover {
+    background-color: #0000004A;
+    transition: 400ms;
+}
+
+.background:hover .title {
+    font-weight: normal;
+    color: black;
+    transition: 400ms;
+    font-size: 12px;
+}
+
+
+.background:hover .sbutton {
+    background-color: #9900ff;
+    color: black;
+    transition: 400ms;
+    font-size: 12px;
+}
+
+.title {
+    text-align: center;
+    font-family: GoboldBold;
+    font-size: 15px;
+    color: white;
+    margin-top: 15px;
+}
+
+.sbutton {
+    font-family: GoboldBold;
+    font-size: 20px;
+    background-color: #BED77700;
+    color: #33294C00;
+    border: 0px;
+    width: 35%;
+    height: 20%;
+    margin-left: 31%;
+    cursor: pointer;
+}
+
+
+.background:hover .sbutton:hover {
+    background-color: #3ECF1E;
+    border: 1px solid #9900ff;
+}
+
+body {
+}
+
+@font-face {
+    font-family: GoboldBold;
+    src: url(../font/GoboldBold.otf) format("opentype");
+}
+
+
+@font-face {
+    font-family: GoboldBold;
+    font-weight: bold;
+    src: url(../font/GoboldCUTS.otf) format("opentype");
+}

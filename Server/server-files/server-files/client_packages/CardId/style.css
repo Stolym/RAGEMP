@@ -1,0 +1,258 @@
+.card_back {
+    height: 1000px;
+    width: 650px;
+}
+
+.card_back.with {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -55px;
+    background-repeat: no-repeat;
+}
+
+.back_pass {
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -38px;
+    background-repeat: no-repeat;
+}
+
+
+.card_info {
+    position: absolute;
+}
+
+.face_div {   
+  position: absolute;
+  width: auto;
+  display: inline-block;
+  margin-top: 320px;
+  margin-left: px;
+}
+
+.back_size {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 450px;
+    height: 250px;    
+}
+
+.face_size {
+  width: 100%;
+  height: auto;    
+}
+
+.button {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    transition-duration: 1.4s;
+    background-color: #0000;
+    color: black;
+    border: 4px dotted black;
+}
+
+.button:hover {
+    opacity: 75;
+    background-color: #0000; /* Green */
+    color: white;
+    border: 4px dashed white;
+  }
+
+.button.pos_a {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 500px;
+}
+
+.card_font {
+    color: black;
+}
+
+.card_input {
+    background-color: #FFFFFF0A;
+    border: 1px solid red;
+}
+
+.Name_Input {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 165px;
+    margin-left: 200px;
+    height: 13px;
+    width: 80px;
+}
+
+.Sex {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 165px;
+    margin-left: 200px;
+    height: 13px;
+    width: 80px;
+}
+
+
+.Del {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 414px;
+    margin-left: 105px;
+    height: 13px;
+    width: 80px;
+}
+
+.Exp {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 430px;
+    margin-left: 105px;
+    height: 13px;
+    width: 80px;
+}
+
+.Height {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 378px;
+    margin-left: 255px;
+    height: 13px;
+    width: 80px;
+}
+
+
+.Prenom_Input {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 165px;
+    margin-left: 285px;
+    height: 13px;
+    width: 80px;
+}
+
+.Nationnal_Input {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 195px;
+    margin-left: 200px;
+    height: 13px;
+    width: 80px;
+}
+
+.Birth_Input {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 225px;
+    margin-left: 285px;
+    height: 13px;
+    width: 80px;
+}
+
+
+.From_Birth_Input {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 255px;
+    margin-left: 285px;
+    height: 13px;
+    width: 80px;
+}
+
+.card_font.Name {
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 150px;
+    padding-top: 468px;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.card_font.Prenom {
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 150px;
+    margin-left: 30px;
+    margin-top:-13;
+    text-transform: uppercase;
+}
+
+.card_font.Numero {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 150px;
+    margin-bottom: 5px;
+    margin-top: -110;
+    margin-left: 160px;
+    text-transform: uppercase;
+}
+
+.card_font.Birth {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 180px;
+    padding-top: 83px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.card_font.Sex {
+    padding-top: 17px;
+    font-weight: bold;
+    margin-top: -63px;
+    font-size: 16px;
+    padding-left: 304px;
+    text-transform: uppercase;
+    
+}
+.card_font.National {
+    font-size: 17px;
+    padding-top: 24px;
+    font-weight: bold;
+    margin-top: -59px;
+    padding-left: 180px;
+    text-transform: uppercase; 
+}
+
+.card_font.Taille {
+    font-size: 17px;
+    padding-top: 20px;
+    font-weight: bold;
+    margin-top: -57px;
+    padding-left: 367px;
+    text-transform: uppercase; 
+}
+/*NE PAS TOUCHER IL RESTE PERMANENT*/
+.card_font.M {
+    font-size: 17px;
+    padding-top: 20px;
+    font-weight: bold;
+    margin-top: -57.6px;
+    padding-left: 397px;
+}
+
+
+.card_font.Datedel {
+    font-size: 15px;
+    padding-top: 20px;
+    font-weight: bold;
+    margin-top: -10px;
+    padding-left: 179px;
+}
+
+.card_font.Dateexp {
+    font-size: 15px;
+    padding-top: 20px;
+    font-weight: bold;
+    margin-top: -28px;
+    padding-left: 179px;
+}
+
+.card_font.Naissance {
+    font-size: 17px;
+    padding-top: 20px;
+    font-weight: bold;
+    margin-top: -98px;
+    padding-left: 320px;
+    text-transform: uppercase;
+}

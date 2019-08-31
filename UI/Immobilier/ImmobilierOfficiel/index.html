@@ -1,0 +1,326 @@
+<html>
+<head>
+    <title>Ordinateur</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="environment">
+        <img class="img_back" src="image/pc.png">
+    <div class="computer">
+        <img class="img_back" src="image/bas.jpg">
+        <img class="logo" src="image/dynasty.png">
+        <div class="menu">
+            <button data-id="10" class="selector">Appartements
+                <img class="img_selector" src="image/accounting.svg">
+            </button>
+            <button data-id="4" class="selector">Historique
+                <img class="img_selector" style="top: 58px;" src="image/transfer.svg">
+            </button>
+            <button data-id="6" class="selector">Gestion du personnel
+                <img class="img_selector" style="top: 108px;" src="image/team.svg">
+            </button>
+        </div>
+        <div class="interact">
+            <div data-id="0" data-active="true" class="submenu">
+                <p class="title_b">List Account</p>
+                <div data-id="0" class="listaccount">
+                    <img data-id="0" src="error.svg" class="close">
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="0" class="open">Ouvrir</button>
+                    </div>
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="0" class="open">Ouvrir</button>
+                    </div>
+                </div>
+                <input placeholder="Search Bar" class="search_bar">
+                <button data-id="3" class="add_account">Add Account</button>
+            </div>
+            <div data-id="1" data-active="false" class="submenu">
+                <p class="title_b">List Effectif</p>
+                <div data-id="1" class="listaccount">
+                    <img data-id="1" src="error.svg" class="close">
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="3" class="open">Ouvrir</button>
+                    </div>
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="3" class="open">Ouvrir</button>
+                    </div>
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="3" class="open">Ouvrir</button>
+                    </div>
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="3" class="open">Ouvrir</button>
+                    </div>
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="3" class="open">Ouvrir</button>
+                    </div>
+                </div>
+                <button data-id="2" class="add_account">Add Effectif</button>
+            </div>
+            <div data-id="2" data-active="false" class="submenu">
+                <p class="title_b">Effectif</p>
+                <div data-id="2" class="windowback">
+                    <img data-id="2" src="error.svg" class="close">
+                    <input class="input_" placeholder="User Fullname">
+                    <input class="input_" placeholder="Permission">
+                    <button class="link">Add Member</button>
+                    <button data-id="2" class="open">Reject</button>
+                </div>
+            </div>
+            <div data-id="3" data-active="false" class="submenu">
+                <p class="window_name" style="left: 170px; margin: 20px 0px 20px 0px;">Liste des comptes</p>
+                <p class="departement" style="font-size: 20px;">MazeBank</p>
+                <button data-id="7" class="add_button">Ajouter</button>
+                <div class="finder">
+                    <input class="search_input" placeholder="Searching...">
+                    <img class="icon_search" src="search.svg">
+                </div>
+                <div data-id="3" class="window_back">
+                    <div data-id="3" class="listaccount">
+                        <div class="account">
+                            <p class="owner">Compte en banque de Pauline Dust</p>
+                            <p class="id_account">0</p>
+                            <button data-id="7" class="open">Ouvrir</button>
+                        </div>
+                        <div class="account">
+                            <p class="owner">Compte en banque de Jade Sim</p>
+                            <p class="id_account">1</p>
+                            <button data-id="7" class="open">Ouvrir</button>
+                        </div>
+                        <div class="account">
+                            <p class="owner">Compte en banque de Benny's</p>
+                            <p class="id_account">2</p>
+                            <button data-id="7" class="open">Ouvrir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-id="4" data-active="false" class="submenu">
+                <p class="window_name" style="left: 210px; font-size: 36px;">Transfert d'argent</p>
+                <div data-id="4" class="window_back">
+                    <p id="t9" class="text">Debiteur</p>
+                    <input class="sinput" style="top: 150px; left: 120px;" placeholder="ID Débiteur">
+                    <p id="t10" class="text">Crediteur</p>
+                    <img class="imgtransfert" src="image/right-arrow.svg">
+                    <input class="sinput" style="top: 150px; left: 440px;" placeholder="ID Créditeur">
+                    <input class="sinput" style="top: 220px; left: 275px;" placeholder="Somme">
+                    <button class="transfertbutton">Transferer l'argent</button>
+                </div>
+            </div>
+            
+            <div data-id="5" data-active="false" class="submenu">
+                <p class="window_name">Tracker</p>
+                <p class="departement">Los Santos Departemental Hopital</p>
+                <button data-id="9" class="add_button">Ajouter</button>
+                
+                <div class="finder">
+                    <input class="search_input" placeholder="Searching...">
+                    <img class="icon_search" src="search.svg">
+                </div>
+                <div data-id="5" class="window_back">
+                    
+                    <div data-id="5" class="listaccount">
+                        <div class="account">
+                            <p class="owner">Owner Pauline Dust</p>
+                            <p class="id_account">1654 9484</p>
+                            <button data-id="5" class="open">Ouvrir</button>
+                        </div>
+                        <div class="account">
+                            <p class="owner">Owner Pauline Dust</p>
+                            <p class="id_account">1654 9484</p>
+                            <button data-id="5" class="open">Ouvrir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-id="6" data-active="false" class="submenu">
+                <p class="window_name">Gestion du personnel</p>
+                <p class="departement">Los Santos Departemental Hopital</p>
+                <button data-id="9" class="add_button">Ajouter</button>
+                
+                <div class="finder">
+                    <input class="search_input" placeholder="Searching...">
+                    <img class="icon_search" src="search.svg">
+                </div>
+                <div data-id="6" class="window_back">
+                    
+                    <div data-id="6" class="listaccount">
+                        <div class="account">
+                            <p class="owner">Owner Pauline Dust</p>
+                            <p class="id_account">1654 9484</p>
+                            <button data-id="5" class="open">Ouvrir</button>
+                        </div>
+                        <div class="account">
+                            <p class="owner">Owner Pauline Dust</p>
+                            <p class="id_account">1654 9484</p>
+                            <button data-id="5" class="open">Ouvrir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-id="7" data-active="false" class="submenu">
+                <p class="window_name">Compte Bancaire</p>
+                <div data-id="7" class="window_back">
+                <p id="t0" class="text">Name</p>
+                <p id="t1" class="text">Prenom</p>
+                <p id="t2" class="text">Date de Naissance</p>
+                <p id="t3" class="text">Sexe</p>
+                <p id="t4" class="text">Type de compte</p>
+                <input id="i0" class="input_add" placeholder="Name">
+                <input id="i1" class="input_add" placeholder="Lastname">
+                <input id="i2" class="input_add" placeholder="Date de Naissance">
+                <input id="i3" class="input_add" placeholder="Sexe">
+                    
+                <select class="selecttypeaccount">
+                    <option value=""></option>
+                    <option value="Economie">Economie</option>
+                    <option value="Privilèges">Privilèges</option>
+                    <option value="VIP">VIP</option>
+                </select>
+                <div class="listcardbancaire">
+                    <p class="listcardbancairetitle">Carte de crédit</p>
+                    <button class="addcardbancaire">+</button>
+                    <div class="cardbancaire">
+                        <p class="cardbancairename">Prince</p>
+                        <p class="cardbancaireprenom">Chocapik</p>
+                        <p class="cardbancairehashcode">541203</p>
+                        <p class="cardbancairetype">VIP</p>
+                        <button class="removecardbancaire">...</button>
+                    </div>
+                    <div class="cardbancaire">
+                        <p class="cardbancairename">Prince</p>
+                        <p class="cardbancaireprenom">Chocapik</p>
+                        <p class="cardbancairehashcode">541203</p>
+                        <p class="cardbancairetype">VIP</p>
+                        <button class="removecardbancaire">...</button>
+                    </div>
+                    <div class="cardbancaire">
+                        <p class="cardbancairename">Prince</p>
+                        <p class="cardbancaireprenom">Chocapik</p>
+                        <p class="cardbancairehashcode">541203</p>
+                        <p class="cardbancairetype">VIP</p>
+                        <button class="removecardbancaire">...</button>
+                    </div>
+                    
+                    
+                </div>
+                    
+                </div>
+            </div>
+            <div data-id="8" data-active="false" class="submenu">
+                <p class="window_name">Plainte</p>
+                <p class="departement">Los Santos Departemental Hopital</p>
+                <div data-id="8" class="window_back">
+                    
+                <p id="t4" class="text">Nom</p>
+                <p id="t5" class="text">Prenom</p>
+                <p id="t6" class="text">Nom</p>
+                <p id="t7" class="text">Prenom</p>
+                <p id="t8" class="text">Date</p>
+                <p id="t9" class="text">Heure</p>
+               
+                <input id="i4" class="input_add" placeholder="Nom">
+                <input id="i5" class="input_add" placeholder="Prenom">
+                <input id="i6" class="input_add" placeholder="Nom">
+                <input id="i7" class="input_add" placeholder="Prenom">
+                <input id="i8" class="input_add" placeholder="Date">
+                <input id="i9" class="input_add" placeholder="Heure">
+                <textarea id="i10" class="input_add" placeholder="Description"></textarea>
+                    
+                <button id="a0" class="add_button">Ajouter</button>
+                <button id="a1" class="add_button">Modifier</button>
+              
+                </div>
+            </div>
+            <div data-id="9" data-active="false" class="submenu">
+                <p class="window_name">Historique</p>
+                 <div class="historyspace">
+                    <div class="transacttest">
+                        <div class="transactionhistoryspace">
+                            <p class="transactionhistoryname" style="position: absolute; float: left;">Secretaire Miuq</p>
+                            <p class="transactionhistoryname" style="position: absolute; left: 340px; float: left;">20/08/2019 08:47</p>
+                            <button class="transacbutton" style="left: 550px;">-</button>
+                            <button  class="transacbutton">@</button>
+                        </div>
+                        <p class="transactobject" style="float: left;">Bonjour Secretaire Miuq <br>Veuillez me rappoter mon cafe à 8h00 du matin pas 6h00 dans mon lit.Veuillez me rappoter mon cafe à 8h00 du matin pas 6h00 dans mon lit.<br> Merci bonne nuit ! ....</p>
+                    </div>
+                </div>
+            </div>
+            <div data-id="10" data-active="false" class="submenu">
+                <p class="window_name">Appartements</p>
+                <ul class="navside">
+                    <li data-id="0" class="navsideselector" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;">Libre</li>
+                    <li data-id="1" class="navsideselector">Location</li>
+                    <li data-id="2" class="navsideselector" style="border-top-right-radius: 20px; border-bottom-right-radius: 20px;">Vendu</li>
+                </ul>
+                <div data-id="0" class="historyspace">
+                    <div class="transacttest">
+                        <div class="transactionhistoryspace">
+                            <p class="transactionhistoryname" style="position: absolute; float: left;">Appartement 0</p>
+                            <p class="transactionhistoryname" style="position: absolute; left: 310px; color: #52C380; float: left;">200 000 000 $</p>
+                            <button data-id="0" class="transacbutton" style="left: 460px; width: 80px;">Navigation</button>
+                            <button data-id="0" class="transacbutton" style="left: 550px;">+</button>
+                        </div>
+                        <p class="transactobject" style="float: left;">Lieux :</p>
+                        <p class="transactobject" style=" color: #FF8000FF">Plage de santa bay</p>
+                        <p class="transactobject" style="float: left;">Description :</p>
+                        <p class="transactobject" style="float: left;">3 Pieces, 2 Salle de bain, ..</p>
+                        <img src="image/appartement1.jpg" class="transacimg">
+                    </div>
+                </div>
+                
+                <div data-id="1" class="historyspace">
+                    <div class="transacttest">
+                        <div class="transactionhistoryspace">
+                            <p class="transactionhistoryname" style="position: absolute; float: left;">Secretaire Paul</p>
+                            <p class="transactionhistoryname" style="position: absolute; left: 340px; float: left;">20/08/2019 08:47</p>
+                            <button class="transacbutton" style="left: 550px;">-</button>
+                            <button  class="transacbutton">@</button>
+                        </div>
+                        <p class="transactobject" style="float: left;">Bonjour Secretaire Miuq <br>Veuillez me rappoter mon cafe à 8h00 du matin pas 6h00 dans mon lit.Veuillez me rappoter mon cafe à 8h00 du matin pas 6h00 dans mon lit.<br> Merci bonne nuit ! ....</p>
+                    </div>
+                </div>
+                
+                <div data-id="2" class="historyspace">
+                    <div class="transacttest">
+                        <div class="transactionhistoryspace">
+                            <p class="transactionhistoryname" style="position: absolute; float: left;">Secretaire Bishop.K</p>
+                            <p class="transactionhistoryname" style="position: absolute; left: 340px; float: left;">20/08/2019 08:47</p>
+                            <button class="transacbutton" style="left: 550px;">-</button>
+                            <button  class="transacbutton">@</button>
+                        </div>
+                        <p class="transactobject" style="float: left;">Bonjour Secretaire Miuq <br>Veuillez me rappoter mon cafe à 8h00 du matin pas 6h00 dans mon lit.Veuillez me rappoter mon cafe à 8h00 du matin pas 6h00 dans mon lit.<br> Merci bonne nuit ! ....</p>
+                    </div>
+                </div>
+                
+            </div>
+              <div data-id="11" data-active="false" class="submenu">
+                <p class="window_name">Appartement</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/resize.js"></script>
+</html>

@@ -1,0 +1,10 @@
+2019-07-28 21:42:27.601875|INFO    |VirtualServer |1  |listening on 0.0.0.0:9987, [::]:9987
+2019-07-28 21:42:27.601875|WARNING |VirtualServer |1  |--------------------------------------------------------
+2019-07-28 21:42:27.601875|WARNING |VirtualServer |1  |ServerAdmin privilege key created, please use the line below
+2019-07-28 21:42:27.601875|WARNING |VirtualServer |1  |token=ViczMWTCoQPrbPp+xxrcCKLWHrebEVO6CAWjJLil
+2019-07-28 21:42:27.601875|WARNING |VirtualServer |1  |--------------------------------------------------------
+2019-07-28 21:44:04.013504|INFO    |VirtualServer |1  |client (id:2) was added to servergroup 'Server Admin'(id:6) by client 'server'(id:0)
+2019-07-28 21:44:04.013504|INFO    |VirtualServer |1  |client 'stolym'(id:2) used privilege key 'ViczMWTCoQPrbPp+xxrcCKLWHrebEVO6CAWjJLil' and was added to servergroup 'Server Admin'(id:6)
+2019-07-31 10:24:37.882787|INFO    |PktHandler    |1  |Dropping client 4 because of ping timeout 19 0 0
+2019-07-31 11:17:58.264193|INFO    |PktHandler    |1  |Dropping client 1 because of ping timeout 19 0 0
+2019-07-31 11:19:25.402839|INFO    |VirtualServerBase|1  |stopped

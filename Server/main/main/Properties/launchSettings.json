@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "main": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\Stol\\Desktop\\Desktop (1)\\Server\\server-files\\server-files\\server.exe",
+      "workingDirectory": "C:\\Users\\Stol\\Desktop\\Desktop (1)\\Server\\server-files\\server-files"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<meta>
+  <info name="main" author="" type="gamemode"/>
+  <script src="bin/main.dll" type="server" lang="compiled" />
+</meta>

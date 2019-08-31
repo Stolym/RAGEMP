@@ -1,0 +1,154 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="panier">
+        <img class="img_back" src="image/boke-city.png">
+        <p class="title">Bank</p>
+        <img class="logo" src="image/mazebnk.png">
+        <div class="menu">
+            <button data-id="0" class="selector">Account</button>
+            <button data-id="4" class="selector">Transfert</button>
+            <button data-id="1" class="selector">Effectif</button>
+            <button data-id="5" class="selector">History</button>
+        </div>
+        <div class="interact">
+            <div data-id="0" data-active="false" class="submenu">
+                <p class="title_b">List Account</p>
+                <div data-id="0" class="listaccount">
+                    <img data-id="0" src="error.svg" class="close">
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="0" class="open">Ouvrir</button>
+                    </div>
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="0" class="open">Ouvrir</button>
+                    </div>
+                </div>
+                <button data-id="3" class="add_account">Add Account</button>
+            </div>
+            <div data-id="1" data-active="false" class="submenu">
+                <p class="title_b">List Effectif</p>
+                <div data-id="1" class="listaccount">
+                    <img data-id="1" src="error.svg" class="close">
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="3" class="open">Ouvrir</button>
+                    </div>
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="3" class="open">Ouvrir</button>
+                    </div>
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="3" class="open">Ouvrir</button>
+                    </div>
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="3" class="open">Ouvrir</button>
+                    </div>
+                    <div class="account">
+                        <p class="owner">Owner Pauline Dust</p>
+                        <p class="id_account">1654 9484</p>
+                        <button data-id="3" class="open">Ouvrir</button>
+                    </div>
+                </div>
+                <button data-id="2" class="add_account">Add Effectif</button>
+            </div>
+            <div data-id="2" data-active="false" class="submenu">
+                <p class="title_b">Effectif</p>
+                <div data-id="2" class="windowback">
+                    <img data-id="2" src="error.svg" class="close">
+                    <input class="input_" placeholder="User Fullname">
+                    <input class="input_" placeholder="Permission">
+                    <button class="link">Add Member</button>
+                    <button data-id="2" class="open">Reject</button>
+                </div>
+            </div>
+            <div data-id="3" data-active="false" class="submenu">
+                <p class="title_b">Account</p>
+                <div data-id="3" class="windowback">
+                    <img data-id="3" src="error.svg" class="close">
+                    <input class="input_" placeholder="User Fullname">
+                    <input class="input_" placeholder="ID">
+                    <input class="input_" placeholder="AddCard">
+                    <button class="link">Link</button>
+                    <div class="list_card_link"></div>
+                    <button data-id="4" class="add_account">Valid</button>
+                    <div class="list_link">
+                         <div class="account">
+                            <p class="owner">Owner Pauline Dust</p>
+                            <p class="id_account">1654 9484</p>
+                            <button data-id="1" class="open">Reject</button>
+                        </div>
+                        <div class="account">
+                            <p class="owner">Owner Pauline Dust</p>
+                            <p class="id_account">1654 9484</p>
+                            <button data-id="1" class="open">Reject</button>
+                        </div>
+                        <div class="account">
+                            <p class="owner">Owner Pauline Dust</p>
+                            <p class="id_account">1654 9484</p>
+                            <button data-id="1" class="open">Reject</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-id="4" data-active="false" class="submenu">
+                <p class="title_b">Transfert</p>
+                <div data-id="4" class="windowback">
+                    <img data-id="4" src="error.svg" class="close">
+                    <input class="input_" placeholder="From ID">
+                    <input class="input_" placeholder="To Id">
+                    <input class="input_" placeholder="Value">
+                    <button class="link">Transfert</button>
+                </div>
+            </div>
+            <div data-id="5" data-active="false" class="submenu">
+                <p class="title_b">History</p>
+                <div data-id="5" class="windowback">
+                    <img data-id="5" src="error.svg" class="close">
+                    <input class="input_" placeholder="ID">
+                    <button class="link">Look</button>
+                    <div class="list_link">
+                         <div class="account">
+                            <p class="owner">Pauline Dust</p>
+                            <p class="action">Action : </p>
+                            <p class="paction">Buy</p>
+                            <p class="object">Object :</p>
+                            <p class="pobject">800$</p>
+                        </div>
+                        <div class="account">
+                            <p class="owner">Pauline Dust</p>
+                            <p class="action">Action : </p>
+                            <p class="paction">Add</p>
+                            <p class="object">Object :</p>
+                            <p class="pobject">100 000$</p>
+                        </div>
+                        <div class="account">
+                            <p class="owner">Pauline Dust</p>
+                            <p class="action">Action : </p>
+                            <p class="paction">Transfert</p>
+                            <p class="object">Object :</p>
+                            <p class="pobject">Id A : Id B</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</html>

@@ -1,0 +1,127 @@
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\main_client.deps.json
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\main_client.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\main_client.pdb
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\rage-sharp.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\NeoSmart.Hashing.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\xxHash.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\rage-sharp.xml
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.csprojAssemblyReference.cache
+C:\RAGEMP\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.csproj.CoreCompileInputs.cache
+C:\RAGEMP\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.AssemblyInfoInputs.cache
+C:\RAGEMP\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.AssemblyInfo.cs
+C:\RAGEMP\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.csproj.CopyComplete
+C:\RAGEMP\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.dll
+C:\RAGEMP\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.pdb
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\main_client.deps.json
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\main_client.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\main_client.pdb
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\rage-sharp.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\NeoSmart.Hashing.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\xxHash.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\rage-sharp.xml
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.csprojAssemblyReference.cache
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.csproj.CoreCompileInputs.cache
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.AssemblyInfoInputs.cache
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.AssemblyInfo.cs
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.csproj.CopyComplete
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.dll
+C:\Users\root\Desktop\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.pdb
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\main_client.deps.json
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\main_client.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\main_client.pdb
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\rage-sharp.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\NeoSmart.Hashing.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\xxHash.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\rage-sharp.xml
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\bin\Debug\netcoreapp2.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.csprojAssemblyReference.cache
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.csproj.CoreCompileInputs.cache
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.AssemblyInfoInputs.cache
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.AssemblyInfo.cs
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.csproj.CopyComplete
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.dll
+C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\client_workspace\main_client\obj\Debug\netcoreapp2.1\main_client.pdb

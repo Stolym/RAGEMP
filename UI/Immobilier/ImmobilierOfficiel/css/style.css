@@ -1,0 +1,1054 @@
+.environment {
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+}
+
+
+.search_bar {
+    position: absolute;
+    left: 0%;
+    top: 92%;
+    width: 40%;
+    height: 8%;
+    font-size: 20px;
+}
+
+
+.title {
+    position: absolute;
+    width: 96%;
+    height: 1%;
+    background-color: #0000008A;
+    font-size: 20px;
+    margin: 0px;
+    font-size: 0px;
+    padding-left: 4%;
+    text-align: justify;
+    border-top: 4px solid  #5786A7FF;
+    color: white;
+    font-family: textFont;
+}
+.title_b {
+    position: absolute;
+    width: 96%;
+    background-color: #333333FF;
+    font-size: 20px;
+    margin: 0px;
+    padding-left: 4%;
+    text-align: justify;
+    border-top: 4px solid  #9900FFFF;
+    color: white;
+    font-family: textFont;
+}
+
+.img_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.navside {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    margin: 0px;
+    padding: 0px;
+    width: 600px;
+    height: 30px;
+    background-color: #333333C0;
+    border-radius: 20px;
+}
+
+.transacbutton {
+    position: absolute;
+    left: 520px;
+    top: 1px;
+    width: 22px;
+    height: 22px;
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 20px;
+    font-size: 12px;
+    border: 0px;
+    transition: 100ms;
+}
+
+.transacbutton:hover {
+    background-color: #333333;
+    color: white;
+    transition: 100ms;
+}
+
+.navsideselector {
+    position: relative;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    font-size: 20px;
+    list-style:none;
+    float: left;
+    left: 0px;
+    transition: 100ms;
+}
+
+.navsideselector:hover {
+    background-color:  #FEFEEFFF;
+    color: black;
+    transition: 100ms;
+}
+
+.transacimg {
+    position: absolute;
+    left: 0px;
+    margin: 70px 0px 0px 205px;
+    width: 200px;
+    height: 110px;
+    opacity: 0;
+    border-radius: 5px;
+}
+
+.logo {
+    position: absolute;
+    margin: 2%;
+    background-color: #52C38080;
+    border-radius: 20px;
+    width: 120px;
+    height: 80px;
+}
+
+.selector {
+    margin: 5px 0px 5px 0px;
+    width: 210px;
+    height: 40px;
+    color: white;
+    text-align: left;
+    font-size: 15px;
+    color: #FFFFFF;
+    border: 0px;
+    transition: 500ms;
+    background: #333333A0;
+    border-radius: 20px;
+    font-family: textFont;
+}
+
+.img_selector {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 8px;
+    left: 168px;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.selector:hover .img_selector {
+    opacity: 100;
+    transition: 200ms;
+}
+
+.departement {
+    position: absolute;
+    width: 96%;
+    height: 5%;
+    left: 65%;
+    margin-top: 1.5%;
+    font-size: 14px;
+    color: white;
+    background-color: #00000000;
+    padding-left: 4%;
+    font-family: textFont;
+}
+
+.window_name {
+    position: absolute;
+    width: 96%;
+    height: 7%;
+    left: 35%;
+    margin-top: 5%;
+    font-size: 24px;
+    color: white;
+    background-color: #00000000;
+    padding-left: 4%;
+    font-family: textFont;
+}
+
+.selector:hover {
+    transition: 500ms;
+    background-color: #FFFFFF64;
+    border: 1px solid #333333;
+    font-family: textFont;
+}
+
+.menu {
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    width: 210px;
+    height: 300px;
+}
+
+
+.interact {
+    position: absolute;
+    top: 0%;
+    left: 18%;
+    width: 82%;
+    height: 100%;
+    border: 0px;
+}
+
+.submenu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000000;
+}
+
+.computer {
+    position: absolute;
+    top: 32px;
+    left: 68px;
+    width: 865px;
+    height: 485px;
+    background-color: #E5D8E7;
+    perspective: 50px;
+    float: left;
+    transform: perspective(100px) rotateY(0deg);
+    transition: 1000ms;
+}
+
+
+.add_account {
+    position: absolute;
+    left: 69%;
+    top: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    padding-left: 3%;
+    width: 20%;
+    height: 6%;
+    color: aliceblue;
+    font-family: textFont;
+    font-size: 14px;
+    background-color: #333333FF;
+    border: 1px solid #9900FFFF;
+    text-align: justify;
+    float: left;
+    transition: 400ms;
+}
+
+.ctitle {
+    margin: 4px;
+    color: black;
+    font-family: textFont;
+    font-size: 14px;
+}
+
+.ctext {
+    margin: 4px;
+    color: black;
+    font-family: textFont;
+    font-size: 14px;
+    width: 98%;
+    height: 100%;
+    opacity: 0;
+}
+
+.listcardbancaire {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    width: 620px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #333333CA;
+}
+
+.listcardbancairetitle {
+    font-size: 15px;
+    margin: 0px;
+    padding: 8px;
+    color: white;
+    
+}
+
+.cardbancaire {
+    position: relative;
+    pointer-events: all;
+    background-color: #CCCCCC80;
+    height: 20px;
+    width: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 0px;
+    border-radius: 20px;
+    transition: 200ms;
+}
+
+.cardbancaire:hover {
+    background-color: #CCCDDDFF;
+    transition: 200ms;
+    
+}
+
+.cardbancaire:hover .cardbancairename {
+    color: #333333;
+    transition: 100ms;
+}
+
+.cardbancaire:hover .cardbancaireprenom {
+    color: #333333;
+    transition: 100ms;
+}
+
+.cardbancaire:hover .cardbancairehashcode {
+    color: #333333;
+    transition: 100ms;
+}
+
+.cardbancaire:hover .cardbancairetype {
+    color: #333333;
+    transition: 100ms;
+}
+
+.cardbancairename {
+    position: absolute;
+    font-family: CourierNew;
+    left: 20px;
+    top: 2px;
+    margin: 0px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.cardbancaireprenom {
+    position: absolute;
+    
+    font-family: CourierNew;
+    left: 170px;
+    top: 2px;
+    margin: 0px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.addcardbancaire {
+    position: absolute;
+    top: 9px;
+    left: 582px;
+    pointer-events: all;
+    border-radius: 20px;
+    border: 0px;
+    transition: 200ms;
+}
+
+
+.sinput {
+    position: absolute;
+    pointer-events: all;
+    text-align: center;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+    font-size: 15px;
+    height: 30px;
+    width: 18   0px;
+}
+
+.transfertbutton {
+    position: absolute;
+    pointer-events: all;
+    left: 260px;
+    top: 300px;
+    width: 230px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #333333FF;
+    color: white;
+    font-family: CourierNew;
+    border: 0px;
+    transition: 200ms;
+}
+
+.transfertbutton:hover {
+    transition: 200ms;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.addcardbancaire:hover {
+    background-color: #333333;
+    color: white;
+    transition: 200ms;
+}
+
+.cardbancairehashcode {
+    position: absolute;
+    font-family: CourierNew;
+    left: 320px;
+    top: 2px;
+    margin: 0px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.cardbancairetype {
+    position: absolute;
+    
+    font-family: CourierNew;
+    left: 470px;
+    top: 2px;
+    margin: 0px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.transacttest {
+    margin: 10px;
+    width: 580px;
+    height: 30px;
+    border-radius: 20px;
+    background: #88888832;
+    transition: 500ms;
+    pointer-events: all;
+}
+
+.transactobject {
+    position: relative;
+    margin: 10px;
+    color: white;
+    font-family: CourierNew; 
+    font-size: 14px;
+    opacity: 0;
+    transition: 100ms;
+}
+
+.transactobjectdesc {
+    position: relative;
+    margin: 10px;
+    color: white;
+    font-family: CourierNew; 
+    font-size: 14px;
+    opacity: 0;
+    transition: 100ms;
+}
+
+.transacttest:hover .transactobject {
+    opacity: 1;
+    transition: 1000ms;
+}
+
+.transacttest:hover .transacimg {
+    opacity: 1;
+    transition: 2000ms;
+}
+.transacttest:hover .transactobjectdesc {
+    opacity: 1;
+    transition: 1000ms;
+}
+
+.transacttest:hover {
+    height: 250px;
+    transition: 500ms;
+}
+
+.historyspace::-webkit-scrollbar {
+    display: none;
+}
+
+.historyspace {
+    position: absolute;
+    left: 100px;
+    top: 140px;
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: scroll;
+    background-color: #333333CA;
+    
+}
+
+.transactionhistoryspace {
+    position: relative;
+    margin: 0px;
+    width: 580px;
+    height: 25px;
+    border-radius: 20px;
+    pointer-events: all;
+    background-color: #CCCCCC80;
+    transition: 100ms;
+}
+
+
+.transactionhistoryspace:hover {
+    background-color: #CCCDDDFF;
+    transition: 100ms;
+}
+
+.transactionhistoryspace:hover .transactionhistoryname {
+    transition: 100ms;
+    color: black;
+}
+
+.transactionhistoryspace:hover .transactionhistoryaction {
+    transition: 100ms;
+    color: black;
+}
+
+.transactionhistoryspace:hover .transactionhistoryobject {
+    transition: 100ms;
+    color: black;
+}
+
+
+.transactionsolde {
+    position: absolute;
+    font-size: 24px;
+    color: green;
+    top: 100px;
+    left: 100px;
+    margin: 0px
+}
+
+.transactionhistoryname {
+    position: absolute;
+    pointer-events: none;
+    color: white;
+    margin: 0px;
+    font-family: CourierNew; 
+    font-size: 16px;
+    left: 20px;
+    top: 2px;
+}
+
+
+.transactionhistoryaction {
+    position: absolute;
+    margin: 0px;
+    color: white;
+    opacity: 0;
+    font-family: CourierNew; 
+    font-size: 16px;
+    left: 140px;
+    top: 2px;
+}
+
+
+.transactionhistoryobject {
+    position: relative;
+    float: left;
+    left: 180px;
+    margin: 0px;
+    color: white;
+    font-family: CourierNew; 
+    top: 2px;
+    font-size: 16px;    
+}
+
+
+.imgtransfert {
+    position: absolute;
+    left: 345px;
+    top: 140px;
+    width: 70px;
+    height: 50px;
+    
+}
+
+.removecardbancaire {
+    position: absolute;
+    left: 570px;
+    top: 1px;
+    height: 18px;
+    width: 24px;
+    border: 0px;
+    font-size: 14px;
+    pointer-events: all;
+    background-color: #FF130800;
+    color: white;
+    border-radius: 20px;
+    transition: 100ms;
+
+}
+
+.removecardbancaire:hover {
+    background-color: #33333380;
+    transition: 100ms;
+    
+}
+
+.selecttypeaccount {
+    position: absolute;
+    pointer-events: all;
+    top: 155px;
+    left: 213px;
+    width: 120px;
+    height: 18px;
+    border-radius: 3px;
+    border: 0px;
+}
+
+
+#t0 {
+    top: 10%;
+    left: 30%;
+}
+
+#t1 {
+    top: 10%;
+    left: 60%;
+}
+
+#t2 {
+    top: 20%;
+    left: 30%;
+}
+
+#t3 {
+    top: 20%;
+    left: 60%;
+}
+
+
+#t4 {
+    top: 30%;
+    left: 30%;
+}
+
+#t5 {
+    top: 20%;
+    left: 30%;
+}
+
+#t6 {
+    top: 30%;
+    left: 30%;
+}
+
+#t7 {
+    top: 30%;
+    left: 30%;
+}
+
+#t8 {
+    top: 30%;
+    left: 10%;
+}
+
+#t9 {
+    top: 20%;
+    left: 15%;
+    width: 170px;
+    text-align: center;
+    padding: 5px 30px 5px 30px;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color: #333333;
+    font-family: CourierNew;
+}
+
+#t10 {
+    top: 20%;
+    left: 60%;
+    width: 170px;
+    text-align: center;
+    padding: 5px 30px 5px 30px;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color: #333333;
+    font-family: CourierNew;
+}
+
+
+#t11 {
+    top: 30%;
+    left: 38%;
+    width: 170px;
+    text-align: center;
+    padding: 5px 30px 5px 30px;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color: #33333300;
+    font-family: CourierNew;
+}
+
+#i0 {
+    top: 18%;
+    left: 30%;
+}
+
+#i1 {
+    top: 18%;
+    left: 60%;
+}
+
+#i2 {
+    top: 28%;
+    left: 30%;
+}
+
+#i3 {
+    top: 28%;
+    left: 60%;
+}
+
+
+#i4 {
+    top: 48%;
+    left: 10%;
+}
+
+#i5 {
+    top: 28%;
+    left: 30%;
+}
+
+#i6 {
+    top: 38%;
+    left: 30%;
+}
+
+#i7 {
+    top: 38%;
+    left: 30%;
+}
+
+
+#i8 {
+    top: 38%;
+    left: 10%;
+}
+
+#i9 {
+    top: 38%;
+    left: 30%;
+}
+
+#i10 {
+    padding-bottom: 20%;
+    top: 18%;
+    left: 50%;
+    width: 40%;
+    height: 40%;
+}
+
+.condanation {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 99.5%;
+    height: 8%;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.input_add {
+    position: absolute;
+    pointer-events: all;
+    font-size: 10px;
+    background-color: #FFFFFF;
+    width: 18%;
+    height: 5%;
+    border-radius: 3px;
+    border: 0px;
+    padding: 2px 2px 2px 3px;
+}
+
+#l0 {
+    left: 55%;
+    width: 40%;
+}
+
+#a2 {
+    top: 0px;
+    left: 0px;
+    font-size: 14px;
+    width: 25%;
+    height: 8%;
+    position: relative;
+}
+
+#a0 {
+    top: 80%;
+}
+
+.text {
+    position: absolute;
+    font-family: textFont;
+    font-size: 14px;
+    color: white;
+}
+
+#a1 {
+    top: 80%;
+    left: 30%;
+}
+
+
+
+.add_account:hover {
+    color: #333333FF;
+    background-color: aliceblue;
+    transition: 400ms;
+}
+
+.account {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    height: 8%;
+    border-radius: 20px;
+    pointer-events: all;
+    background-color: #33333380;
+}
+
+.account:hover {
+    background-color: #55555580;
+    
+}
+
+.genderlist {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    margin-left: 200px;
+}
+
+
+.listaccount {
+    position: absolute;
+    margin: 0px;
+    top: 10%;
+    left: 10%;
+    width: 600px;
+    height: 80%;
+    background-color: #7B85FF00;
+    overflow: auto;
+}
+
+.list_link {
+    position: absolute;
+    width: 90%;
+    margin: 5%;
+    height: 60%;
+    border: 1px solid black;
+    background-color: #7BA5FFAF;
+    overflow: auto;
+}
+
+.add_button {
+    position: absolute;
+    left: 70px;
+    top: 65px;
+    font-family: textFont;
+    font-size: 14px;
+    background-color: #FFFFFF34;
+    color: black;
+    border: 0px;
+    width: 15%;
+    border-radius: 20px;
+    font-size: 15px;
+    height: 5%;
+    transition: 100ms;
+}
+
+
+.add_button:hover {
+    background-color: #000000FF;
+    color: white;
+    transition: 100ms;
+}
+
+
+.finder {
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    top: 10%;
+    left: 60%;
+}
+
+.search_input {
+    position: absolute;
+    font-family: GoboldBold;
+    padding: 5px 5px 5px 5px;
+    color: #333333;
+    left: -10px;
+    top: 10px;
+    height: 30%;
+    width: 100%;
+    border: 0px;
+    border-radius: 25px;
+}
+
+.icon_search {
+    position: absolute;
+    top: 13%;
+    left: 75%;
+    width: 30%;
+    height: 25%;
+}
+
+.input_ {
+    width: 40%;
+    height: 10%;
+    font-size: 12px;
+    margin-top: 2%;
+    margin-left: 2%;
+    text-align: center;
+    border: 0px;
+    color: white;
+    border-bottom: 2px solid;
+    border-bottom-color: #9900FFFF;
+    font-family: textFont;
+    background-color: #333333DF;
+}
+
+.window_back {
+    position: absolute;
+    top: 15%;
+    margin: 0px;
+    width: 100%;
+    height: 85%;
+    pointer-events: none;
+    background-color: #7B85FF00;
+}
+
+
+.link {
+    width: 40%;
+    height: 10%;
+    font-size: 12px;
+    margin-top: 2%;
+    margin-left: 2%;
+    text-align: center;
+    border: 0px;
+    color: white;
+    border: 2px solid;
+    border-color: #9900FFFF;
+    font-family: textFont;
+    background-color: #333333FF;
+    transition: 1000ms;
+}
+
+.open {
+    color: white;
+    position: absolute;
+    height: 8%;
+    left: 88%;
+    margin-top: 0.0%;
+    float: left;
+    font-size: 14px;
+    background-color: #333333AA;
+    border: 0px;
+    pointer-events: all;
+    font-family: textFont;
+    transition: 400ms;
+}
+.open:hover {
+    color: black;
+    background-color: white;
+    font-family: textFont;
+    border: 0px solid #9900FFFF;
+    transition: 400ms;
+}
+
+.owner {
+    margin: 0 0 0 10px;
+    float: left;
+    color: white;
+    margin-top: 0.7%;
+    font-size: 16px;
+    font-family: textFont;
+}
+.id_account {
+    margin: 0%;
+    margin-left: 2%;
+    margin-top: 0.7%;
+    float: left;
+    color: white;
+    font-size: 16px;
+    font-family: textFont;
+}
+
+.icon {
+    left: 77%;
+    top: 84.5%;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    pointer-events: none;
+}
+
+.close  {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    left: 95%;
+    margin-top: 1%;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+
+.close:hover  {
+    filter: sepia(100%) contrast(80%);
+    transition: 100ms;
+}
+
+
+
+body {
+}
+
+@font-face {
+    font-family: GoboldBold;
+    src: url(../font/GoboldBold.otf) format("opentype");
+}
+
+
+
+@font-face {
+    font-family: titleFont;
+    src: url(../font/Arimo-Bold.ttf) format("opentype");
+}
+
+
+
+
+@font-face {
+    font-family: CourierNew;
+    src: url(../font/CourierNew.ttf) format("opentype");
+}
+
+
+
+@font-face {
+    font-family: textFont;
+    src: url(../font/Arimo-Regular.ttf) format("opentype");
+}
+
+
+@font-face {
+    font-family: Terminal;
+    src: url(../font/term.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Umar;
+    src: url(../font/umar.otf) format("opentype");
+}
+
+
+@font-face {
+    font-family: GoboldBold;
+    font-weight: bold;
+    src: url(../font/GoboldCUTS.otf) format("opentype");
+}

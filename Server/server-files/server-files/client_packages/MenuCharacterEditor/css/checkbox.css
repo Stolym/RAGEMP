@@ -1,0 +1,42 @@
+.block{
+  width:80px;
+  position:relative;
+  clear:both;
+  float: left;
+  text-align: center;
+}
+
+label{
+  width:78px;
+  height:30px;
+  box-sizing:border-box;
+  border:1px solid;
+  float:left;
+  border-radius:100px;
+  position:relative;
+  cursor:pointer;
+  transition:.3s ease;
+}
+
+input[type=checkbox]{
+  display: none;
+}
+
+input[type=checkbox]:checked + label:before{
+  left:50px;
+}
+
+label:before{
+  transition:.3s ease;
+  content:'';
+  width:24px;
+  height:24px;
+  position:absolute;
+  background:white;
+  left:2px;
+  top:2px;
+  box-sizing:border-box;
+  border:0px solid;
+  color:black;
+  border-radius:100px;
+}

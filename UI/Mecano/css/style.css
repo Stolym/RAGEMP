@@ -1,0 +1,230 @@
+.shop_background {
+    background-color: #00000000;
+    width: 300px;
+    height: 500px;
+    margin: 50px;
+    border-radius: 1px;
+    transform: perspective(100px) rotateY(0deg);
+    transition: 1000ms;
+    float: left;
+}
+
+.shop_background:hover {
+    transition: 1000ms;
+}
+
+.title {
+    width: 96%;
+    height: 8%;
+    background-color: #0000008A;
+    font-size: 20px;
+    margin: 0px;
+    padding-left: 4%;
+    text-align: justify;
+    border-top: 4px solid #AC89FF;
+    color: white;
+    font-family: GoboldBold;
+}
+
+.panier {
+    position: absolute;
+    top: 100px;
+    width: 500px;
+    height: 400px;
+    background-color: #E5D8E7;
+    perspective: 50px;
+    float: left;
+    border: 1px solid #AC89FF;
+    box-shadow: 0px 0px 1px 1px #EEE8F1CC;
+    transform: perspective(100px) rotateY(0deg);
+    transition: 1000ms;
+}
+
+.slider_ {
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 80%;
+    -webkit-appearance: none;
+    background: #EEE8F1CC;
+    outline: none;
+    opacity: 0.7;
+}
+
+.pointer {
+    pointer-events: none;
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    font-size: 14;
+    position: absolute;
+    color: black;
+    font-family: GoboldBold;
+}
+
+.slider_::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #AC89FF;
+  cursor: pointer;
+}
+
+.slider_::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #AC89FF;
+  cursor: pointer;
+}
+
+.buy {
+    position: absolute;
+    left: 0px;
+    top: 72%;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 10%;
+    font-family: GoboldBold;
+    font-size: 24px;
+    background-color: #E5D8E7;
+    border: 1px solid #AC89FF;
+    text-align: justify;
+    float: left;
+    transition: 1000ms;
+
+}
+
+.add {
+    position: absolute;
+    left: 0px;
+    top: 72%;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 35%;
+    height: 8%;
+    font-family: GoboldBold;
+    font-size: 24px;
+    background-color: #E5D8E7;
+    border: 1px solid #AC89FF;
+    text-align: justify;
+    float: left;
+    transition: 1000ms;
+}
+
+.clear {
+    position: absolute;
+    left: 45%;
+    top: 72%;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 35%;
+    height: 8%;
+    font-family: GoboldBold;
+    font-size: 24px;
+    background-color: #E5D8E7;
+    border: 1px solid #AC89FF;
+    text-align: justify;
+    float: left;
+    transition: 1000ms;
+}
+
+.add:hover {
+    transition: 1000ms;
+    background-color: #FFD700AA;
+}
+
+.clear:hover {
+    transition: 1000ms;
+    background-color: #990000AA;
+}
+
+
+.buy:hover {
+    transition: 1000ms;
+    background-color: #A5EA89;
+}
+
+
+.icon_a {
+    pointer-events: none;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.ptext {
+    margin: 0px;
+    font-size: 20px;
+    font-family: GoboldBold;
+}
+
+
+.icon {
+    left: 77%;
+    top: 84.5%;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    pointer-events: none;
+}
+
+.top {
+    margin: 10%;
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+.car_part {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    top: 0px;
+    left: 0px;
+    background-color: #79D271AA;
+    border: 1px solid green;
+}
+
+.car_part:hover {
+    background-color: #990000AA;
+    border: 1px solid red;
+}
+
+
+.slot {
+    pointer-events: auto;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: 4%;
+    background-color: #E5D8E7;
+    perspective: 50px;
+    float: left;
+    border: 1px solid #AC89FF;
+    box-shadow: 0px 0px 1px 1px #EEE8F1CC;
+    transform: perspective(100px) rotateY(20deg);
+}
+
+.slot:hover {
+    border: 1px solid green;
+    transition: 800ms;
+}
+
+body {
+}
+
+@font-face {
+    font-family: GoboldBold;
+    src: url(../font/GoboldBold.otf) format("opentype");
+}
+
+
+@font-face {
+    font-family: GoboldBold;
+    font-weight: bold;
+    src: url(../font/GoboldCUTS.otf) format("opentype");
+}

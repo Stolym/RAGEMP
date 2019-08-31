@@ -1,0 +1,7 @@
+.multiscreen {
+    position: absolute;
+    margin: 0px;
+    border-radius: 40px;
+    width: 270px;
+    height: 540px;
+}

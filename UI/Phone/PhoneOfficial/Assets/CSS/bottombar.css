@@ -1,0 +1,39 @@
+.bottombar {
+    position: absolute;
+    top: 495px;
+    left: 9px;
+    margin: 0px;
+    width: 249px;
+    height: 40px;
+    padding: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 2;
+}
+
+.bottomicon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 5px;
+    left: 40px;
+}
+
+.libutton {
+    position: relative;
+    width: 83px;
+    height: 35px;
+    padding: 0px;
+    float: left;
+    left: 0px;
+    color: white;
+    text-align: center;
+    list-style: none;
+    background-color: #FFFFFF30;
+    transition: 50ms;
+}
+
+.libutton:hover {
+    transition: 50ms;
+    background-color: #00000020;
+}

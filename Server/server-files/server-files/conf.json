@@ -1,0 +1,12 @@
+{
+	"maxplayers" : 50,
+	"name" : "ATDC",
+	"gamemode" : "freeroam", 
+	"stream-distance" : 1000.0,
+	"announce" : true,
+	"csharp" : "enabled",
+	"enable-nodejs": false,
+	"port": 22005,
+	"sync-rate": 40,
+	"allow-cef-debugging": true
+}

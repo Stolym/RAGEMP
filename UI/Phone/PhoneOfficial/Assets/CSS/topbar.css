@@ -1,0 +1,39 @@
+.topbar {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 270px;
+    height: 30px;
+}
+
+.topbar_object {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 90px;
+    height: 30px;
+    list-style: none;
+    float: left;
+}
+
+.topbar_clock {
+    position: relative;
+    top: 8px;
+    left: 10px;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: Quicksand;
+}
+
+.topbar_image {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    left: 60px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+}

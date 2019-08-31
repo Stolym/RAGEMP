@@ -1,0 +1,117 @@
+.background {
+    background-color: #333333;
+    width: 300px;
+    height: 120px;
+    margin: 20px;
+    border-radius: 2px;
+    border-top: 15px solid  #9900ff;
+   
+}
+
+.background:hover {
+    background-color: #333333;
+    box-shadow: 0px 0px 0px 1px  #9900ff;
+    transition: 1000ms;
+}
+
+.background:hover .title {
+    font-weight: normal;
+    color: #FFFFFFA0;
+    transition: 1000ms;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+
+.background:hover .sbutton {
+    background-color: #FFFFFFA0;
+    color: #FFFFFFFF;
+    transition: 1000ms;
+}
+
+.title {
+    text-align: center;
+    font-family: GoboldBold;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.text {
+    float: left;
+    margin-left: 15px;
+    margin-top: 19px;
+    text-align: center;
+    font-family: GoboldBold;
+    margin-right: px;
+    font-size: 12px;
+    color:  white;
+    
+}
+
+.texta {
+    float: left;
+    margin-top: 19px;
+    margin-left: 8px;
+    text-align: justify;
+    font-family: GoboldBold;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFFFFFCE;
+    
+}
+
+.background:hover .text {
+    margin-top: -1px;
+    font-weight: normal;
+    font-size: 12px;
+    color:  #9900ff;
+    transition: 1000ms;
+    
+}
+
+
+.background:hover .texta {
+    margin-top: -1px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFFFFFA0;
+    transition: 1000ms;
+}
+
+
+.sbutton {
+    font-family: GoboldBold;
+    font-size: 10px;
+    background-color: #BED77700;
+    color: #33294C00;
+    border: 1px;
+    width: 35%;
+    height: 20%;
+    margin-top: 3%;
+    margin-left: 10%;
+    cursor: pointer;
+    float: left;
+}
+
+
+.background:hover .sbutton:hover {
+    background-color: #BED77700;
+    border: 1px solid  #9900ff;
+}
+
+body {
+}
+
+@font-face {
+    font-family: GoboldBold;
+    src: url(../font/GoboldBold.otf) format("opentype");
+}
+
+
+@font-face {
+    font-family: GoboldBold;
+    font-weight: bold;
+    src: url(../font/GoboldCUTS.otf) format("opentype");
+}

@@ -1,0 +1,158 @@
+.phone_border {
+    border: 2px solid #000000AA;
+    position: absolute;
+    margin-top: 45%;
+    margin-left: 45%;
+    background-color: #A8A5A550;
+    width: 150px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-color: #000000AA;
+    transform: perspective(1200px) rotateX(48deg);
+}
+
+.phone_background {
+    position: absolute;
+    background-color: #A8A5A550;
+    width: 150px;
+    height: 50px;
+    animation-name: glitch;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 200ms;
+}
+
+
+@keyframes glitch { 
+    0%   {background-color: #A8A5A520;}
+    25%  {background-color: #A8A5A540;}
+    50%  {background-color: #A8A5A520;}
+    75%  {background-color: #A8A5A540;}
+    100% {background-color: #A8A5A520;} 
+}
+
+
+.progress {
+    position: absolute;   
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin: -80px 0 0 -80px;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+	margin-top: -40px;
+}
+
+.progress-circle-back {
+	fill: none; 
+	stroke: #0A7D99;
+	stroke-width:10px;
+}
+
+.progress-circle-prog {
+	fill: none; 
+	stroke: #00CCFF;
+	stroke-width: 10px;  
+	stroke-dasharray: 0 999;    
+	stroke-dashoffset: 0px;
+    transition: stroke-dasharray 0.7s linear 0s;
+}
+
+.progress-text {
+	width: 100%;
+	position: absolute;
+	top: 60px;
+	text-align: center;
+	font-size: 20px;
+    transform: perspective(200px);
+    color: aliceblue;
+}
+
+
+
+.progress2 {
+    position: absolute;   
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin: -80px 0 0 -130px;
+}
+
+.progress2-circle {
+  transform: rotate(-90deg);
+	margin-top: -40px;
+}
+
+.progress2-circle-back {
+	fill: none; 
+	stroke: #850321;
+	stroke-width:10px;
+}
+
+.progress2-circle-prog {
+	fill: none; 
+	stroke: #FF003A;
+	stroke-width: 10px;  
+	stroke-dasharray: 0 999;    
+	stroke-dashoffset: 0px;
+    transition: stroke-dasharray 0.7s linear 0s;
+}
+
+.progress2-text {
+	width: 100%;
+	position: absolute;
+	top: 60px;
+	text-align: center;
+	font-size: 20px;
+    transform: perspective(200px);
+    color: aliceblue;
+}
+
+
+
+.progress3 {
+    position: absolute;   
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin: -80px 0 0 -30px;
+}
+
+.progress3-circle {
+  transform: rotate(-90deg);
+	margin-top: -40px;
+}
+
+.progress3-circle-back {
+	fill: none;
+	stroke: #A08600;
+	stroke-width:10px;
+}
+
+.progress3-circle-prog {
+	fill: none; 
+	stroke: #E0BB01;
+	stroke-width: 10px;  
+	stroke-dasharray: 0 999;    
+	stroke-dashoffset: 0px;
+    transition: stroke-dasharray 0.7s linear 0s;
+}
+
+.progress3-text {
+	width: 100%;
+	position: absolute;
+	top: 60px;
+	text-align: center;
+	font-size: 20px;
+    transform: perspective(200px);
+    color: aliceblue;
+}

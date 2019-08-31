@@ -1,0 +1,306 @@
+.shop_background {
+    background-color: #00000000;
+    width: 300px;
+    height: 500px;
+    margin: 50px;
+    border-radius: 1px;
+    transform: perspective(100px) rotateY(0deg);
+    transition: 1000ms;
+    float: left;
+}
+
+.shop_background:hover {
+    transition: 1000ms;
+    
+}
+
+.title {
+    width: 288px;
+    height: 5%;
+    background-color: #333333;
+    font-size: 20px;
+    margin: 0px;
+    padding-left: 4%;
+    text-align: justify;
+    border-top: 10px solid #9900ff;
+    color: white;
+    font-family: GoboldBold;
+    text-align: center;
+   
+}
+
+.panier {
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    width: 300px;
+    height: 200px;
+    background-color: #333333;
+    perspective: 50px;
+    float: left;
+    border: 1px solid #AC89FF;
+    box-shadow: 0px 0px 0px 0px #9900ff; 
+    transform: perspective(100px) rotateY(0deg);
+    transition: 1000ms;
+}
+
+.slider_ {
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 80%;
+    -webkit-appearance: none;
+    background: #EEE8F1CC;
+    outline: none;
+    opacity: 0.7;
+}
+
+.pointer {
+    pointer-events: none;
+    margin: 7px;
+    padding: 0px;
+    left: 5px;
+    top: 5px;
+    font-size: 14;
+    position: absolute;
+    color: black;
+    font-family: GoboldBold;
+
+}
+
+.slider_::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #9900ff;
+  cursor: pointer;
+    
+}
+
+.slider_::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #AC89FF;
+  cursor: pointer;
+}
+
+.buy {
+    
+    margin: 0;
+    padding: 0 5 0 5;
+    color: white;
+    position: absolute;
+    left: 0px;
+    top: 55%;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 25%;
+    font-family: GoboldBold;
+    font-size: 24px;
+    border: 1px solid #9900ff;
+    text-align: justify;
+    float: left;
+    transition: 1000ms;
+    background-color: #3EFF839A;
+    
+}
+
+.add {
+    position: absolute;
+    left: 0px;
+    top: 20%;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 35%;
+    height: 24%;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #E5D8E7;
+    border: 1px solid #9900ff;
+    text-align: justify;
+    float: left;
+    transition: 1000ms;
+    text-align: center;
+}
+
+.clear {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 35%;
+    height: 24%;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #E5D8E7;
+    border: 1px solid #9900ff;
+    text-align: justify;
+    float: left;
+    transition: 1000ms;
+    text-align: center;
+}
+
+.add:hover {
+    transition: 1000ms;
+    background-color: #FFD700AA;
+}
+
+.clear:hover {
+    transition: 1000ms;
+    background-color: #990000AA;
+}
+
+
+.buy:hover {
+    transition: 1000ms;
+    background-color: #A5EA89;
+}
+
+
+.icon_a {
+    pointer-events: none;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.ptext {
+    margin: 0px;
+    font-size: 20px;
+    font-family: GoboldBold;
+    text-align: center
+    
+}
+
+
+.icon {
+    left: 65%;
+    top: 72%;
+    position: absolute;
+    width: 20%;
+    height: 22%;
+}
+
+.slot {
+    pointer-events: auto;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: 4%;
+    background-color: #333333;
+    perspective: 50px;
+    float: left;
+    border: 2px solid #9900ff;
+    box-shadow: 0px 0px 1px 1px #EEE8F1CC;
+    transform: perspective(100px) rotateY(20deg);
+}
+
+.slot:hover {
+    border: 5px solid #99FF7F;
+    transition: 800ms;
+}
+
+
+.currentbuylisttitle {
+    font-size: 20px;
+    color: white;
+    font-family: GoboldBold;
+    padding: 5px 0px 5px 10px;
+    margin: 0px 0px 0px 0px;
+    border-top: 5px solid #9900FF;
+}
+
+.currentitembuy {
+    position: relative;
+    margin: 8px 0px 8px 10px;
+    width: 280px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #888888F0;
+}
+
+.currentitemname {
+    position: absolute;
+    top: -13px;
+    left: 50px;
+    color: white;
+    font-family: GoboldBold;
+    font-size: 18px;
+}
+
+.currentitemnumber {
+    position: absolute;
+    top: -13px;
+    left: 150px;
+    color: white;
+    font-family: GoboldBold;
+    font-size: 18px;
+}
+
+.currentitemprice {
+    position: absolute;
+    top: -13px;
+    left: 200px;
+    color: #3EFF839A;
+    font-family: GoboldBold;
+    font-size: 18px;
+}
+
+.currentitemicon {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 26px;
+    height: 26px;
+}
+
+.removeitembuy {
+    position: absolute;
+    top: 4px;
+    left: 250px;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    font-family: GoboldBold;
+    border: 0px; 
+    font-size: 18px;
+    color: white;
+    background-color: #33333380;
+    transition: 100ms;
+}
+
+.removeitembuy:hover {
+    background-color: #FFFFFF;
+    color: #333333;
+    transition: 100ms;
+}
+
+.currentbuylist {
+    position: absolute;
+    top: 340px;
+    left: 400px;
+    width: 300px;
+    height: 400px;
+    background-color: #333333FF;
+    transform: perspective(100px) rotateY(0deg);
+    border: 1px solid #9900FF;
+}
+
+body {
+}
+
+@font-face {
+    font-family: GoboldBold;
+    src: url(../font/GoboldBold.otf) format("opentype");
+}
+
+
+@font-face {
+    font-family: GoboldBold;
+    font-weight: bold;
+    src: url(../font/GoboldCUTS.otf) format("opentype");
+}

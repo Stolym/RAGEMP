@@ -1,0 +1,64 @@
+.rangeBlock {
+  background-color: #ffffff10;
+  border-radius: 50px;
+  width: 240px;
+  margin-left: auto;
+}
+
+.range {
+  -webkit-appearance: none;
+  margin: 12px 10px 0 10px;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #ffffff38;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+input[type=range]#RGBrange1D::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background: linear-gradient(-90deg,
+    #FF0000,
+    #6D0000,
+    #FF6C00,
+    #6D2E00,
+    #EFB401,
+    #08EF01,
+    #008256,
+    #004C82,
+    #4A0082);
+    height: 5px;
+    border-radius: 40px;
+}
+
+
+input[type=range]#RGBrange1D::-webkit-slider-thumb  {
+    -webkit-appearance: none;
+    margin: -5px 0px;
+}
+
+
+.range:hover {
+  opacity: 1;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.range::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}

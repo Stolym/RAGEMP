@@ -1,0 +1,96 @@
+.widget {
+    position: absolute;
+    margin: 0px;
+    top: 50px;
+    left: 15px;
+    width: 240px;
+    height: 200px;
+    background-color: #FFFFFF20;
+    border-radius: 10px;
+}
+
+.widgetpolitics {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 230px;
+    height: 90px;    
+    overflow: auto;
+    z-index: 3;
+    border-radius: 10px;
+    background-color: #FFFFFF00;
+}
+
+
+.widgetpolitics::-webkit-scrollbar {
+    display: none;
+}
+
+.widgettrading::-webkit-scrollbar {
+    display: none;
+}
+
+.ptrade {
+    position: relative;
+    margin: 4px 0px 4px 0px;
+    border: 1px solid #0000FF20;
+    width: 210px;
+    height: 18px;
+    padding: 5px;
+    left: 5px;
+    font-family: Quicksand;
+    font-size: 16px;
+    color: white;
+    background-color: #FFFFFF20;
+    border-radius: 10px;
+}
+
+.ptitle {
+    position: relative;
+    border: 1px solid #0000FF20;
+    margin: 0px;
+    width: 210px;
+    height: 18px;
+    padding: 5px;
+    top: 8px;
+    left: 5px;
+    font-family: Quicksand;
+    font-size: 16px;
+    color: white;
+    background-color: #FFFFFF20;
+    border-radius: 10px;
+}
+
+.pdesc {
+    position: relative;
+    border: 1px solid #0000FF20;
+    margin: 0px;
+    width: 210px;
+    top: 20px;
+    font-family: Quicksand;
+    padding: 5px;
+    left: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #FFFFFF20;
+    border-radius: 10px;
+}
+
+.widgettrading {
+    position: absolute;
+    overflow: auto;
+    z-index: 3;
+    left: 5px;
+    top: 105px;
+    width: 230px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: #FFFFFF00;
+}
+
+
+@font-face {
+    font-family: Quicksand;
+    font-weight: bold;
+    src: url(../Font/Quicksand_Book.otf) format("opentype");
+}

@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="meta.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="meta.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="gtanetwork.api" Version="0.3.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="TeamSpeak3QueryApi" Version="1.8.0" />
+    <PackageReference Include="ZeroFormatter" Version="1.6.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Gouvernment\" />
+    <Folder Include="Item\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\..\RAGEMP\server-files\bridge\resources\main\bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="del &quot;C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\bridge\resources\main\bin\*.*&quot; /Q&#xD;&#xA;xcopy &quot;$(OutDir)*&quot; &quot;C:\Users\Stol\Desktop\Desktop (1)\Server\server-files\server-files\bridge\resources\main\bin&quot; /Y" />
+  </Target>
+
+</Project>

@@ -1,0 +1,625 @@
+.background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 184px;
+    height: 375px;
+}
+.wallpaper {
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 96%;
+    height: 97.5%;
+    border-radius: 15px;
+}
+
+.screen {
+    position: absolute;
+    width: 184px;
+    height: 375px;
+}
+
+.menu_interaction {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    height: 20%;
+}
+
+.streaming {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.widget {
+    position: absolute;
+    top: 20%;
+    width: 90%;
+    height: 20%;
+    margin: 5%;
+    background-color: #5555558A;
+    border: 1px solid #FFFFFFAA;
+}
+
+
+.logo_weather {
+    position: absolute;
+    top: 4%;
+    left: -5%;
+    width: 40%;
+    height: 40%;
+}
+
+.atitle {
+    margin-top: 20%;
+    text-align: center;
+    font-family: titleFont;
+    color: black;
+    font-size: 16px;
+}
+
+.esms {
+    width: 80%;
+    height: auto;
+    font-family: textFont;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    background-color: #e6e8fa;
+    border: 2px solid #ddddddAA;
+    border-radius: 10px;
+}
+
+.asms {
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+    font-family: textFont;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #ddddddAA;
+    background-color: #83b5d7;
+    border-radius: 10px;
+}
+
+.sinput {
+    margin-left: 10%;
+    border: 0px;
+    font-family: textFont;
+    width: 80%;
+}
+
+.sbutton {
+    margin-top: 5%;
+    margin-left: 10%;
+    width 80%;
+    height: 8%;
+    border: 0px;
+    background-color: white;
+    transition: 100ms;
+}
+
+.sbutton:hover {
+    transition: 100ms;
+    color: white;
+    background-color: black;
+}
+
+.text_weather {
+    
+    margin: 1% 0 1% 30%;
+    font-size: 14px;
+    font-family: textFont;
+    color: white;
+}
+
+.slot {
+    position: absolute;
+    top 0px;
+    left: 0px;
+    width: 10%;
+    height: 10%;
+    padding: 1%;
+    margin: 12% 6% 12% 6%;
+    float: left;
+    transition: 100ms;
+}
+
+.top_icon {
+    position: absolute;
+    left: 2%;
+    top: 25%;
+    width: 8%;
+    height: 70%;
+}
+
+.top_clock {
+    margin: 0px;
+    font-size: 10px;
+    margin-left: 35%;
+    margin-top: 5%;
+    color: white;
+    font-family: titleFont;
+}
+
+.slot:hover {
+    padding: 2%;
+    margin: 12% 6% 12% 6%;
+    transition: 100ms;
+}
+
+.intraction:nth-child(2) {
+    position: absolute;
+    left: 40%;
+    top: 25%;
+    width: 10%;
+    height: 20%;
+    margin: 5%;
+}
+
+.intraction:nth-child(3) {
+    position: absolute;
+    left: 65%;
+    top: 25%;
+    width: 10%;
+    height: 20%;
+    margin: 5%;
+}
+
+.ctitle {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: titleFont;
+    background-color: #333333AA;
+    box-shadow: 0px 1px 20px 0px #000000;
+}
+
+.stitle {
+    margin: 0%;
+    margin-top: 10%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: titleFont;
+    background-color: #f9db3e;
+    box-shadow: 0px 1px 20px 0px #000000;
+}
+
+.catitle {
+    margin: 0%;
+    margin-top: 10%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: titleFont;
+    background-color: #00000080;
+    box-shadow: 0px 1px 5px 0px #000000;
+}
+
+
+.cfunction {
+    float: left;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 20%;
+    height: 10%;
+    margin: 5%;
+    background-color: #00000080;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 1px 5px 0px #000000;
+    border-radius: 25px;
+    border: 1px solid #333333FF;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.cfunction:nth-child(3) {
+    margin-top: 25%;
+}
+
+.cfunction:nth-child(4) {
+    margin-top: 25%;
+}
+
+.cfunction:nth-child(5) {
+    margin-top: 25%;
+}
+
+.tocall {
+    width: 90%;
+    margin-left: 5%;
+    font-family: textFont;
+    font-size: 16px;
+    color: #6DDB9B;
+    background-color: #6DDB9BA0;
+    border: 0px;
+    box-shadow: 0px 1px 5px 0px #000000;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+
+.tocall:hover {
+    transition: 200ms;
+    border: 1px solid #6DDB9B;
+}
+
+
+.cfunction:hover {
+    margin-left: 5%;
+    transition: 200ms;
+    border: 1px solid #FFFFFFFF;
+}
+
+
+.cacalling {
+    position: relative;
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+    color: white;
+    font-family: textFont;
+    top: 10%;
+    font-size: 26px;
+}
+
+.ca {
+    margin-top: 30%;
+    margin-bottom: -20%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: titleFont;
+    background-color: #00000060;
+    box-shadow: 0px 1px 2px 0px #000000;
+}
+
+
+.ca:nth-child(2) {
+    margin-top: 10%;
+    margin-bottom: -20%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: titleFont;
+    background-color: #00000060;
+    box-shadow: 0px 1px 2px 0px #000000;
+}
+
+.cpage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #555555AA;
+    border-radius: 15px;
+}
+
+
+.spage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffd700;
+    border-radius: 15px;
+}
+
+
+.capage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000000;
+    border-radius: 15px;
+}
+
+.acontact {
+    top: 5.3%;
+    left: 80%;
+    color: white;
+    background-color: #00000000;
+    border: 0px;
+    height: 6.4%;
+    position: absolute;
+    font-size: 20px;
+    font-family: textFont;
+}
+
+.cbutton {
+    margin: 0%;
+    margin-top: 10%;
+    margin-left: 4%;
+    margin-right: 2.5%;
+    width: 25%;
+    height: 10%;
+    background-color: #6DDB9B;
+    border: 0px;
+    font-size: 20px;
+    font-family: textFont;
+    color: whitesmoke;
+}
+
+.acontact:hover {
+    color: black;
+}
+
+.listcontact {
+    height: 75%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.cinput {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+    background-color: #333333AA;
+    color: white;
+    font-size: 16px;
+    font-family: textFont;
+    border: 1px solid #9900FFFF;
+}
+
+.cbuttonb {
+    background-color: #333333AA;    
+    color: white;
+    border: 0px;
+    font-size: 12px;
+    width: 48%;
+    height: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;    
+    border: 1px solid #9900FFFF;
+
+}
+
+
+.cbuttonb:hover {
+    background-color: #33333388;
+}
+
+.csms {
+    cursor: pointer;
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0px #000000FF;
+    background-color: aliceblue;
+}
+
+
+.csms:hover {
+    background-color: #EBCD5FFF;
+}
+
+.ctsms {
+    left: 5%;
+    position: relative;
+    margin: 0%;
+    font-family: textFont;
+    font-size: 10px;
+}
+
+.ctsmsb {
+    left: 5%;
+    top: 10%;
+    position: relative;
+    margin: 0%;
+    font-family: textFont;
+    font-size: 10px;
+}
+
+.ctsmsc {
+    top: -30%;
+    left: 40%;
+    position: relative;
+    margin: 0%;
+    font-family: textFont;
+    font-size: 10px;
+}
+
+.listsms {
+    top: 13%;
+    position: absolute;
+    border-radius: 15px;
+    height: 70%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.listsms::-webkit-scrollbar {
+    display: none;
+}
+
+.isms {
+    top: 83%;
+    width: 100%;
+    height: 8%;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.listcontact::-webkit-scrollbar {
+    display: none;
+}
+
+.lccontact {
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: #3333331C;
+    border-radius: 3px;
+    border: 1px solid #9900FFFF;
+    filter: brightness(150%);
+    cursor: pointer;
+    transition: 100ms;
+
+}
+
+.lcletter {
+    margin: 2px 0% 2px 0%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: #88888874;
+    border: 1px solid #000000AA;
+}
+
+
+.lccontact:hover {
+    background-color: #FFFFFF2A;
+    filter: brightness(100%);
+    perspective: 500px;
+    transform: rotateY(20deg);
+    transition: 100ms;
+}
+
+.ccurrent {
+    margin: 0%;
+    font-family: textFont;
+    font-size: 24px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.ccurrent:nth-child(3) {
+    margin-top: 40%;
+}
+
+.intraction {
+    position: absolute;
+    left: 14%;
+    top: 25%;
+    width: 10%;
+    height: 20%;
+    margin: 5%;
+    border: 1px solid red;
+    background-color: #00000000;
+}
+
+.effect {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 30%;
+    height: 36%;
+    border-bottom-left-radius: 12px;
+    background-color: #333333AA;
+    transition: 700ms;
+
+}
+
+.effect:nth-child(2) {
+    width: 32%;
+    left: 35%;
+    border-bottom-left-radius: 0px;
+}
+
+
+.effect:nth-child(3) {
+    left: 67%;    
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 12px;
+}
+
+.top_slider {
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    width: 98%;
+    height: 6.5%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: #3333336A;
+    border-bottom: 1px solid #FFFFFFFF;
+}
+
+.current_application {
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 96%;
+    height: 97.5%;
+    border-radius: 15px;
+}
+
+.application {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.effect:hover {
+    background-color: aqua;
+    transition: 700ms;
+    background-color: #FFFFFFCA;
+}
+
+
+
+
+.slot:hover {
+    width: 12%;
+    height: 12%;
+    margin: 5%;
+    cursor: pointer;
+}
+
+
+.event_interaction {
+    position: absolute;
+    left: 1%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.icon:nth-child(1) {
+}
+
+
+@font-face {font-family: titleFont; src: url(../font/Arimo-Bold.ttf);}
+@font-face {font-family: bodyFont; src: url(../font/Arimo-Regular.ttf);}
+
+
+@font-face {
+    font-family: GoboldBold;
+    src: url(../font/GoboldBold.otf) format("opentype");
+}
+
+
+@font-face {
+    font-family: Terminal;
+    src: url(../font/term.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Umar;
+    src: url(../font/umar.otf) format("opentype");
+}
+
+
+@font-face {
+    font-family: GoboldBold;
+    font-weight: bold;
+    src: url(../font/GoboldCUTS.otf) format("opentype");
+}

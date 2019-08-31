@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>drag and drop</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contain.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+    <div class="menu">
+        <div class="menu_player"></div>
+    </div>
+
+        
+    <!--<div data-info="{}" data-id="0" data-state="0" data-name="Inventory" class="contain">
+        <p class="contain_title">Your Inventory</p>
+        <p class="money">1 000 000$</p>
+        <div data-name="Inventory" class="contain_list_item">
+            <div class="stack">
+                <div class="scursor">
+                    <p class="stack_size">*2</p>
+                    <img class="icon_stack" src="rest/body.png"> 
+                </div>
+            </div>
+        </div>
+    </div>-->
+        
+        
+    <!--<button id="additem">Add Item</button>-->
+        
+    <div data-enabled="true" class="ibody">
+        <p class="interact_title">Body</p>
+        <div id="Mask" class="slot_body" style="left: 25%; top: 15%;">
+            <img class="icon_body" src="rest/masque.png">
+        </div>
+        <div id="Hat" class="slot_body" style="left: 50%; top: 15%;">
+            <img class="icon_body" src="rest/chapeau.png">
+        </div>
+        <div id="EarRing" class="slot_body" style="left: 50%; top: 26%;">
+            <img class="icon_body" src="rest/boucle_oreilles.png">
+        </div>
+        <div id="See" class="slot_body" style="left: 25%; top: 26%;">
+            <img class="icon_body" src="rest/jumelles.png">
+        </div>
+        <div id="Tie" class="slot_body" style="left: 24%; top: 37%; width: 80px; height: 20px">
+            <img class="icon_body" src="rest/tie.png">
+        </div>
+        <div id="Shirt" class="slot_body" style="left: 50%; top: 44%;">
+            <img class="icon_body" src="rest/shirt.png">
+        </div>
+        <div id="T-shirt" class="slot_body" style="left: 25%; top: 44%; ">
+            <img class="icon_body" src="rest/t-shirt.png">
+        </div>
+        <div id="Leg" class="slot_body" style="left: 24%; top: 55%; width: 80px; height: 40px">
+            <img class="icon_body" src="rest/leg.png">
+        </div>
+        <div id="Shoes" class="slot_body" style="left: 24%; top: 68%; width: 80px; height: 20px">
+            <img class="icon_body" src="rest/shoes.png">
+        </div>
+        <div id="bag" class="slot_body" style="left: 50%; top: 85%;">
+            <img class="icon_body" src="rest/sac.png">
+        </div>
+        <div id="Gant" class="slot_body" style="left: 22%; top: 85%;">
+            <img class="icon_body" src="rest/gants.png">
+        </div>
+        <div class="line">
+        </div>
+    </div>
+    <div data-enabled="true" class="interact">
+        <p class="interact_title">Porte-feuille</p>
+        <div class="list_item">
+            <div class="item">
+                <div data-item="1" class="scursor">
+                    <img class="icon_stack" src="rest/card_bank.png">
+                </div>
+            </div>
+            <div class="item" style="left: 30%;">
+                <div data-item="1" class="scursor">
+                    <img class="icon_stack" src="rest/key_car.png">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div data-enabled="true" class="cursor">
+        <p class="interact_title">Carte Bancaire</p>
+        <button class="setdefault">Default</button>
+        <p class="item_text">8888 8888 8888 8888<br/>Miller Connor<br/>06/29</p>
+    </div>
+    </body>
+</html>

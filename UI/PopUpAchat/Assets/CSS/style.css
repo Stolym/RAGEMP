@@ -1,0 +1,35 @@
+.contain {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 600px;
+    height: 140px;
+    border-radius: 20px;
+    border: 1px solid #9900FF;
+    background-color: #00000020;
+}
+
+.cobject {
+    position: absolute;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.cbutton {
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    margin: 10px;
+    border: 1px solid #0000FF20;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: #33333380;
+    transition: 100ms;
+}
+
+.cbutton:hover {
+    transition: 100ms;
+    color: black;
+    background-color: #FFFFFF80;
+}

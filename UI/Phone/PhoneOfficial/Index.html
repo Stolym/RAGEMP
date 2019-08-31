@@ -1,0 +1,172 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/phone.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/screen.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/lock.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/topbar.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/application.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/capplication.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/widget.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/setting.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/lbutton.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/bottombar.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/contact.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/messagerie.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/you.css">
+    </head>
+<body>
+    <div class="background">
+        <img class="phone_image" src="Assets/Pictures/M9Border.png">
+    </div>
+    <div class="screen">
+        <img class="screen_locked" src="Assets/Pictures/locked.jpg">
+        <img class="screen_unlocked" src="Assets/Pictures/wallpaper.jpg">
+        <ul class="topbar">
+            <li class="topbar_object">
+                <img class="topbar_image" src="Assets/Pictures/battery.svg">
+            </li>
+            <li class="topbar_object">
+                <img class="topbar_image" src="Assets/Pictures/wifi.svg">
+            </li>
+            <li class="topbar_object">
+                <p class="topbar_clock">08:34</p>
+            </li>
+        </ul>
+        <ul class="bottombar">
+            <li data-id="0" class="libutton" style="border-bottom-left-radius: 23px;"><img class="bottomicon" src="Assets/Pictures/back.png"></li>
+            <li data-id="1" class="libutton" style="width: 83px;"><img class="bottomicon" style="left: 30px;" src="Assets/Pictures/house.png"></li>
+            <li data-id="2" class="libutton" style="border-bottom-right-radius: 23px;"><img class="bottomicon" style="left: 30px;" src="Assets/Pictures/delete.png"></li>
+        </ul>
+        <div class="lock">
+            <p class="lock_clock">08:34</p>
+            <button class="unlock_button">
+                <img class="unlock_image" src="Assets/Pictures/fingerprint_on.svg">
+            </button>
+        </div>
+        <div class="widget">
+            <div class="widgetpolitics">
+                <p class="ptitle">Attentat à XX</p>
+                <p class="pdesc">A fais 10 mort, Suspect retrouvé. Nous sommes en train de nananana ananan an an </p>
+            </div>
+            <div class="widgettrading">
+                <p class="ptrade">Lost : 386 $</p>
+                <p class="ptrade">Ventura : 12 386 $</p>
+                <p class="ptrade">Brink's : 126 $</p>
+            </div>
+        </div>
+        <div class="all_application">
+            <div data-id="0" class="application" style="background: rgb(20,20,20);
+background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(170,170,170,1) 100%);">
+                <img class="appicon" src="Assets/Pictures/settings.png">
+            </div>
+            <div data-id="1" class="application" style="background: rgb(29,74,217);
+background: linear-gradient(0deg, rgba(29,74,217,1) 0%, rgba(123,187,255,1) 100%);">
+                <img class="appicon" src="Assets/Pictures/phone-book.png">
+            </div>
+            <div data-id="2" class="application" style="background: rgb(148,149,4);
+background: linear-gradient(0deg, rgba(148,149,4,1) 0%, rgba(251,255,60,1) 100%);">
+                <img class="appicon" src="Assets/Pictures/email.png">
+                <p class="appnotify">1</p>
+            </div>
+            <div data-id="3" class="application" style="background: rgb(28,164,53);
+background: linear-gradient(0deg, rgba(28,164,53,1) 0%, rgba(85,255,72,1) 100%);">
+                <img class="appicon" src="Assets/Pictures/phone.png">
+                <p class="appnotify">9</p>
+            </div>
+            <div data-id="4" class="application" style="background: rgb(97,23,119);
+background: linear-gradient(0deg, rgba(97,23,119,1) 0%, rgba(240,118,255,1) 100%);">
+                <img class="appicon" src="Assets/Pictures/collaboration.png">
+            </div>
+            <div data-id="5" class="application" style="background: rgb(255,129,51);
+background: linear-gradient(0deg, rgba(255,129,51,1) 0%, rgba(255,210,103,1) 100%);">
+                <img class="appicon" src="Assets/Pictures/bank.png">
+            </div>
+            <div data-id="6" class="application" style="background: rgb(217,59,20);
+background: linear-gradient(0deg, rgba(217,59,20,1) 0%, rgba(255,166,149,1) 100%);">
+                <img class="appicon" src="Assets/Pictures/photo-camera.png">
+            </div>
+        </div>
+        
+        <div class="current_application">
+            <div data-id="0" class="capplication">
+                <p class="settitle" style="left: 70px; font-family: Quicksand;">Paramètre</p>
+                <div class="setting_list">
+                    <div class="lbutton">
+                        <img class="seticonobject" src="Assets/Pictures/settings.svg">
+                        <p class="setobject" style="font-family: Quicksand; color: white;">Affichage</p>
+                        <p class="setcobject" style="font-family: Quicksand;">Changer Background</p>
+                        <input id="changeunlocked" data-id="0" type="text" style="top: 90px; border-radius: 5px;" class="setcobject">
+                        <p class="setcobject"  style="top: 130px; font-family: Quicksand;">Changer Lock Background</p>
+                        <input data-id="1" id="changelocked" type="text" style="top: 170px; border-radius: 5px;" class="setcobject">
+                    </div>
+                    <div class="lbutton">
+                        <img class="seticonobject" src="Assets/Pictures/think.svg">
+                        <p class="setobject" style="font-family: Quicksand; color: white;">Crédits</p>
+                        <p class="setcobject" style="font-size: 24px; font-family: Quicksand;">Solt Industry</p>
+                        <p class="setcobject" style="top: 90px; font-family: Quicksand;">CPU : 3S033E</p>
+                        <p class="setcobject" style="top: 125px; font-family: Quicksand;">GPU : Nano 3S033SKGTX</p>
+                        <p class="setcobject" style="top: 155px; font-family: Quicksand;">RAM : 16 Gb</p>
+                    </div>
+                </div>
+            </div>
+            <div data-id="1" class="capplication">
+                <div data-id="0" class="multiscreen">
+                    <p class="settitle" style="color: black; left: 90px; top: 28px; font-family: Quicksand; color: white;">Contact</p>
+                    <button class="addcontact">+</button>
+                    <div class="listcontact">
+
+                    </div>
+                </div>
+                <div data-id="1" class="multiscreen">
+                    <p class="settitle" style="color: black; left: 95px; top: 28px;">Contact B</p>
+                </div>
+            </div>
+            <div data-id="2" class="capplication" style="background-color: #FFFFFF; background-image: none;">
+                <div data-id="0" class="multiscreen">
+                    <p class="settitle" style="color: black; left: 80px; top: 28px;">Messagerie</p>
+                    <div class="listmessage">
+                        <div class="boxmessage">
+                            <div class="boxclock">
+                                <p class="mboxclock">16:24</p>
+                            </div>
+                            <p class="mname">333-333-333</p>
+                            <p class="mmessage">Bonjour ta ta titi tutu voila salut...</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div data-id="1" class="multiscreen">
+                    <p class="settitle" style="color: black; left: 75px; top: 28px;">333-333-333</p>
+                    <div class="listmessage">
+                        <div class="message_a">
+                            <p class="mmclock">16:25</p>
+                            <p class="mdesc">azpodkazpodpopaok<br>zdpoazkdp<br>oazkdpokazd</p>
+                        </div>
+                        <div class="message_b">
+                            <p class="mmclock">16:25</p>
+                            <p class="mdesc">azpodkazpodpopaok<br>zdpoazkdp<br>oazkdpokazd</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div data-id="4" class="capplication" style="background-color: #FFFFFF; background-image: none;">
+                <div data-id="0" class="multiscreen">
+                    <p class="settitle" style="color: black; left: 100px; top: 28px;">Ventura</p>
+                    <iframe class="you" src="https://panel.ventura-roleplay.fr/signup"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="Assets/JS/main.js"></script>
+    <script src="Assets/JS/lock.js"></script>
+    <script src="Assets/JS/topbar.js"></script>
+    <script src="Assets/JS/application.js"></script>
+    <script src="Assets/JS/contact.js"></script>
+    <script src="Assets/JS/setting.js"></script>
+    </body>
+</html>

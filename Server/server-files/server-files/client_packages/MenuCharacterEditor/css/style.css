@@ -1,0 +1,455 @@
+/* ------MENU GENETIQUE ------- */
+
+@font-face {
+  font-family: gta;
+  src: url(../fonts/ChaletLondonNineteenSixty.ttf);
+}
+
+html, body, .page {
+    margin: 0;
+    height: 100%;
+}
+
+body{
+	background-color: #00000000!important;
+    background-size: 1920px 1080px;
+    min-height:100%;
+}
+
+h1 {
+  margin: 0!important;
+  padding: 10px 5px;
+}
+
+#special {
+    position: absolute;
+    left: 20px;
+}
+
+#specialb {
+    position: absolute;
+    left: 140px;
+}
+
+#modifyWindow  .CharacterSettings{
+  display: block;
+  font-family: gta;
+  letter-spacing: 3px;
+  background-color: #ffffff10!important;
+  color: #fff;
+  font-size: 20px;
+}
+
+#modifyWindow  .CharacterSettings .slider2D{
+  margin:10px;
+}
+
+
+#modifyWindow .titleBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff10!important;
+}
+
+#modifyWindow .titleBar .labell {
+  display: block;
+  font-family: gta;
+  letter-spacing: 3px;
+  padding: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+
+#modifyWindow .titleBar .closeBtn {
+  color: #fff;
+  margin: 5px;
+  background-color: #00000030;
+}
+
+#modifyWindow .titleBar .closeBtn:hover{
+  background-color: #00000050!important;
+}
+
+#modifyWindow  .CharacterSettings .slider2D #widget{
+    margin-left: 75px;
+    text-transform: uppercase;
+}
+
+#modifyWindow  .CharacterSettings .slider2D #widget span{
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+}
+
+#modifyWindow  .CharacterSettings .slider2D #markerbounds {
+  position: relative;
+  background-color: #ffffff10;
+  border-radius: 10px;
+  display: block!important;
+}
+
+#modifyWindow  .CharacterSettings .slider2D #box {
+  margin: auto;
+  background-color: #ffffff30;
+  position: absolute;
+  border-radius: 10px;
+}
+
+#modifyWindow  .CharacterSettings .slider2D #marker {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+
+
+
+
+.metal.linear {
+  background-color: black;
+  border-radius: 15px;
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)), linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-size: 100% 100%;
+}
+
+.wrapper {
+  left:100px;
+  top:80px;
+  border-radius: 1px;
+  width: 400px;
+  border-bottom: 1px solid #5600ff;
+}
+
+.container {
+  background-color: #00000094;
+  box-shadow: 0 0 5px #00000094;
+  border-top: 6px solid #5600ff;
+  width: 100%!important;
+  padding: 0!important;
+}
+
+.settings {
+  margin-top: 10px;
+  background-color: #00000094;
+  box-shadow: 0 0 5px #00000094;
+  border-top: 1px solid #5600ff;
+  width: 100%!important;
+  padding: 0!important;
+}
+
+.container .nav {
+  display: flex;
+}
+
+.container .nav li{
+    flex: 1;
+    font-size: 120%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container .nav li a{
+  font-family: gta;
+  border-radius: 0;
+  color: white;
+  background-color: #ffffff10;
+  transition: all cubic-bezier(0.81, 0.09, 0.29, 0.95) 200ms;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  border-radius: 0;
+  background-color: #ffffff50!important;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+  border-radius: 0;
+  background-color: #ffffff50!important;
+}
+
+.container .tab-content{
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+
+.container .tab-content .tab-title{
+  opacity: 0.9;
+  position: absolute;
+  font-family: gta;
+  letter-spacing: 3px;
+  border-left: 3px solid #5600ff;
+  margin: 20px;
+  padding: 0 10px;
+  background-color: #ffffff10!important;
+}
+
+.container .tab-content #tab1 .showcase{
+  background-image: url(../img_menu/showcaseBG.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.container .tab-content #tab2 .showcase{
+  background-image: url(../img_menu/showcaseBG.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+}
+
+.container .tab-content #tab2 .showcase img{
+  position: absolute;
+  max-width: 250px;
+  margin-top: 100px;
+}
+
+.container .tab-content #tab2 .showcase img:nth-child(2){
+  margin-left: 150px;
+}
+
+.container .tab-content #tab3 .showcase, .container .tab-content #tab4 .showcase{
+  background-image: url(../img_menu/showcaseBG.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+}
+.container .tab-content #tab5 .showcase{
+  background-image: url(../img_menu/showcaseBG.jpg);
+  height: 200px;
+}
+
+.CharacterSettings:nth-child(odd){
+  background-color: #00000030;
+  border-top: 1px solid #00000000;
+  border-bottom: 1px solid #00000000;
+}
+
+.CharacterSettings:nth-child(even){
+  background-color: #00000050;
+  border-top: 1px solid #00000000;
+  border-bottom: 1px solid #00000000;
+}
+
+
+
+.CharacterSettings div{
+  display: flex;
+}
+
+.CharacterSettings .selector{
+  margin: 5px 0;
+  padding: 5px  20px;
+  font-family: gta;
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: all cubic-bezier(0, 0, 0.26, 0.97) 200ms;
+  border-left: 3px solid #ffffff00;
+}
+
+.blur{
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.CharacterSettings .selector:hover, .CharacterSettings .selector.hovered{
+  background-color: #ffffff08;
+  border-left: 3px solid #fff;
+}
+
+.CharacterSettings .selector.selected{
+  transform: scale(1.05);
+  box-shadow: 0 0 50px #00000050;
+}
+
+.CharacterSettings .selector>i{
+  margin: 0 0 0 10px ;
+  padding: 6px 0 0 3px;
+  font-size: 85%;
+}
+
+
+.CharacterSettings .selector .choice{
+  text-align: right;
+  width: 240px;
+  background-color: #ffffff10;
+  border-radius: 50px;
+  margin-left: auto;
+}
+.CharacterSettings .selector .choice .arrow{
+  display: block;
+  text-align: center;
+  width: 10%;
+  background-color: #ffffff10;
+  border-radius: 50px;
+
+}
+
+.CharacterSettings .selector .choice .name{
+  display: block;
+  text-align: center;
+  width: 80%;
+}
+
+.CharacterSettings .selector .modifyBtn{
+  margin-left: auto;
+}
+
+.CharacterSettings .slider{
+    height: 30px;
+    width: 480px;
+    margin: 10px 20% 10px -20%;
+    padding: 0px 100px 0px 180px;
+    font-family: gta;
+    font-size: 20px;
+    border-left: 3px solid #ffffff00;
+}
+
+.CharacterSettings .slider:hover{
+  background-color: #ffffff08;
+  border-left: 3px solid #fff;
+}
+
+.CharacterSettings .slider .label{
+  width: 100%;
+}
+
+.CharacterSettings .slider #right{
+    width: 100px;
+    position: absolute;
+    left: 300px;
+    text-align: center;
+    color: #fff;
+}
+
+.CharacterSettings .slider #left{
+    width: 100px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+.CharacterSettings .RGBslider{
+    height: 30px;
+    width: 480px;
+    margin: 10px 20% 10px -20%;
+    padding: 0px 100px 0px 180px;
+    font-family: gta;
+    font-size: 20px;
+    border-left: 3px solid #ffffff00;
+}
+
+.CharacterSettings .RGBslider:hover{
+  background-color: #ffffff08;
+  border-left: 3px solid #fff;
+}
+
+.CharacterSettings .RGBslider .label{
+  width: 100%;
+}
+.CharacterSettings .RGBslider #right {
+    width: 100px;
+    left: 300px;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+.CharacterSettings .RGBslider #left{
+    width: 100px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+
+.CharacterSettings .Opaslider{
+    height: 30px;
+    width: 480px;
+    margin: 10px 20% 10px -20%;
+    padding: 0px 100px 0px 180px;
+    font-family: gta;
+    font-size: 20px;
+    border-left: 3px solid #ffffff00;
+}
+
+.CharacterSettings .Opaslider:hover{
+  background-color: #ffffff08;
+  border-left: 3px solid #fff;
+}
+
+.CharacterSettings .Opaslider .label{
+  width: 100%;
+}
+.CharacterSettings .Opaslider #right {
+    width: 100px;
+    left: 300px;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+.CharacterSettings .Opaslider #left{
+    width: 100px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+.CharacterSettings i{
+  border-radius: 50px;
+  min-width: 30px!important;
+  height: 30px;
+  padding: 5px 0 0 0;
+  background-color: #ffffff10;
+  display: block;
+  text-align: center;
+}
+
+.CharacterSettings .clickable{
+  cursor:pointer;
+  transition: all cubic-bezier(0.41, 0.32, 0.35, 1.1) 100ms;
+}
+
+.CharacterSettings .clickable:hover{
+  background-color: #585858!important;
+  transform: scale(1.1);
+}
+
+.CharacterSettings .twoChoice{
+margin: 20px 20px;
+font-family: gta;
+font-size: 20px;
+letter-spacing: 2px;
+}
+
+.CharacterSettings .twoChoice p{
+  width: 40%;
+  height: 30px;
+  text-align: center;
+}
+.CharacterSettings .twoChoice input{
+  width: 20%;
+  height: 24px;
+}
+
+.ResetButton {
+    position: absolute;
+    top: 0.5em;
+    left: 18.5em;
+    width: 5em;
+    font-size: 24px;
+    background-color: #333333AA;
+    border: 1px solid #5600ff;
+    box-shadow: 0 0 1px #5600FF8A;
+    color: white;
+    transition: 100ms;
+}
+
+.ResetButton:hover {
+    background-color: #33333344;
+    color: #5600FFAA;
+    transition: 100ms;
+}

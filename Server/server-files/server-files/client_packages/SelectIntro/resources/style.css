@@ -1,0 +1,38 @@
+@font-face {
+	font-family: bankgothic;
+	src: url(../assets/BankGothicBold.otf);
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+div {
+	font:20px bankgothic, sans-serif;
+	width: 150px;
+	height: 80px;
+	line-height: 80px; 
+	text-align: center;
+	color: #ffffff;
+	background-color: #000000D0;
+}
+
+div:hover, div:active, div:focus {
+	color: #ffffff;
+	background-color: #ffffff;
+	color: #5C34FF;
+	filter: drop-shadow(0 0 5px #8D5EEB);
+}
+
+div:hover {
+	cursor: pointer;
+}

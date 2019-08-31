@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Creator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/checkbox.css">
+  <link rel="stylesheet" href="css/range.css">
+
+</head>
+
+<body>
+
+  <html lang=fr>
+
+  <head>
+    <meta charset="utf-8">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body id="body">
+
+
+    <!-- FULL HEIGHT MENU -->
+    <div class="page">
+        <button class="ResetButton">Reset</button>
+      <div class="wrapper" id="wrapper">
+        <div class="container">
+          <ul class="nav nav-pills">
+            <li class="active"><a href="#tab1" data-toggle="tab"><i class='fas fa-transgender'></i></a></li>
+            <li><a href="#tab2" data-toggle="tab"><i class='fas fa-sitemap'></i></a></li>
+            <li><a href="#tab3" data-toggle="tab"><i class='fas fa-user-edit'></i></a></li>
+            <li><a href="#tab4" data-toggle="tab"><i class='fas fa-diagnoses'></i></a></li>
+            <li><a href="#tab5" data-toggle="tab"><i class='fas fa-tshirt'></i></a></li>
+          </ul>
+          <div class="tab-content">
+
+            <div class="tab-pane active" id="tab1">
+              <div class="tab-title">
+                <h1 style="color:white;">Sexe</h1>
+              </div>
+              <div class="showcase">
+              </div>
+
+              <div class="CharacterSettings gender">
+                <div class="twoChoice">
+                  <p>Homme</p>
+                  <div class="block">
+                    <input data-index="1" id="gender" type="checkbox" />
+                    <label for="gender"></label>
+                  </div>
+                  <p>Femme</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tab2">
+              <div class="tab-title">
+                <h1 style="color:white;">Hérédité</h1>
+              </div>
+              <div class="showcase">
+                <img src="img_perso/female_13.png" alt="Mère" class="mother_png">
+                <img src="img_perso/male_5.png" alt="Père" class="father_png">
+              </div>
+              <div class="CharacterSettings parent">
+                <div class="selector" id="motherName">
+                  <span>Mère</span>
+                  <div class="choice">
+                    <i class='arrow left clickable fas fa-angle-left'></i>
+                    <div class="name">Hannah</div>
+                    <i class='arrow right clickable fas fa-angle-right'></i>
+                  </div>
+                </div>
+                <div class="selector" id="fatherName">
+                  <span>Père</span>
+                  <div class="choice">
+                    <i class='arrow left clickable fas fa-angle-left'></i>
+                    <div class="name">Benjamin</div>
+                    <i class='arrow right clickable fas fa-angle-right'></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="CharacterSettings parent">
+                <div class="slider" id="similarity">
+                  <span id="special">Hérédité</span>
+                  <div id="specialb" class="rangeBlock">
+                    <i class='fas fa-venus'></i>
+                    <input type="range" class="range" min="0" max="100" id="skinHeredity">
+                    <i class="fas fa-mars"></i>
+                  </div>
+                </div>
+                <div class="slider" id="similarity">
+                  <span id="special">Grand-Parent</span>
+                  <div id="specialb" class="rangeBlock">
+                    <i class='fas fa-venus'></i>
+                    <input type="range" class="range" min="0" max="50" id="skinParent">
+                    <i class="fas fa-mars"></i>
+                  </div>
+                </div>
+                <div class="slider" id="skinTone">
+                  <span id="special">Peau</span>
+                  <div id="specialb" class="rangeBlock">
+                    <i class='far fa-circle'></i>
+                    <input type="range" class="range"  min="0" max="100" id="skinSkin">
+                    <i class='fas fa-circle'></i>
+                  </div>
+                </div>
+                <div class="slider" id="skinTone">
+                  <span id="special">Hérédité GP</span>
+                  <div id="specialb" class="rangeBlock">
+                    <i class='far fa-circle'></i>
+                    <input type="range" class="range"  min="0" max="100" id="skinParentSkin">
+                    <i class='fas fa-circle'></i>
+                  </div>
+                </div>
+                  
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tab3">
+              <div class="tab-title">
+                <h1 style="color:white;">Traits du visage</h1>
+              </div>
+              <div class="showcase">
+              </div>
+
+              <div class="CharacterSettings facial">
+
+                  
+                <div class="selector">
+                  <span>Yeux</span>
+                  <i id="AYeux" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='1' data-text='{"list_button":[{"name":"Eyes","right":"Plissés","left":"Ouverts"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Nez</span>
+                  <i id="ANez" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='8' data-text='{"list_button":[{"name":"Nez","right":"Relevé","left":"Bas","up":"Fin","down":"Epais"}]}' data-x='' data-y=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Arête du nez</span>
+                  <i id="AArete" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='8' data-text='{"list_button":[{"name":"Arête du nez","right":"Saillante","left":"Incurvée","up":"Courte","down":"Longue"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Bout du nez</span>
+                  <i id="ABout" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='8' data-text='{"list_button":[{"name":"Bout du nez","right":"Haut","left":"Bas","up":"Cassé gauche","down":"Cassé droite"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Pommettes</span>
+                  <i id="APommettes" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='8' data-text='{"list_button":[{"name":"Pommettes","right":"Haut","left":"Bas","up":"Intérieur","down":"Extérieur"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Joues</span>
+                  <i id="AJoues" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='8' data-text='{"list_button":[{"name":"Joues","right":"Emacié","left":"Bouffi"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Lèvre</span>
+                  <i id="ALevre" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='1' data-text='{"list_button":[{"name":"Lèvre","right":"Minces","left":"Epaisses"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Mâchoire</span>
+                  <i id="AMachoire" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='8' data-text='{"list_button":[{"name":"Mâchoire","right":"Ronde","left":"Carrée","up":"Etroite","down":"Large"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Profil menton</span>
+                  <i id="AProfil" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='8' data-text='{"list_button":[{"name":"Profil menton","right":"Haut","left":"Bas","up":"Intérieur","down":"Extérieur"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Forme du menton</span>
+                  <i id="AForme" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='8' data-text='{"list_button":[{"name":"Forme du menton","right":"Arrondi","left":"Fossette","up":"Carré","down":"Pointu"}]}' data-x=''></i>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="tab-pane" id="tab4">
+              <div class="tab-title">
+                <h1 style="color:white;">Apparence</h1>
+              </div>
+              <div class="showcase">
+              </div>
+
+
+              <div class="CharacterSettings apparence">
+
+                <div class="selector">
+                  <span>Coiffure</span>
+                  <i id="Coiffure" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='7' data-text='{"list_button":[{"name":"Coiffure","right":"Coiffure","left":"End"},{"name":"RGB","right":"Color","left":"End"}, {"name":"O1D","right":"Clair","left":"Foncée"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Sourcils</span>
+                  <i id="Sourcils" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='7' data-text='{"list_button":[{"name":"Sourcils","right":"0","left":"X"},{"name":"RGB","right":"0","left":"X"}, {"name":"O1D","right":"Clair","left":"Foncée"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Barbes</span>
+                  <i id="Barbes" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='7' data-text='{"list_button":[{"name":"Barbes","right":"0","left":"X"},{"name":"RGB","right":"0","left":"X"}, {"name":"O1D","right":"Clair","left":"Foncée"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Yeux</span>
+                  <i id="Yeux" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='3' data-text='{"list_button":[{"name":"Yeux","right":"0","left":"X"},{"name":"RGB","right":"0","left":"X"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Poils</span>
+                  <i id="Poils" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='7' data-text='{"list_button":[{"name":"Poils","right":"0","left":"X"},{"name":"RGB","right":"0","left":"X"}, {"name":"O1D","right":"Clair","left":"Foncée"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Problème de peau</span>
+                  <i id="PPeau" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='5' data-text='{"list_button":[{"name":"Problème de peau","right":"0","left":"X"},{"name":"RGB","right":"0","left":"X"}, {"name":"O1D","right":"Clair","left":"Foncée"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Signes de vieillissement</span>
+                  <i id="Vieillissement" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='5' data-text='{"list_button":[{"name":"Signes de vieillissement","right":"0","left":"X"},{"name":"RGB","right":"0","left":"X"}, {"name":"O1D","right":"Clair","left":"Foncée"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Teint</span>
+                  <i id="Teint" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='7' data-text='{"list_button":[{"name":"Teint","right":"0","left":"X"},{"name":"RGB","right":"0","left":"X"}, {"name":"O1D","right":"Clair","left":"Foncée"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Taches cutanées</span>
+                  <i id="Taches" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='5' data-text='{"list_button":[{"name":"Taches cutanées","right":"0","left":"X"},{"name":"RGB","right":"0","left":"X"}, {"name":"O1D","right":"Clair","left":"Foncée"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Aspect de la peau</span>
+                  <i id="Aspect" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='5' data-text='{"list_button":[{"name":"Aspect de la peau","right":"0","left":"X"},{"name":"RGB","right":"0","left":"X"}, {"name":"O1D","right":"Clair","left":"Foncée"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Makeup</span>
+                  <i id="Makeup" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='7' data-text='{"list_button":[{"name":"Makeup","right":"0","left":"X"},{"name":"RGB","right":"0","left":"X"}, {"name":"O1D","right":"Clair","left":"Foncée"}]}' data-x=''></i>
+                </div>
+
+                <div class="selector">
+                  <span>Blush</span>
+                  <i id="Blush" class='modifyBtn clickable fas fa-pencil-ruler' data-range-type='7' data-text='{"list_button":[{"name":"Blush","right":"0","left":"X"},{"name":"RGB","right":"0","left":"X"}, {"name":"O1D","right":"Clair","left":"Foncée"}]}' data-x=''></i>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="tab-pane" id="tab5">
+              <div class="tab-title">
+                <h1 style="color:white;">Vêtements</h1>
+              </div>
+              <div class="showcase">
+              </div>
+
+              <div class="CharacterSettings cloth">
+                <div class="selector" id="overlayHair">
+                  <span>Dégradé</span>
+                  <div class="choice">
+                    <i class='arrow left clickable fas fa-angle-left'></i>
+                    <div class="name">0</div>
+                    <i class='arrow right clickable fas fa-angle-right'></i>
+                  </div>
+                </div>
+                <div class="selector" id="tenue">
+                  <span>Tenue</span>
+                  <div class="choice">
+                    <i class='arrow left clickable fas fa-angle-left'></i>
+                    <div class="name">0</div>
+                    <i class='arrow right clickable fas fa-angle-right'></i>
+                  </div>
+                </div>
+                <!--<div class="selector" id="haut">
+                  <span>Pull</span>
+                  <div class="choice">
+                    <i class='arrow left clickable fas fa-angle-left'></i>
+                    <div class="name">0</div>
+                    <i class='arrow right clickable fas fa-angle-right'></i>
+                  </div>
+                </div>
+                <div class="selector" id="mi-haut">
+                  <span>T-Shirt</span>
+                  <div class="choice">
+                    <i class='arrow left clickable fas fa-angle-left'></i>
+                    <div class="name">0</div>
+                    <i class='arrow right clickable fas fa-angle-right'></i>
+                  </div>
+                </div>
+                <div class="selector" id="bas">
+                  <span>Pantalon</span>
+                  <div class="choice">
+                    <i class='arrow left clickable fas fa-angle-left'></i>
+                    <div class="name">0</div>
+                    <i class='arrow right clickable fas fa-angle-right'></i>
+                  </div>
+                </div>
+                <div class="selector" id="shoes">
+                  <span>Chaussure</span>
+                  <div class="choice">
+                    <i class='arrow left clickable fas fa-angle-left'></i>
+                    <div class="name">0</div>
+                    <i class='arrow right clickable fas fa-angle-right'></i>
+                  </div>
+                </div>-->
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div id="modifyWindow" class="container settings" value="" style="display:none;">
+
+          <div class="CharacterSettings">
+
+            <div class="titleBar">
+              <span class="labell"></span>
+              <i class='closeBtn clickable fas fa-times'></i>
+            </div>
+
+            <div class="selector" style="display:none;">
+              <div class="choice">
+                <i class='arrow left clickable fas fa-angle-left'></i>
+                <div class="name">Hannah</div>
+                <i class='arrow right clickable fas fa-angle-right'></i>
+              </div>
+            </div>
+
+
+            <div class="slider" style="display:none;">
+              <span id="left"></span>
+                <div class="rangeBlock">
+                <input id="range1D" type="range" class="range" min="-100" max="100">
+              </div>
+              <span id="right"></span>
+            </div>
+              
+            <div class="RGBslider" style="display:none;">
+              <span id="left"></span>
+              <div class="rangeBlock">
+                <input id="RGBrange1D" type="range" class="range" min="0" max="100">
+              </div>
+              <span id="right"></span>
+            </div>
+
+            <div class="Opaslider" style="display:none;">
+              <span id="left"></span>
+              <div class="rangeBlock">
+                <input id="Opaslider1D" type="range" class="range" min="0" max="100">
+              </div>
+              <span id="right"></span>
+            </div>
+
+
+            <div class="slider2D" style="display:block;">
+              <span id="up" style="display:block;width:100%;text-align:center;"></span>
+
+              <div id="widget" style="display:flex;">
+                <span id="left"></span>
+                <div id="markerbounds">
+                  <div id="box">
+                    <div id="marker"></div>
+                  </div>
+                </div>
+                <!--<input type="range" class="range" id="range2DVertical" style="display:none;">-->
+                <!--<input type="range" class="range" id="range2DHorizontal" style="display:none;">-->
+                <span id="right"></span>
+              </div>
+              <span id="down" style="display:block;width:100%;text-align:center;"></span>
+
+              <!--
+          <div class="rangeBlock">
+            <i class='fas fa-venus'></i>
+            <input type="range" class="range" id="skinTone">
+            <i class="fas fa-mars"></i>
+          </div>
+-->
+
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="tail">
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    </div>
+  </body>
+
+  </html>
+
+
+  <script src="js/index.js"></script>
+  <script src="js/resize.js"></script>
+  <script src="js/2dslider.js"></script>
+  <script src="js/update.js"></script>

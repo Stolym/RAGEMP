@@ -1,0 +1,252 @@
+#background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -50;
+	background: url("../assets/preview-background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	filter: blur(10px);
+}
+
+
+
+
+/* ----------------------------------------------------- */
+
+@font-face {font-family: titleFont; src: url(../assets/Arimo-Bold.ttf);}
+@font-face {font-family: bodyFont; src: url(../assets/Arimo-Regular.ttf);}
+
+* {
+	color: #ffffff;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+#atm {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: line;
+	justify-content: center;
+	background-image: linear-gradient(to right, #101010f0, #101010a0, #101010f0);
+}
+
+#center {
+	height: 100%;
+	flex-grow: 5;
+	width: 56%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#right, #left {
+	height: 100%;
+	width: 22%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sectionTitle {
+	font:0.95vw titleFont, sans-serif;
+	padding: 5%;
+}
+
+
+/* ----- Partie gauche ----- */
+
+#bankLogo {
+	margin: 8% 12%;
+}
+
+#bankLogo>img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#totalCount {
+	padding: 6% 10%;
+	border-top:    0.3vh solid #aaa;
+	border-bottom: 0.3vh solid #aaa;
+	width: 70%;
+}
+
+#totalCountValue {
+	margin: 0 -0.5vw;
+	text-align: center;
+	font:1.7vw bodyFont, sans-serif;
+}
+
+#paymentHistory {
+	height: 60vh;
+	padding: 6% 10%;
+	width: 80%;
+}
+
+#historyScrollbox {
+	max-height: 90%;
+	overflow-y: auto;
+	scrollbar-color: #0f0f0fa0 #0f0f0f40;
+	scrollbar-width: thin;
+}
+
+#historyTable {
+	border-collapse: separate;
+	border-spacing: 0 2.5vh;
+}
+
+#historyTable, .transaction {
+	width: 96%;
+}
+
+.transactionName {
+	font:0.8vw titleFont, sans-serif;
+}
+
+.transactionDesc {
+	color: #d0d0d0;
+	font:0.75vw titleFont, sans-serif;
+}
+
+.transactionValue {
+	white-space: nowrap;
+	text-align: right;
+	vertical-align: top;
+	font:0.8vw titleFont, sans-serif;
+}
+
+.posval {
+	color: #18b10e;
+}
+
+.negval {
+	color: #c92222;
+}
+
+
+
+/* ----- Partie centrale ----- */
+
+#atmScreen {
+	width: 70%;
+	height: 45%;
+	margin: 5vh 0;
+}
+
+#atmNumpad {
+	width: 70%;
+}
+
+
+
+/* ----- Partie droite ----- */
+
+#atmInfo {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	margin: 3vh 0;
+}
+
+#atmDateTime {
+	height: 100%;
+	font: 1vw titleFont, sans-serif;
+	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 2vw;
+}
+
+#backButton {
+	width: 3vw;
+}
+
+#availableCards {
+	width: 100%;
+}
+
+#cardsScrollbox {
+	max-height: 75vh;
+	overflow-y: auto;
+	scrollbar-color: #0f0f0fa0 #0f0f0f40;
+	scrollbar-width: thin;
+	direction: rtl;
+	padding: 0 1.5vw;
+}
+
+#cardsScrollbox > * {
+	direction:ltr;
+}
+
+.selectedCard, .blockedCard {
+	display: none;
+}
+
+.creditCard {
+	position: relative;
+	width: 12vw;
+	height: 6.5vw;
+	background-color: #000000a0;
+	margin: 3vh 4.5vw 3vh 0;
+	border-radius: 1vw;
+	padding: 0.8vw;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.creditCard:hover {
+    box-shadow: 0px 0px 8px #8d5eeb;
+}
+
+.cardName {
+	font: 1vw titleFont, sans-serif;
+	color: #e0e0e0;
+}
+
+.cardIcon {
+	position: absolute;
+	top: 1vw;
+	right: 1vw;
+	width: 20%;
+}
+
+.cardId {
+	font: 1.1vw titleFont, sans-serif;
+	color: #ffffff;
+	padding-top: 5%;
+	margin: 8% 0;
+}
+
+.cardInfo {
+	font: 0.8vw titleFont, sans-serif;
+	color: #b6b6b6;
+}
+
+
+
+/* Pavé numérique 
+.numpadKey rect {
+	fill:#303030ff;
+	stroke:none;
+}
+
+.numpadKey path {
+	fill:#fcfcfcff;
+	stroke:none;
+}
+
+.numpadKey rect:hover {
+	fill:#414141;
+	stroke:none;
+}
+*/

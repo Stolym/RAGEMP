@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Stol\\Desktop\\Desktop (1)\\Server\\server-files\\server-files\\client_workspace\\main_client\\main_client.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Stol\\Desktop\\Desktop (1)\\Server\\server-files\\server-files\\client_workspace\\main_client\\main_client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Stol\\Desktop\\Desktop (1)\\Server\\server-files\\server-files\\client_workspace\\main_client\\main_client.csproj",
+        "projectName": "main_client",
+        "projectPath": "C:\\Users\\Stol\\Desktop\\Desktop (1)\\Server\\server-files\\server-files\\client_workspace\\main_client\\main_client.csproj",
+        "packagesPath": "C:\\Users\\Stol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stol\\Desktop\\Desktop (1)\\Server\\server-files\\server-files\\client_workspace\\main_client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Stol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "ZeroFormatter": {
+              "target": "Package",
+              "version": "[1.6.4, )"
+            },
+            "ZeroFormatter.Interfaces": {
+              "target": "Package",
+              "version": "[1.6.4, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

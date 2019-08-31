@@ -1,0 +1,103 @@
+.listmessage {
+    position: absolute;
+    top: 60px;
+    left: 9px;
+    height: 435px;
+    width: 249px;
+    background-color: #00000020;
+    margin: 2px 0px 2px 0px;
+    overflow: auto;
+}
+
+.listmessage::-webkit-scrollbar {
+    display: none;
+}
+
+.mname {
+    position: absolute;
+    margin: 0px;
+    left: 60px;
+    pointer-events: none;
+}
+
+.mmessage {
+    position: absolute;
+    margin: 0px;
+    left: 60px;
+    top: 20px;
+    pointer-events: none;
+}
+
+
+.boxclock {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-right: 1px solid #333333;
+}
+
+.mboxclock {
+    text-align: center;
+    pointer-events: none;
+    font-size: 18px;
+    margin: 15px 0px 15px 0px;
+}
+
+.message_a {
+    position: relative;
+    left: 64px;
+    width: 180px;
+    z-index: 3;
+    margin: 10px 0px 10px 0px;
+    padding: 2px;
+    background-color: darkseagreen;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.mmclock {
+    
+    position: relative;
+    margin: 0px;
+    font-size: 16px;
+    width: 180px;
+    color: white;
+    pointer-events: none;
+}
+
+.mdesc {
+    position: a;
+    width: 180px;
+    margin: 0px;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+}
+
+.message_b {
+    position: relative;
+    margin: 10px 0px 10px 0px;
+    z-index: 3;
+    padding: 2px;
+    left: 0px;
+    width: 180px;
+    background-color: dodgerblue;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.boxmessage {
+    position: relative;
+    z-index: 3;
+    margin: 2px 0px 2px 0px;
+    padding: 2px 0px 2px 0px;
+    width: 249px;
+    height: 50px;
+    background-color: #00000010;
+    transition: 200ms;
+}
+
+.boxmessage:hover {
+    background-color: #FFFFFF40;
+    transition: 200ms;    
+}

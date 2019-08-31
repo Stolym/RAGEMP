@@ -1,0 +1,50 @@
+.background {
+    width: 400px;
+    height: 400px;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+}
+
+.frequency {
+    top: 210;
+    left: 50;
+    font-size: 20px;
+    position: absolute;
+    font-family: GoboldBold;
+    margin: 0px;
+}
+
+.change_h {
+    border: 2px solid red;
+    background-color: #00000000;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 140;
+    left: 122;
+}
+
+.change_radio_a {
+    border: 2px solid red;
+    background-color: #00000000;
+    height: 80px;
+    width: 30px;
+    position: absolute;
+    top: 180;
+    left: 170;
+}
+
+@font-face {
+    font-family: GoboldBold;
+    src: url(../font/GoboldBold.otf) format("opentype");
+}
+
+
+@font-face {
+    font-family: GoboldBold;
+    font-weight: bold;
+    src: url(../font/GoboldCUTS.otf) format("opentype");
+}

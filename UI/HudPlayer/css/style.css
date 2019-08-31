@@ -1,0 +1,45 @@
+.contain {
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    background-color: #333333AA;
+    border-top: 1px solid #9900FFAA;
+    overflow: hidden;
+}
+
+
+.icon_slider {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+}
+
+.speedometer {
+    left: 2%;
+    top: 0%;
+    margin-left: 2%;
+    position: absolute;
+    color: #FFFF39FF;
+    font-size: 18px;
+}
+
+
+.icon_off {
+    overflow: hidden;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    filter: grayscale(100%);
+}
+
+.icon_on {
+    overflow: hidden;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    height: 40px;
+    width: 50px;
+}

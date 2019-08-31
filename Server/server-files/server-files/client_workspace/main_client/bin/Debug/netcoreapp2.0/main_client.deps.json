@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "main_client/1.0.0": {
+        "dependencies": {
+          "rage-sharp": "1.0.0.0"
+        },
+        "runtime": {
+          "main_client.dll": {}
+        }
+      },
+      "rage-sharp/1.0.0.0": {
+        "runtime": {
+          "rage-sharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "main_client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "rage-sharp/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
