@@ -1,0 +1,37 @@
+.environment {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 2840px;
+    height: 1680px;
+    border: 0px;
+}
+
+.logo {
+    position: absolute;
+    margin: 2%;
+    width: 400px;
+    height: 400px;
+}
+
+
+.img_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+}
+
+.computer {
+    position: absolute;
+    top: 88px;
+    left: 192px;
+    width: 2459px;
+    height: 1357px;
+    float: left;
+    transition: 1000ms;
+    border: 0px;
+}
