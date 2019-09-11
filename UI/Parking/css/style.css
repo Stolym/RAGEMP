@@ -57,6 +57,87 @@
 body {
 }
 
+
+.contain {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    top: 10px;
+    left: 10px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #00041180;
+    border: 5px solid #4848d8;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+
+.contain::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.list {
+    position: relative;
+    top: 40px;
+    width: 500px;
+    height: 200px;
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    border-top: 2px solid #4848d8;
+    border-bottom: 2px solid #4848d8;
+    background-color: #00041180;
+}
+
+.outbutton {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: 130px;
+    left: 145px;
+    border: 1px solid #4848d8;
+    background-color: #00041120;
+    color: white;
+    font-family: GoboldBold;
+}
+
+.outbutton:hover {
+    transition: 100ms;
+    background-color: #4848d8;
+}
+
+.title {
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px solid #4848d8;
+    background-color: #FFFFFF80;
+    color: #494949;
+    font-family: GoboldBold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.listobject {
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: GoboldBold;
+    font-size: 20px;
+    text-align: center;
+}
+
 @font-face {
     font-family: GoboldBold;
     src: url(../font/GoboldBold.otf) format("opentype");

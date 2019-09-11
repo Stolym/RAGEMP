@@ -14,6 +14,27 @@
     font-size: 20px;
 }
 
+.confirmaddaccount {
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    left: 70px;
+    top: 20px;
+    font-family: Quantify;
+    font-size: 15px;
+    color: white;
+    background-color: #000411;
+    border: 0px;
+    border-radius: 10px;
+    pointer-events: all;
+    z-index: 2;
+    transition: 100ms;
+}
+
+.confirmaddaccount:hover {
+    background-color: #00041120;
+    transition: 100ms;
+}
 
 .title {
     position: absolute;
@@ -27,7 +48,7 @@
     text-align: justify;
     border-top: 4px solid  #5786A7FF;
     color: white;
-    font-family: textFont;
+    font-family: Quantify;
 }
 .title_b {
     position: absolute;
@@ -39,7 +60,7 @@
     text-align: justify;
     border-top: 4px solid  #9900FFFF;
     color: white;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .img_back {
@@ -68,7 +89,7 @@
     transition: 500ms;
     background: #333333A0;
     border-radius: 20px;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .img_selector {
@@ -96,7 +117,7 @@
     color: white;
     background-color: #00000000;
     padding-left: 4%;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .window_name {
@@ -109,14 +130,14 @@
     color: white;
     background-color: #00000000;
     padding-left: 4%;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .selector:hover {
     transition: 500ms;
     background-color: #FFFFFF64;
     border: 1px solid #333333;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .menu {
@@ -168,7 +189,7 @@
     width: 20%;
     height: 6%;
     color: aliceblue;
-    font-family: textFont;
+    font-family: Quantify;
     font-size: 14px;
     background-color: #333333FF;
     border: 1px solid #9900FFFF;
@@ -180,14 +201,14 @@
 .ctitle {
     margin: 4px;
     color: black;
-    font-family: textFont;
+    font-family: Quantify;
     font-size: 14px;
 }
 
 .ctext {
     margin: 4px;
     color: black;
-    font-family: textFont;
+    font-family: Quantify;
     font-size: 14px;
     width: 98%;
     height: 100%;
@@ -209,7 +230,7 @@
     margin: 0px;
     padding: 8px;
     color: white;
-    
+    font-family: Quantify;
 }
 
 .cardbancaire {
@@ -456,7 +477,7 @@
     font-family: CourierNew; 
     font-size: 16px;
     left: 20px;
-    top: 2px;
+    top: 5px;
 }
 
 
@@ -708,11 +729,13 @@
 
 #a0 {
     top: 80%;
+    pointer-events: all;
+    z-index: 2;
 }
 
 .text {
     position: absolute;
-    font-family: textFont;
+    font-family: Quantify;
     font-size: 14px;
     color: white;
 }
@@ -778,7 +801,7 @@
     position: absolute;
     left: 70px;
     top: 65px;
-    font-family: textFont;
+    font-family: Quantify;
     font-size: 14px;
     background-color: #FFFFFF34;
     color: black;
@@ -838,7 +861,7 @@
     color: white;
     border-bottom: 2px solid;
     border-bottom-color: #9900FFFF;
-    font-family: textFont;
+    font-family: Quantify;
     background-color: #333333DF;
 }
 
@@ -864,7 +887,7 @@
     color: white;
     border: 2px solid;
     border-color: #9900FFFF;
-    font-family: textFont;
+    font-family: Quantify;
     background-color: #333333FF;
     transition: 1000ms;
 }
@@ -880,13 +903,13 @@
     background-color: #333333AA;
     border: 0px;
     pointer-events: all;
-    font-family: textFont;
+    font-family: Quantify;
     transition: 400ms;
 }
 .open:hover {
     color: black;
     background-color: white;
-    font-family: textFont;
+    font-family: Quantify;
     border: 0px solid #9900FFFF;
     transition: 400ms;
 }
@@ -897,7 +920,7 @@
     color: white;
     margin-top: 0.7%;
     font-size: 16px;
-    font-family: textFont;
+    font-family: Quantify;
 }
 .id_account {
     margin: 0%;
@@ -906,7 +929,7 @@
     float: left;
     color: white;
     font-size: 16px;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .icon {
@@ -964,6 +987,12 @@ body {
 @font-face {
     font-family: textFont;
     src: url(../font/Arimo-Regular.ttf) format("opentype");
+}
+
+
+@font-face {
+    font-family: Quantify;
+    src: url(../font/Quantify.ttf) format("opentype");
 }
 
 

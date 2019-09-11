@@ -1,0 +1,73 @@
+.ContainMenu {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    height: 520px;
+    width: 500px;
+    border-top: 20px solid #4848D8;
+    border-radius: 5px;
+    background-color: #49494980;
+    box-shadow: 0px 0px 5px #4848D8;
+    overflow: auto;
+    transform: rotateY(10deg) perspective(1500px);
+}
+
+.ContainMenu::-webkit-scrollbar {
+    display: none;
+}
+
+.CButton {
+    position: absolute;
+    top: 0px;
+    height: 50px;
+    width: 460px;
+    margin: 10px;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 36px;
+    font-family: CaviarDreams;
+    color: white;
+    background-color: #494949;
+}
+
+.CButton:focus {
+    outline-style: none;
+}
+
+
+.CButton:hover {
+    transition: 100ms;
+    color: black;
+    background-color: #FFFFFFCA;
+}
+
+.ContainButton {
+    position: relative;
+    top: 80px;
+    height: 70px;
+    width: 480px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #494949;  
+}
+
+.ContainMenuTitle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 500px;
+    padding: 10px 0px 15px 0px;
+    margin: 0px;
+    height: 40px;
+    font-size: 36px;
+    text-align: center;
+    border-bottom: 2px solid #494949;
+    background-color: #4848D8;
+    color: white;
+    font-family: CaviarDreams;
+}
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../Font/CaviarDreams.ttf) format("opentype");
+}

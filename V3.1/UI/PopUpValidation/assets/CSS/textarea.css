@@ -1,0 +1,11 @@
+.TextAreaSignal {
+    position: absolute;
+    top: 100px;
+    height: 600px;
+    width: 1140px;
+    margin: 30px;
+    padding: 30px;
+    font-size: 30px;
+    font-style: CaviarDreams;
+    border-radius: 20px;
+}

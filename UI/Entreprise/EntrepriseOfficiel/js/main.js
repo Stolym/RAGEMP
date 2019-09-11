@@ -67,6 +67,10 @@ $(() => {
     
     $(".add_button").click(function () {
         SetAllMenu(false);
+        
+        if ($(this).data("id") == 9)
+            CLEAR_EMPLOYEE_PAGE();
+
         menu[$(this).data("id")] = true;
         UpdateMenu();
     });

@@ -1,0 +1,65 @@
+.List {
+    position: absolute;
+    width: 1160px;
+    height: 1050px;
+    top: 100px;
+    left: 0px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #4949495C;
+    overflow: auto;;
+}
+
+.ListObject {
+    position: relative;
+
+    width: 1140px;
+    height: 200px;
+    margin: 10px;
+    background-color: #4949495C;
+    
+}
+
+
+.ListButton {
+    position: absolute;
+
+    width: 500px;
+    height: 60px;
+    padding: 10px;
+
+    color: white;
+    font-size: 38px;
+    font-family: CaviarDreams; 
+    background-color: #00041120;  
+
+    border: 2px solid #4848D8;
+    border-radius: 20px;
+    transition: 200ms;
+}
+
+
+.ListButton:focus {
+    outline-style: none;
+}
+
+.ListButton:hover {
+    transition: 200ms;
+    background-color: #6868D8;
+    border: 0px;
+}
+
+
+.ListContainObject {
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: 500px;
+    height: 50;
+    margin: 0px;
+    color: white;
+    font-size: 38px;
+    font-family: CaviarDreams;
+}

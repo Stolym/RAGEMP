@@ -1,0 +1,346 @@
+// ID des voitures affichées
+var displayedID = {}
+
+// véhicules disponibles
+var cars = {
+    "Haut de Gamme": {
+        "Thrust":          		     {prix: 130000,selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Hakuchou":           	     {prix: 160000,selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Akuma":        			 {prix: 80000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Bati 801":          	     {prix: 140000,selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Carbon RS":       	         {prix: 80000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},	
+        "Diabolus":          		 {prix: 60000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Double T":           	     {prix: 90000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},			
+    },
+	"Millieu Gamme": {
+        "Lectro":          		     {prix: 50000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Nemesis":           	     {prix: 40000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "PCJ 600":          		 {prix: 30000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Ruffian":           	     {prix: 50000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Vader":          		     {prix: 45000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Vindicator":           	 {prix: 40000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},		
+    },
+    "Bas de Gamme": {
+        "Enduro":          		     {prix: 5000,  selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Esskey":           	     {prix: 15000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Fcr 1000":        			 {prix: 20000, selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},	
+    },
+	"Scooter": {
+        "Faggio":          	         {prix: 500,   selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+        "Faggio Mod":       	     {prix: 600,   selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+		"Faggio Sport":       	     {prix: 700,   selectedColor: 21, hasAnimatedImg: false, hashcode: 0x01},
+    }
+}
+
+// couleurs disponibles
+var couleurs = {
+    "Classique": {
+        "c132": {color: "#fefff9", name: "Blanc"},
+        "c21":  {color: "#1a212b", name: "Noir"},
+        "c43":  {color: "#99131c", name: "Rouge"},
+        "c126": {color: "#eac630", name: "Jaune taxi"},
+        "c57":  {color: "#215843", name: "Vert"},
+        "c77":  {color: "#264f8d", name: "Bleu"}
+    }
+}
+
+// toutes couleurs existantes
+var toutesCouleurs = {
+    "Métallique":{
+        "c111": {color: "#fefff7", name: "Blanc"},
+        "c112": {color: "#e8e8e8", name: "Blanc de givre"},
+        "c0":   {color: "#0f1219", name: "Noir"},
+        "c147": {color: "#10131a", name: "Noir spécial"},
+        "c1":   {color: "#222325", name: "Noir graphite"},
+        "c141": {color: "#0d1321", name: "Noir bleu"},
+        "c2":   {color: "#30353b", name: "Steal Black "},
+        "c3":   {color: "#434b4e", name: "Argent foncé"},
+        "c4":   {color: "#969a9d", name: "Argent"},
+        "c5":   {color: "#c0c4c5", name: "Bleu Silver"},
+        "c146": {color: "#09131f", name: "Bleu Foncé"},
+        "c6":   {color: "#949695", name: "Gris acier"},
+        "c7":   {color: "#5f6f7c", name: "Gris ombre"},
+        "c8":   {color: "#5f5e59", name: "Pierre d'argent"},
+        "c9":   {color: "#3a3f45", name: "Argent minuit"},
+        "c10":  {color: "#414c52", name: "Métal"},
+        "c11":  {color: "#1e212a", name: "Gris anthracite"},
+        "c27":  {color: "#b8121e", name: "Rouge"},
+        "c28":  {color: "#d41a1f", name: "Rouge Torino"},
+        "c29":  {color: "#ab1926", name: "Rouge formule 1"},
+        "c30":  {color: "#a12024", name: "Rouge blaze"},
+        "c31":  {color: "#781b25", name: "Rouge gracieux "},
+        "c32":  {color: "#881b21", name: "Rouge grenat "},
+        "c33":  {color: "#721a19", name: "Rouge du désert"},
+        "c34":  {color: "#45131f", name: "Rouge cabernet "},
+        "c35":  {color: "#ae1228", name: "Rouge bonbon "},
+        "c143": {color: "#10101a", name: "Rouge noir"},
+        "c36":  {color: "#d04719", name: "Orange soleil"},
+        "c37":  {color: "#bb8e4b", name: "Gold"},
+        "c38":  {color: "#f48116", name: "Orange"},
+        "c137": {color: "#dd5891", name: "Rose vermillon"},
+        "c135": {color: "#ee1f93", name: "Rose chaud"},
+        "c136": {color: "#fccfcc", name: "Rose saumon"},
+        "c49":  {color: "#13242b", name: "Vert foncé"},
+        "c50":  {color: "#122f2b", name: "Vert racing"},
+        "c51":  {color: "#14393f", name: "Vert mer"},
+        "c52":  {color: "#303e3e", name: "Vert olive"},
+        "c53":  {color: "#185b32", name: "Vert"},
+        "c92":  {color: "#a6dc2e", name: "Vert chaux"},
+        "c125": {color: "#80bf64", name: "Vert teint"},
+        "c54":  {color: "#1c666f", name: "Essence bleu"},
+        "c61":  {color: "#28344c", name: "Bleu foncé"},
+        "c62":  {color: "#253358", name: "Bleu nuit"},
+        "c63":  {color: "#36517c", name: "Bleu de Saxe"},
+        "c64":  {color: "#566493", name: "Bleu"},
+        "c65":  {color: "#7389ae", name: "Bleu marine"},
+        "c66":  {color: "#394761", name: "Bleu gris"},
+        "c67":  {color: "#d4e5ef", name: "Bleu diamant"},
+        "c68":  {color: "#74acbd", name: "Blue surf"},
+        "c69":  {color: "#315a6e", name: "Bleu nautique"},
+        "c70":  {color: "#0b95ed", name: "Bleu vif"},
+        "c71":  {color: "#2d2b52", name: "Bleu violet"},
+        "c72":  {color: "#292c4d", name: "Bleu Spinnaker"},
+        "c73":  {color: "#2955a0", name: "Blue ultra"},
+        "c74":  {color: "#669abf", name: "Bleu clair"},
+        "c88":  {color: "#feca1f", name: "Jaune Taxi"},
+        "c89":  {color: "#fadf16", name: "Jaune"},
+        "c91":  {color: "#e5e643", name: "Jaune pousin"},
+        "c90":  {color: "#895e33", name: "Bronze"},
+        "c93":  {color: "#988b78", name: "Champagne"},
+        "c94":  {color: "#4c301a", name: "Beige"},
+        "c95":  {color: "#463d2c", name: "Ivoire foncé "},
+        "c96":  {color: "#201a1a", name: "Marron choco"},
+        "c97":  {color: "#613d23", name: "Marron doré "},
+        "c98":  {color: "#74593e", name: "Marron clair "},
+        "c99":  {color: "#b4a27e", name: "Beige paille "},
+        "c100": {color: "#6d6c4d", name: "Marron"},
+        "c101": {color: "#3e2e2e", name: "Marron biston"},
+        "c102": {color: "#9e915d", name: "Bois de hêtre "},
+        "c103": {color: "#542f27", name: "Bois de hêtre foncé "},
+        "c104": {color: "#762b16", name: "Orange choco"},
+        "c105": {color: "#bdac78", name: "Sable de plage "},
+        "c106": {color: "#e1d4b2", name: "Sable  soleil"},
+        "c107": {color: "#f4ead1", name: "Crème"},
+        "c142": {color: "#0f1521", name: "Violet noir"},
+        "c145": {color: "#5f1375", name: "Violet"},
+        "c145": {color: "#5f1375", name: "Violet"}
+    },
+    "Mat": {
+        "c131": {color: "#faf7f0", name: "Blanc"},
+        "c12":  {color: "#101721", name: "Noir"},
+        "c13":  {color: "#1d2025", name: "Gris"},
+        "c14":  {color: "#494e51", name: "Gris clair"},
+        "c39":  {color: "#c81318", name: "Rouge"},
+        "c40":  {color: "#6c171a", name: "Rouge foncé"},
+        "c41":  {color: "#ec7318", name: "Orange"},
+        "c42":  {color: "#ffc418", name: "Jaune"},
+        "c55":  {color: "#62b622", name: "Vert lime"},
+        "c82":  {color: "#15204d", name: "Bleu foncé"},
+        "c83":  {color: "#1c30a0", name: "Bleu "},
+        "c84":  {color: "#182f4f", name: "Bleu midnight"},
+        "c128": {color: "#4f6445", name: "Vert"},
+        "c129": {color: "#bdac90", name: "Marron"},
+        "c149": {color: "#16171c", name: "Violet "},
+        "c148": {color: "#691e79", name: "Violet foncé"},
+        "c150": {color: "#bb1819", name: "Rouge de lave"},
+        "c151": {color: "#293126", name: "Vert forée"},
+        "c152": {color: "#5f6040", name: "Vert Olive"},
+        "c153": {color: "#7b6c55", name: "Marron desert"},
+        "c154": {color: "#bfb08f", name: "Vert tan"},
+        "c155": {color: "#505849", name: "Vert foilage"}
+    },
+    "Classique": {
+        "c132": {color: "#fefff9", name: "Blanc"},
+        "c134": {color: "#fffff7", name: "Blanc pure"},
+        "c121": {color: "#e3e0d7", name: "Blanc cassé"},
+        "c122": {color: "#dddbcf", name: "Blanc gris"},
+        "c21":  {color: "#1a212b", name: "Noir"},
+        "c15":  {color: "#131925", name: "Noir bleu"},
+        "c16":  {color: "#1e222b", name: "Noir poly"},
+        "c86":  {color: "#52668b", name: "Bleu"},
+        "c85":  {color: "#475b80", name: "Bleu foncé"},
+        "c87":  {color: "#6db1d4", name: "Bleu clair"},
+        "c113": {color: "#ada78f", name: "Beige miel"},
+        "c18":  {color: "#818590", name: "Argent"},
+        "c24":  {color: "#cdcdcf", name: "Argenté"},
+        "c17":  {color: "#323941", name: "Argent foncé"},
+        "c19":  {color: "#37444d", name: "Argent métal"},
+        "c25":  {color: "#b2b8c4", name: "Gris"},
+        "c22":  {color: "#34373c", name: "Gris foncé"},
+        "c23":  {color: "#9a9b95", name: "Gris argenté"},
+        "c20":  {color: "#4c5d71", name: "Gris ombre"},
+        "c26":  {color: "#708290", name: "Gris bleu"},
+        "c144": {color: "#9b9a88", name: "Gris vert"},
+        "c43":  {color: "#99131c", name: "Rouge"},
+        "c44":  {color: "#da1119", name: "Rouge vif"},
+        "c45":  {color: "#8c1f18", name: "Rouge grenat"},
+        "c46":  {color: "#a64443", name: "Rouge délavé"},
+        "c47":  {color: "#ac694f", name: "Rouge doré"},
+        "c48":  {color: "#341d25", name: "Rouge foncé"},
+        "c123": {color: "#efa92d", name: "Orange"},
+        "c124": {color: "#f59d53", name: "Orange clair"},
+        "c138": {color: "#f4ab21", name: "Orange vif"},
+        "c126": {color: "#eac630", name: "Jaune taxi"},
+        "c130": {color: "#f8b658", name: "Orange"},
+        "c57":  {color: "#215843", name: "Vert"},
+        "c56":  {color: "#22393f", name: "Vert foncé"},
+        "c59":  {color: "#42564a", name: "Vert militaire"},
+        "c58":  {color: "#2c403f", name: "Vert foncé"},
+        "c60":  {color: "#63837e", name: "Vert eau"},
+        "c133": {color: "#707240", name: "Vert Olive"},
+        "c139": {color: "#a8eb6a", name: "Vert éclatant"},
+        "c77":  {color: "#264f8d", name: "Bleu"},
+        "c75":  {color: "#112351", name: "Bleu foncé"},
+        "c76":  {color: "#1b1f3c", name: "Bleu nuit"},
+        "c78":  {color: "#5d838e", name: "Bleu mer"},
+        "c157": {color: "#abd2e1", name: "Bleu très clair"},
+        "c79":  {color: "#2343a6", name: "Bleu éclair"},
+        "c80":  {color: "#3d6ddc", name: "Bleu poly"},
+        "c81":  {color: "#3739db", name: "Bleu brillant"},
+        "c140": {color: "#0de4f9", name: "Bleu pétant"},
+        "c108": {color: "#41301e", name: "Marron"},
+        "c109": {color: "#745b33", name: "Marron moyen"},
+        "c110": {color: "#b6a07b", name: "Marron clair"},
+        "c114": {color: "#433832", name: "Marron terne"},
+        "c115": {color: "#433832", name: "Marron foncé"},
+        "c116": {color: "#766b57", name: "Beige paille"}
+    },
+    "Métal": {
+        "c117": {color: "#798595", name: "Acier"},
+        "c118": {color: "#555b67", name: "Acier noir"},
+        "c119": {color: "#99a0a6", name: "Aluminium"},
+        "c120": {color: "#a7c3ea", name: "Chrome"},
+        "c158": {color: "#7a6343", name: "Pure Gold"},
+        "c159": {color: "#776757", name: "Brushed Gold"},
+        "c127": {color: "#49c0d8", name: "Bleu police"}
+    }
+}
+
+
+
+
+init("Concessionnaire Moto Sportive");
+
+function init(title){
+    document.getElementById("pageTitle").innerHTML = title;
+    var shopContainer = document.getElementById("shopContainer")
+
+    for (var key in cars){
+        displayedID[key] = 0;
+        var slot = document.createElement("div");
+        slot.classList.add("slot");
+        slot.dataset.name = key;
+        displaySlot(slot, 0);
+        shopContainer.appendChild(slot);
+    }
+}
+
+function displaySlot(slot, carnum){
+    var categName = slot.dataset.name;
+    displayedID[categName] = (displayedID[categName] + carnum) % Object.keys(cars[categName]).length;
+    if(displayedID[categName]<0) displayedID[categName] = Object.keys(cars[categName]).length-1;
+    var carName = Object.keys(cars[categName])[displayedID[categName]];
+    
+    if(slot.innerHTML == ""){
+        slot.innerHTML = `<div class="slotTitle">${categName}</div><div class="itemPreview"><div class="navArrow">&#x2BC7;</div><div class="itemDesc"><span class="bolditemDesc">${carName}</span><br/>${cars[categName][carName].prix.toLocaleString()} $</div><img class="previewImg" src="assets/static/${carName}.png"><div class="navArrow">&#x2BC8;</div></div>`;
+        
+        // image click pour ouvrir menu
+        slot.childNodes[1].childNodes[2].addEventListener("click", function(e){
+            // e.stopPropagation();
+            var ss = document.getElementsByClassName("activeslot");
+            for(var i=0; i<ss.length; i++) ss[i].classList.remove("activeslot");
+            e.currentTarget.parentNode.parentNode.classList.add("activeslot");
+            
+            //destroyPanier();
+            categName = slot.dataset.name;
+            carName = Object.keys(cars[categName])[displayedID[categName]];
+            panier(categName, carName);
+        });
+
+        // navArrow gauche
+        slot.childNodes[1].childNodes[0].addEventListener("click", function(e){
+            // e.stopPropagation();
+            displaySlot(e.currentTarget.parentNode.parentNode, -1);
+        });
+
+        // navArrow droite
+        slot.childNodes[1].childNodes[3].addEventListener("click", function(e){
+            // e.stopPropagation();
+            displaySlot(e.currentTarget.parentNode.parentNode, 1);
+        });
+    }
+    else{
+        slot.childNodes[1].childNodes[1].innerHTML = `<span class="bolditemDesc">${carName}</span><br/>${cars[categName][carName].prix.toLocaleString()} $`;
+        slot.childNodes[1].childNodes[2].src=`assets/static/${carName}.png`;
+    }
+}
+
+
+function destroyPanier(){
+    document.getElementById("panier").style.display = "none";
+    document.getElementById("panier").innerHTML = "";
+};
+
+function panier(categName, carName){
+    document.getElementById("panier").innerHTML = `<div class="containerTitle">${carName}</div>
+    <div id="panierContent" class="containerContents">
+        <div class="box">
+            <img class="bigPreviewImg" src="${cars[categName][carName].hasAnimatedImg ? `assets/animated/${carName}.gif` : `assets/static/${carName}.png`}">
+        </div>
+        <div id="colorSelectorBox" class="box">
+            <div class="boxTitle">Couleur</div>
+        </div>
+        <div class="box buttonBox" id="acheterButtonBox">
+            <div id="titlePanier">Acheter ${cars[categName][carName].prix.toLocaleString()} $</div>
+        </div>
+    </div>`;
+    
+    for(var colorCat in couleurs){
+        document.getElementById("colorSelectorBox").innerHTML += `<div class="box"><div class="boxTitle">${colorCat}</div><div id="innerColorSelectorBox${colorCat}" class="colorChoiceBox"></div></div>`;
+
+        console.log(Object.keys(couleurs[colorCat]))
+
+        for(var i=0; i<Object.keys(couleurs[colorCat]).length; i++){
+
+            var color = Object.keys(couleurs[colorCat])[i];
+
+           
+            var colorbx = document.createElement('div');
+            
+            colorbx.classList.add("colorChoice");
+            colorbx.style.backgroundColor = couleurs[colorCat][color].color;
+            colorbx.dataset.value = color;
+            colorbx.innerHTML = `<span>${couleurs[colorCat][color].name}</span>`;
+
+            if(cars[categName][carName].selectedColor == color){
+                colorbx.classList.add("selectedColorChoice");
+            }
+
+            document.getElementById(`innerColorSelectorBox${colorCat}`).appendChild(colorbx);
+        }
+    }
+
+    document.getElementById("colorSelectorBox").addEventListener("click", function(e){
+        if(e.target.classList.contains("colorChoice")){
+            var ss = document.getElementsByClassName("selectedColorChoice");
+            for(var i=0; i<ss.length; i++){
+                ss[i].classList.remove("selectedColorChoice");
+            }
+            e.target.classList.add("selectedColorChoice");
+            cars[categName][carName].selectedColor = parseInt(e.target.dataset.value.substring(1), 10);
+        }
+    });
+
+    document.getElementById("acheterButtonBox").addEventListener('click', function(e){
+        document.getElementById("checkout").play();
+        alert(JSON.stringify({
+            category: categName,
+            model: carName,
+            price: cars[categName][carName].prix,
+            color: cars[categName][carName].selectedColor,
+            hashcode: cars[categName][carName].hashcode
+        }));
+    });
+
+    document.getElementById("panier").style.display = "block";
+}

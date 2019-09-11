@@ -1,7 +1,8 @@
 
 var single_grapha = {
-    name:"Lost",
-    sum: 53000,
+    name: "Immobilier",
+    hashcode: 0,
+    sum: 124000,
     part:1,
     part_limit: 490,
     values: [],
@@ -10,8 +11,9 @@ var single_grapha = {
 }
 
 var single_graphb = {
-    name:"Ventura",
-    sum:1459300,
+    name: "Benny's Custom",
+    hashcode: 1,
+    sum: 103000,
     part:1,
     part_limit: 490,
     values: [],
@@ -21,8 +23,9 @@ var single_graphb = {
 
 
 var single_graphc = {
-    name:"Weazel News",
-    sum:1000,
+    name: "Los Santos Express",
+    hashcode: 2,
+    sum: 25000,
     part:1,
     part_limit: 490,
     values: [],
@@ -30,7 +33,31 @@ var single_graphc = {
     colors: [],
 }
 
-var data_list = [ single_grapha, single_graphb, single_graphc ]
+
+var single_graphd = {
+    name: "Weazel New's",
+    hashcode: 3,
+    sum: 50000,
+    part:1,
+    part_limit: 490,
+    values: [],
+    labels: [],
+    colors: [],
+}
+
+
+var single_graphe = {
+    name: "D&C",
+    hashcode: 4,
+    sum: 423000,
+    part:1,
+    part_limit: 490,
+    values: [],
+    labels: [],
+    colors: [],
+}
+
+var data_list = [ single_grapha, single_graphb, single_graphc, single_graphd, single_graphe ]
 
 
 /*
@@ -65,11 +92,14 @@ function UpdateListGraphJson(json) {
 
 
 function UpdateValues(graph, mod) {
-    for (var i = 0; i < 24; i++) {
-        graph.sum += Math.random() * (1000 * mod - -1000 * mod) + -1000 * mod;   
-        var part = get_price_part(graph.sum, graph.part);
+    graph.values = [];
+    graph.labels = [];
+    
+    for (var i = 0; i < 50; i++) {
+        graph.sum += Math.random() * (1000 * mod - -1000 * mod) + -1000 * mod + 1000;   
+        var part = (graph.sum/49).toFixed(1);//get_price_part(graph.sum, graph.part);
         graph.values.push(part);
-        graph.labels.push(i);
+        graph.labels.push((graph.labels.length + i));
         
         if (i == 0) {
             graph.colors.push('rgb(129,204,0)');
@@ -84,7 +114,7 @@ function UpdateValues(graph, mod) {
 }
 
 function CreateGraph(graph) {
-    $(".sinteract").append("<div data-id='0' class='bourse_tab'><div data-id='0' class='bourse_graph'><canvas data-id='0' class='chart'></canvas></div><p data-id='0' class='btext'>Part : "+"16660"+"$</p><input class='binput' placeholder='Nbr' type='text'><button data-id='0' class='usage'>Acheter</button></div>");
+    $(".sinteract").append("<div data-id='"+graph.hashcode+"' class='bourse_tab'><div data-id='"+graph.hashcode+"' class='bourse_graph'><canvas height='135' data-id='"+graph.hashcode+"' class='chart'></canvas></div><p data-id='"+graph.hashcode+"' class='btext'>Action : "+(graph.sum/49).toFixed(0)+" $</p><input class='binput' data-id='"+graph.hashcode+"' maxlength='3' placeholder='Qtn' type='text'><button data-id='"+graph.hashcode+"' class='usage'>Acheter</button></div>");
     var ctx = $("canvas").last()[0].getContext('2d');
     //var ctx = document.getElementById('chart').getContext('2d');
     
@@ -93,7 +123,7 @@ function CreateGraph(graph) {
         data: {
             labels: graph.labels,
             datasets: [{
-                label: "# Part de l'entreprise des "+graph.name,
+                label: "# Action de l'entreprise: "+graph.name,
                 backgroundColor: 'rgba(160, 0, 255, 0.1)',
                 borderColor: graph.colors,
                 data: graph.values,
@@ -112,9 +142,24 @@ function CreateGraph(graph) {
     });
 }
 
+
+
 $(function() {
+    
+    $("#rand").click(function() {
+        $(".bourse_tab").remove();
+        UpdateValues(data_list[0], 2);
+        UpdateValues(data_list[1], 100);
+        UpdateValues(data_list[2], 1);
+        UpdateListGraphJson(JSON.stringify(data_list));
+        $(".usage").click(BuyAction);
+        GainPotential(array);
+        UpdateActionCEF(JSON.stringify(array));
+    });
     UpdateValues(data_list[0], 2);
     UpdateValues(data_list[1], 100);
     UpdateValues(data_list[2], 0.1);
+    UpdateValues(data_list[3], 8);
+    UpdateValues(data_list[4], 200);
     UpdateListGraphJson(JSON.stringify(data_list));
 });

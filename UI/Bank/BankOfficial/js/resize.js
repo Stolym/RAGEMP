@@ -1,8 +1,8 @@
 var pageWidth, pageHeight;
 
 var basePage = {
-  width: 1366,
-  height: 768,
+  width: 1920,
+  height: 1080,
   scale: 1,
   scaleX: 1,
   scaleY: 1
@@ -40,6 +40,6 @@ function scalePages(page, maxWidth, maxHeight) {
   var newTopPos = Math.abs(Math.floor(((basePage.height * basePage.scale) - maxHeight)/2));
 
 
-  page.attr('style', '-webkit-transform:scale(' + basePage.scale + ');left:' + newLeftPos + 'px;top:' + newTopPos + 'px;');
+  //page.attr('style', '-webkit-transform:scale(' + basePage.scale + ');left:' + newLeftPos + 'px;top:' + newTopPos + 'px;');
 }
 });

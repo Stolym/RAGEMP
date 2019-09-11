@@ -1,0 +1,220 @@
+body {
+	background-image: url("https://puu.sh/DzXjb/d6e4af59d9.png");
+}
+
+
+
+
+
+/* ------------------------------------------------------ */
+
+
+
+@font-face {font-family: titleFont; src: url(../assets/Arimo-Bold.ttf);}
+@font-face {font-family: bodyFont; src: url(../assets/Arimo-Regular.ttf);}
+
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	padding-bottom: 8px;
+	background-color: #33333350;
+	border-top: 15px solid #4848d8;
+	width: 520px;
+}
+
+#panier {
+	position: absolute;
+	left: 600px;
+	top: 0;
+	width: 550px;
+}
+
+.containerContents {
+	margin: 20px;
+}
+
+#panierContent {
+	padding: 10px 20px;
+	margin: 0;
+}
+
+.containerTitle {
+	background-color: #333333;
+	color: #ffffffff;
+	padding: 15px 10px;
+	font: 15pt titleFont, sans-serif;
+}
+
+.box {
+	background-color: #333333;
+	margin : 10px 0;
+	padding: 20px;
+}
+
+#colorSelectorBox {
+	max-height: 25vh;
+	overflow: auto;
+	scrollbar-color: #0f0f0fa0 #0f0f0f40;
+	scrollbar-width: thin;
+}
+
+.slot {
+	background-color: #333333a0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	max-height: 53px;
+	overflow: hidden;
+
+	transition: max-height 300ms, border 200ms;
+}
+
+.slot:not(:first-child):not(:last-child) {
+	margin: 15px 0;
+}
+
+.slot:hover, .activeslot {
+	max-height: 100vh;
+	background-color: #333333;
+}
+
+.activeslot {
+	border-top: 3px solid #4848d8;
+	border-bottom: 3px solid #4848d8;
+}
+
+.slot:hover .previewImg, .activeslot .previewImg  {
+	max-height: 100vh;
+	background-color: #333333;
+}
+
+.boxTitle {
+	color: #ffffffff;
+	font: 12pt titleFont, sans-serif;
+	margin-bottom: 10px;
+	top: 0;
+}
+
+.itemPreview {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navArrow {
+	color: #d3d3d35e;
+	font: 20pt bodyFont, sans-serif;
+	cursor: pointer;
+	transition: 100ms;
+}
+
+.navArrow:hover {
+	color: #ffffff;
+}
+
+.itemDesc {
+	color: #ffffff;
+	font: 12pt bodyFont, sans-serif;
+	text-align: left;
+}
+
+.bolditemDesc {
+	font: 14pt titleFont, sans-serif;
+}
+
+.previewImg {
+	width: 40%;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+.slotTitle {
+	bottom:0;
+	text-align: center;
+	color: #ffffff;
+	font: 15pt titleFont, sans-serif;
+	margin: 15px 0;
+}
+
+.bigPreviewImg {
+	width: 100%;
+}
+
+#acheterButtonBox {
+	cursor: pointer;
+}
+
+#acheterButtonBox:hover {
+	box-shadow:  0 0 10px #007006;
+}
+
+#titlePanier {
+	flex: 3;
+	text-align: center;
+	color: #3ECF1E;
+	font: 20pt titleFont, sans-serif;
+}
+
+.colorChoiceBox {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-row-gap: 10px;
+}
+
+.colorChoice {
+	width: 20px;
+	height: 20px;
+	transition: all 200ms;
+	border: 1px solid #000000;
+	cursor: pointer;
+	position: relative;
+}
+
+.colorChoice:not(.selectedColorChoice):hover {
+	border: 1px solid #4d4d4d;
+	box-shadow:  0 0 10px #4d4d4d;
+}
+
+.selectedColorChoice {
+	border: 1px solid #4848d8;
+	box-shadow:  0 0 10px #4848d8;
+}
+
+.colorChoice span {
+	visibility: hidden;
+	background-color: #000000;
+
+	color: #ffffffff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 10px;
+	color: #ffffffff;
+	font: 10pt bodyFont, sans-serif;
+
+	position: absolute;
+	z-index: 1;
+	width: 50px;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -35px;
+}
+
+.colorChoice span::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+}
+
+.colorChoice:hover span {
+	visibility: visible;
+}

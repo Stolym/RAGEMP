@@ -1,0 +1,54 @@
+.menu {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 510px;
+    height: 800px;
+}
+
+
+.selector:hover .img_selector {
+    opacity: 100;
+    transition: 200ms;
+}
+
+
+.selector:hover {
+    transition: 500ms;
+    background-color: #FFFFFF64;
+    border: 2px solid #4848D8;
+    font-family: CaviarDreams;
+}
+
+.selector:focus {
+    outline-style: none;
+}
+
+.img_selector {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 8px;
+    left: 460px;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.selector {
+    position: relative;
+    width: 550px;
+    height: 80px;
+
+    transition: 500ms;
+    padding: 0px 70px 0px 0px;
+    margin: 25px 0px 25px 0px;
+    background: #333333A0;
+
+    color: white;
+    font-size: 38px;
+    font-family: CaviarDreams;
+
+    z-index: 2;
+    border: 0px;
+    border-radius: 120px;
+}

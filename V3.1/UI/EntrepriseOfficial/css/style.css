@@ -1,0 +1,693 @@
+
+.search_bar {
+    position: absolute;
+    left: 0%;
+    top: 92%;
+    width: 40%;
+    height: 8%;
+    font-size: 20px;
+}
+
+.confirmaddaccount {
+    position: absolute;
+    height: 70px;
+    width: 250px;
+    left: 250px;
+    top: 00px;
+    font-family: CaviarDreams;
+    font-size: 45px;
+    color: white;
+    background-color: #4848D8;
+    border: 2px solid #6868D8;
+    border-radius: 10px;
+    pointer-events: all;
+    z-index: 2;
+    transition: 100ms;
+}
+
+.confirmaddaccount:focus {
+    outline-style: none;
+}
+
+.confirmaddaccount:hover {
+    background-color: #00041120;
+    transition: 100ms;
+}
+
+.title {
+    position: absolute;
+    width: 96%;
+    height: 1%;
+    background-color: #0000008A;
+    font-size: 20px;
+    margin: 0px;
+    padding-left: 4%;
+    text-align: justify;
+    border-top: 4px solid  #5786A7FF;
+    color: white;
+    font-family: CaviarDreams;
+}
+.title_b {
+    position: absolute;
+    width: 96%;
+    background-color: #333333FF;
+    font-size: 20px;
+    margin: 0px;
+    padding-left: 4%;
+    text-align: justify;
+    border-top: 4px solid  #9900FFFF;
+    color: white;
+    font-family: CaviarDreams;
+}
+
+
+.departement {
+    position: absolute;
+    width: 96%;
+    height: 5%;
+    left: 65%;
+    margin-top: 1.5%;
+    font-size: 14px;
+    color: white;
+    background-color: #00000000;
+    padding-left: 4%;
+    font-family: CaviarDreams;
+}
+
+
+
+
+
+.submenu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000000;
+}
+
+.computer {
+    position: absolute;
+    top: 32px;
+    left: 68px;
+    width: 865px;
+    height: 485px;
+    background-color: #E5D8E7;
+    perspective: 50px;
+    float: left;
+    transform: perspective(100px) rotateY(0deg);
+    transition: 1000ms;
+}
+
+
+.add_account {
+    position: absolute;
+    left: 69%;
+    top: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    padding-left: 3%;
+    width: 20%;
+    height: 6%;
+    color: aliceblue;
+    font-family: CaviarDreams;
+    font-size: 14px;
+    background-color: #333333FF;
+    border: 1px solid #9900FFFF;
+    text-align: justify;
+    float: left;
+    transition: 400ms;
+}
+
+.ctitle {
+    margin: 4px;
+    color: black;
+    font-family: CaviarDreams;
+    font-size: 14px;
+}
+
+.ctext {
+    margin: 4px;
+    color: black;
+    font-family: CaviarDreams;
+    font-size: 14px;
+    width: 98%;
+    height: 100%;
+    opacity: 0;
+}
+
+.listcardbancaire {
+    position: absolute;
+    top: 600px;
+    left: 250px;
+    width: 1720px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #333333CA;
+}
+
+.listcardbancairetitle {
+    font-size: 42px;
+    margin: 0px;
+    padding: 8px;
+    color: white;
+    font-family: CaviarDreams;
+}
+
+.cardbancaire {
+    position: relative;
+    pointer-events: all;
+    background-color: #CCCCCC80;
+    height: 50px;
+    width: 1700px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 0px;
+    border-radius: 30px;
+    transition: 200ms;
+}
+
+.cardbancaire:hover {
+    background-color: #CCCDDDFF;
+    transition: 200ms;
+    
+}
+
+.cardbancaire:hover .cardbancairename {
+    color: #333333;
+    transition: 100ms;
+}
+
+.cardbancaire:hover .cardbancaireprenom {
+    color: #333333;
+    transition: 100ms;
+}
+
+.cardbancaire:hover .cardbancairehashcode {
+    color: #333333;
+    transition: 100ms;
+}
+
+.cardbancaire:hover .cardbancairetype {
+    color: #333333;
+    transition: 100ms;
+}
+
+.cardbancairename {
+    position: absolute;
+    font-family: CaviarDreams;
+    left: 20px;
+    top: 2px;
+    margin: 0px;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.cardbancaireprenom {
+    position: absolute;
+    
+    font-family: CaviarDreams;
+    left: 170px;
+    top: 2px;
+    margin: 0px;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.addcardbancaire {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    top: 9px;
+    left: 1650px;
+    font-family: CaviarDreams;
+    font-size: 30px;
+    pointer-events: all;
+    border-radius: 30px;
+    border: 0px;
+    transition: 200ms;
+}
+
+
+.sinput {
+    position: absolute;
+    pointer-events: all;
+    text-align: center;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+    font-size: 15px;
+    height: 60px;
+    width: 380px;
+    font-size: 32px;
+}
+
+.transfertbutton {
+    position: absolute;
+    pointer-events: all;
+    left: 700px;
+    top: 420px;
+    width: 380px;
+    height: 60px;
+    font-size: 36px;
+    border-radius: 20px;
+    background-color: #333333FF;
+    color: white;
+    font-family: CaviarDreams;
+    border: 0px;
+    transition: 200ms;
+}
+
+.transfertbutton:hover {
+    transition: 200ms;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.addcardbancaire:hover {
+    background-color: #333333;
+    color: white;
+    transition: 200ms;
+}
+
+.cardbancairehashcode {
+    position: absolute;
+    font-family: CaviarDreams;
+    left: 620px;
+    top: 2px;
+    margin: 0px;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.cardbancairetype {
+    position: absolute;
+    
+    font-family: CaviarDreams;
+    left: 870px;
+    top: 2px;
+    margin: 0px;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.transacttest {
+    margin: 10px;
+    width: 1780px;
+    height: 80px;
+    border-radius: 20px;
+    background: #88888832;
+    transition: 500ms;
+    pointer-events: all;
+}
+
+.transactobject {
+    position: relative;
+    margin: 10px;
+    color: white;
+    font-family: CaviarDreams; 
+    font-size: 40px;
+    opacity: 0;
+    transition: 100ms;
+}
+
+.transactobjectdesc {
+    position: relative;
+    margin: 10px;
+    color: white;
+    font-family: CaviarDreams; 
+    font-size: 40px;
+    opacity: 0;
+    transition: 100ms;
+}
+
+.transacttest:hover .transactobject {
+    opacity: 1;
+    transition: 1000ms;
+}
+.transacttest:hover .transactobjectdesc {
+    opacity: 1;
+    transition: 1000ms;
+}
+
+.transacttest:hover {
+    height: 350px;
+    transition: 500ms;
+}
+
+.historyspace::-webkit-scrollbar {
+    display: none;
+}
+
+.historyspace {
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    width: 1800px;
+    height: 1000px;
+    border-radius: 20px;
+    overflow: scroll;
+    background-color: #333333CA;
+    
+}
+
+.transactionhistoryspace {
+    position: relative;
+    margin: 0px;
+    width: 1780px;
+    height: 60px;
+    border-radius: 20px;
+    pointer-events: all;
+    background-color: #CCCCCC80;
+    transition: 100ms;
+}
+
+
+.transactionhistoryspace:hover {
+    background-color: #CCCDDDFF;
+    transition: 100ms;
+}
+
+.transactionhistoryspace:hover .transactionhistoryname {
+    transition: 100ms;
+    color: black;
+}
+
+.transactionhistoryspace:hover .transactionhistoryaction {
+    transition: 100ms;
+    color: black;
+}
+
+.transactionhistoryspace:hover .transactionhistoryobject {
+    transition: 100ms;
+    color: black;
+}
+
+
+.transactionsolde {
+    position: absolute;
+    font-size: 44px;
+    font-family: CaviarDreams;
+    color: green;
+    top: 200px;
+    left: 300px;
+    margin: 0px;
+}
+
+.transactionhistoryname {
+    position: absolute;
+    pointer-events: none;
+    color: white;
+    margin: 0px;
+    font-family: CaviarDreams; 
+    font-size: 40px;
+}
+
+
+.transactionhistoryaction {
+    position: absolute;
+    margin: 0px;
+    color: white;
+    opacity: 0;
+    font-family: CaviarDreams; 
+    font-size: 16px;
+    left: 140px;
+    top: 2px;
+}
+
+
+.transactionhistoryobject {
+    position: relative;
+    float: left;
+    left: 180px;
+    margin: 0px;
+    color: white;
+    font-family: CaviarDreams; 
+    top: 2px;
+    font-size: 16px;    
+}
+
+
+.imgtransfert {
+    position: absolute;
+    left: 825px;
+    top: 140px;
+    width: 140px;
+    height: 80px;
+    
+}
+
+.removecardbancaire {
+    position: absolute;
+    left: 1620px;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    border: 0px;
+    font-size: 32px;
+    pointer-events: all;
+    background-color: #FF130800;
+    color: white;
+    border-radius: 30px;
+    transition: 100ms;
+
+}
+
+.removecardbancaire:hover {
+    background-color: #33333380;
+    transition: 100ms;
+    
+}
+
+.selecttypeaccount {
+    position: absolute;
+    pointer-events: all;
+    top: 155px;
+    left: 213px;
+    width: 120px;
+    height: 18px;
+    border-radius: 3px;
+    border: 0px;
+}
+
+
+#t11 {
+    top: 30%;
+    left: 38%;
+    width: 170px;
+    text-align: center;
+    padding: 5px 30px 5px 30px;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color: #33333300;
+    font-family: CaviarDreams;
+}
+
+.condanation {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 99.5%;
+    height: 8%;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.input_add {
+    position: absolute;
+    pointer-events: all;
+    font-size: 42px;
+    margin: 0px;
+    background-color: #FFFFFF;
+    width: 450px;
+    height: 50px;
+    border-radius: 3px;
+    border: 0px;
+    padding: 5px;
+}
+
+#l0 {
+    left: 55%;
+    width: 40%;
+}
+
+#a2 {
+    top: 0px;
+    left: 0px;
+    font-size: 14px;
+    width: 25%;
+    height: 8%;
+    position: relative;
+}
+
+#a0 {
+    top: 80%;
+    pointer-events: all;
+    z-index: 2;
+}
+
+.text {
+    position: absolute;
+    font-family: CaviarDreams;
+    font-size: 42px;
+    color: white;
+}
+
+#a1 {
+    top: 80%;
+    left: 30%;
+}
+
+
+
+.add_account:hover {
+    color: #333333FF;
+    background-color: aliceblue;
+    transition: 400ms;
+}
+
+.genderlist {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    margin-left: 200px;
+}
+
+.list_link {
+    position: absolute;
+    width: 90%;
+    margin: 5%;
+    height: 60%;
+    border: 1px solid black;
+    background-color: #7BA5FFAF;
+    overflow: auto;
+}
+
+
+.input_ {
+    width: 40%;
+    height: 10%;
+    font-size: 12px;
+    margin-top: 2%;
+    margin-left: 2%;
+    text-align: center;
+    border: 0px;
+    color: white;
+    border-bottom: 2px solid;
+    border-bottom-color: #9900FFFF;
+    font-family: CaviarDreams;
+    background-color: #333333DF;
+}
+
+
+.link {
+    width: 40%;
+    height: 10%;
+    font-size: 12px;
+    margin-top: 2%;
+    margin-left: 2%;
+    text-align: center;
+    border: 0px;
+    color: white;
+    border: 2px solid;
+    border-color: #9900FFFF;
+    font-family: CaviarDreams;
+    background-color: #333333FF;
+    transition: 1000ms;
+}
+
+.owner {
+    margin: 0 0 0 10px;
+    float: left;
+    color: white;
+    margin-top: 0.7%;
+    font-size: 16px;
+    font-family: CaviarDreams;
+}
+
+
+.icon {
+    left: 77%;
+    top: 84.5%;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    pointer-events: none;
+}
+
+.close  {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    left: 95%;
+    margin-top: 1%;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+
+.close:hover  {
+    filter: sepia(100%) contrast(80%);
+    transition: 100ms;
+}
+
+
+
+body {
+}
+
+@font-face {
+    font-family: GoboldBold;
+    src: url(../font/GoboldBold.otf) format("opentype");
+}
+
+
+
+@font-face {
+    font-family: titleFont;
+    src: url(../font/Arimo-Bold.ttf) format("opentype");
+}
+
+
+
+
+@font-face {
+    font-family: CourierNew;
+    src: url(../font/CourierNew.ttf) format("opentype");
+}
+
+
+
+@font-face {
+    font-family: textFont;
+    src: url(../font/Arimo-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Quantify;
+    src: url(../font/Quantify.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../font/CaviarDreams.ttf) format("opentype");
+}
+
+
+@font-face {
+    font-family: Terminal;
+    src: url(../font/term.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Umar;
+    src: url(../font/umar.otf) format("opentype");
+}
+
+
+@font-face {
+    font-family: GoboldBold;
+    font-weight: bold;
+    src: url(../font/GoboldCUTS.otf) format("opentype");
+}

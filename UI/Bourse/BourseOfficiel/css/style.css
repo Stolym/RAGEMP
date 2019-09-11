@@ -53,7 +53,13 @@
 .bourse_tab {
     width: 99.7%;
     height: 180px;
+    border: 1px solid #4141d8;
     background-color: #333333AA;
+}
+
+.chart {
+    border: 4px solid #4141d8;
+    background-color: white;
 }
 
 .bourse_graph {
@@ -77,7 +83,7 @@
     text-align: justify;
     border-top: 4px solid  #5786A7FF;
     color: white;
-    font-family: textFont;
+    font-family: Quantify;
 }
 .title_b {
     position: absolute;
@@ -89,7 +95,7 @@
     text-align: justify;
     border-top: 4px solid  #9900FFFF;
     color: white;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .img_back {
@@ -118,7 +124,7 @@
     transition: 500ms;
     background: #333333A0;
     border-radius: 20px;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .img_selector {
@@ -146,7 +152,7 @@
     color: white;
     background-color: #00000000;
     padding-left: 4%;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .window_name {
@@ -159,14 +165,14 @@
     color: white;
     background-color: #00000000;
     padding-left: 4%;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .selector:hover {
     transition: 500ms;
     background-color: #FFFFFF64;
     border: 1px solid #333333;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .menu {
@@ -218,7 +224,7 @@
     width: 20%;
     height: 6%;
     color: aliceblue;
-    font-family: textFont;
+    font-family: Quantify;
     font-size: 14px;
     background-color: #333333FF;
     border: 1px solid #9900FFFF;
@@ -230,14 +236,14 @@
 .ctitle {
     margin: 4px;
     color: black;
-    font-family: textFont;
+    font-family: Quantify;
     font-size: 14px;
 }
 
 .ctext {
     margin: 4px;
     color: black;
-    font-family: textFont;
+    font-family: Quantify;
     font-size: 14px;
     width: 98%;
     height: 100%;
@@ -305,7 +311,7 @@
 
 .cardbancairename {
     position: absolute;
-    font-family: CourierNew;
+    font-family: Quantify;
     left: 20px;
     top: 2px;
     margin: 0px;
@@ -316,7 +322,7 @@
 .cardbancaireprenom {
     position: absolute;
     
-    font-family: CourierNew;
+    font-family: Quantify;
     left: 170px;
     top: 2px;
     margin: 0px;
@@ -358,7 +364,7 @@
     border-radius: 20px;
     background-color: #333333FF;
     color: white;
-    font-family: CourierNew;
+    font-family: Quantify;
     border: 0px;
     transition: 200ms;
 }
@@ -377,7 +383,7 @@
 
 .cardbancairehashcode {
     position: absolute;
-    font-family: CourierNew;
+    font-family: Quantify;
     left: 320px;
     top: 2px;
     margin: 0px;
@@ -387,7 +393,7 @@
 .cardbancairetype {
     position: absolute;
     
-    font-family: CourierNew;
+    font-family: Quantify;
     left: 470px;
     top: 2px;
     margin: 0px;
@@ -453,7 +459,7 @@
     position: absolute;
     color: white;
     margin: 0px;
-    font-family: CourierNew; 
+    font-family: Quantify; 
     font-size: 16px;
     left: 20px;
     top: 2px;
@@ -465,7 +471,7 @@
     margin: 0px;
     color: white;
     opacity: 0;
-    font-family: CourierNew; 
+    font-family: Quantify; 
     font-size: 16px;
     left: 140px;
     top: 2px;
@@ -479,8 +485,8 @@
     margin-left: 50px;
     margin-top: 130px;
     color: white;
-    font-size: 20px;
-    font-family: CourierNew; 
+    font-size: 18px;
+    font-family: Quantify; 
     border: 0px;
     transition: 100ms;
     background-color: #58c384;
@@ -493,14 +499,15 @@
 
 .binput {
     position: absolute;
-    width: 60px;
+    width: 100px;
     height: 25px;
-    margin-left: 80px;
-    margin-top: 75px;
+    margin-left: 60px;
+    margin-top: 80px;
     padding: 10px;
     text-align: center;
-    border-radius: 20px;
-    font-family: CourierNew; 
+    border-radius: 10px;
+    border: 0px;
+    font-family: Quantify; 
 }
 
 .transacttest {
@@ -517,7 +524,7 @@
     position: relative;
     margin: 10px;
     color: white;
-    font-family: CourierNew; 
+    font-family: Quantify; 
     font-size: 14px;
     opacity: 0;
     transition: 100ms;
@@ -527,7 +534,7 @@
     position: relative;
     margin: 10px;
     color: white;
-    font-family: CourierNew; 
+    font-family: Quantify; 
     font-size: 14px;
     opacity: 0;
     transition: 100ms;
@@ -546,18 +553,20 @@
     height: 120px;
     transition: 500ms;
 }
+
 .btext {
     position: absolute;
-    width: 140px;
+    width: 200px;
     height: 24px;
-    left: 400px;
+    left: 370px;
     text-align: center;
-    padding-top: 6px;
-    background-color: #222222;
-    border-radius: 20px;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: #22222280;
+    border-radius: 5px;
     margin: 0px;
     margin-top: 20px;
-    font-family: CourierNew; 
+    font-family: Quantify; 
     font-size: 14px;   
     color: white;
 }
@@ -568,7 +577,7 @@
     left: 140px;
     margin: 0px;
     color: white;
-    font-family: CourierNew; 
+    font-family: Quantify; 
     top: 2px;
     font-size: 16px;    
 }
@@ -672,7 +681,7 @@
     font-size: 24px;
     border-radius: 20px;
     background-color: #333333;
-    font-family: CourierNew;
+    font-family: Quantify;
 }
 
 #t10 {
@@ -684,7 +693,7 @@
     font-size: 24px;
     border-radius: 20px;
     background-color: #333333;
-    font-family: CourierNew;
+    font-family: Quantify;
 }
 
 
@@ -697,7 +706,7 @@
     font-size: 24px;
     border-radius: 20px;
     background-color: #33333300;
-    font-family: CourierNew;
+    font-family: Quantify;
 }
 
 #i0 {
@@ -802,7 +811,7 @@
 
 .text {
     position: absolute;
-    font-family: textFont;
+    font-family: Quantify;
     font-size: 14px;
     color: white;
 }
@@ -868,7 +877,7 @@
     position: absolute;
     left: 70px;
     top: 65px;
-    font-family: textFont;
+    font-family: Quantify;
     font-size: 14px;
     background-color: #FFFFFF34;
     color: black;
@@ -898,7 +907,7 @@
 
 .search_input {
     position: absolute;
-    font-family: GoboldBold;
+    font-family: Quantify;
     padding: 5px 5px 5px 5px;
     color: #333333;
     left: -10px;
@@ -928,7 +937,7 @@
     color: white;
     border-bottom: 2px solid;
     border-bottom-color: #9900FFFF;
-    font-family: textFont;
+    font-family: Quantify;
     background-color: #333333DF;
 }
 
@@ -954,7 +963,7 @@
     color: white;
     border: 2px solid;
     border-color: #9900FFFF;
-    font-family: textFont;
+    font-family: Quantify;
     background-color: #333333FF;
     transition: 1000ms;
 }
@@ -970,13 +979,13 @@
     background-color: #333333AA;
     border: 0px;
     pointer-events: all;
-    font-family: textFont;
+    font-family: Quantify;
     transition: 400ms;
 }
 .open:hover {
     color: black;
     background-color: white;
-    font-family: textFont;
+    font-family: Quantify;
     border: 0px solid #9900FFFF;
     transition: 400ms;
 }
@@ -987,7 +996,7 @@
     color: white;
     margin-top: 0.7%;
     font-size: 16px;
-    font-family: textFont;
+    font-family: Quantify;
 }
 .id_account {
     margin: 0%;
@@ -996,7 +1005,7 @@
     float: left;
     color: white;
     font-size: 16px;
-    font-family: textFont;
+    font-family: Quantify;
 }
 
 .icon {
@@ -1054,6 +1063,11 @@ body {
 @font-face {
     font-family: textFont;
     src: url(../font/Arimo-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Quantify;
+    src: url(../font/Quantify.ttf) format("opentype");
 }
 
 

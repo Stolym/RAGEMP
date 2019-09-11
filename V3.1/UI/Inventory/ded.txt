@@ -1,0 +1,3701 @@
+
+
+    [JsonObject]
+    public class Billet : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.BILLET; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Billet()
+        {
+            Id = 0;
+            Name = "Billet";
+            ModelName = "p_banknote_s";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    
+    [JsonObject]
+    public class Burger : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Burger); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.BURGER; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Burger()
+        {
+            Id = 1;
+            Name = "Burger";
+            ModelName = "prop_cs_burger_01";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    
+    [JsonObject]
+    public class WaterBottle : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.WATER; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public WaterBottle()
+        {
+            Id = 2;
+            Name = "Water Bottle";
+            ModelName = "prop_ld_flow_bottle";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class Coffee : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Coffee()
+        {
+            Id = 3;
+            Name = "Coffee";
+            ModelName = "prop_fib_coffee";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class SodaBottle : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public SodaBottle()
+        {
+            Id = 4;
+            Name = "Soda";
+            ModelName = "ng_proc_sodacan_01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    
+    [JsonObject]
+    public class Donuts : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+        public Donuts()
+        {
+            Id = 5;
+            Name = "Donuts";
+            ModelName = "ng_proc_sodacan_01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class Tacos : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Tacos()
+        {
+            Id = 6;
+            Name = "Tacos";
+            ModelName = "prop_taco_01";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class Clope : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Clope()
+        {
+            Id = 7;
+            Name = "Clope";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class PaquetClope : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public PaquetClope()
+        {
+            Id = 8;
+            Name = "Paquet Clope";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class Jumelles : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Jumelles()
+        {
+            Id = 10;
+            Name = "Jumelles";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class Parapluie : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Parapluie()
+        {
+            Id = 11;
+            Name = "Parapluie";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class Rose : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Rose()
+        {
+            Id = 12;
+            Name = "Rose";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class RadioStation : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public RadioStation()
+        {
+            Id = 13;
+            Name = "RadioStation";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class Sim : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Sim()
+        {
+            Id = 14;
+            Name = "Sim";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class Smartsphone : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Smartsphone()
+        {
+            Id = 15;
+            Name = "Smartsphone";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class Talkie : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Talkie()
+        {
+            Id = 16;
+            Name = "Talkie";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class Malette : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Malette()
+        {
+            Id = 17;
+            Name = "Malette";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class Sandwich : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Sandwich()
+        {
+            Id = 18;
+            Name = "Sandwich";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class PorteFeuille : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public PorteFeuille()
+        {
+            Id = 19;
+            Name = "PorteFeuille";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class BillBillet : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public BillBillet()
+        {
+            Id = 20;
+            Name = "BillBillet";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class KeyHouse : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public KeyHouse()
+        {
+            Id = 21;
+            Name = "KeyHouse";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class CreditCard : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public CreditCard()
+        {
+            Id = 22;
+            Name = "CreditCard";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class GunCard : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public GunCard()
+        {
+            Id = 23;
+            Name = "GunCard";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MedicCard : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public MedicCard()
+        {
+            Id = 24;
+            Name = "MedicCard";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class CopCard : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public CopCard()
+        {
+            Id = 25;
+            Name = "CopCard";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class IdCard : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public IdCard()
+        {
+            Id = 26;
+            Name = "IdCard";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Pot : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Pot()
+        {
+            Id = 27;
+            Name = "Pot";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class DirtBag : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public DirtBag()
+        {
+            Id = 28;
+            Name = "DirtBag";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Parachute : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Parachute()
+        {
+            Id = 29;
+            Name = "Parachute";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MoneyBag : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public MoneyBag()
+        {
+            Id = 30;
+            Name = "MoneyBag";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class FishBox : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public FishBox()
+        {
+            Id = 31;
+            Name = "FishBox";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Fish : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Fish()
+        {
+            Id = 32;
+            Name = "Fish";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class BarrelBrut : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public BarrelBrut()
+        {
+            Id = 33;
+            Name = "BarrelBrut";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class BarrelGazol : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public BarrelGazol()
+        {
+            Id = 34;
+            Name = "BarrelGazol";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class RaisinR : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public RaisinR()
+        {
+            Id = 35;
+            Name = "Raisin Rouge";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class RedWine : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public RedWine()
+        {
+            Id = 36;
+            Name = "RedWine";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class WhiteWine : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public WhiteWine()
+        {
+            Id = 37;
+            Name = "WhiteWine";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Champagne : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Champagne()
+        {
+            Id = 38;
+            Name = "Champagne";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class RaisinB : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public RaisinB()
+        {
+            Id = 39;
+            Name = "Raisin Blanc";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Beer : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Beer()
+        {
+            Id = 40;
+            Name = "Beer";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Malt : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Malt()
+        {
+            Id = 41;
+            Name = "Malt";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Orgre : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Orgre()
+        {
+            Id = 42;
+            Name = "Orgre";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Patato : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Patato()
+        {
+            Id = 43;
+            Name = "Patato";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Rhum : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Rhum()
+        {
+            Id = 44;
+            Name = "Rhum";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Vodka : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Vodka()
+        {
+            Id = 45;
+            Name = "Vodka";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class CocainePaper : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public CocainePaper()
+        {
+            Id = 46;
+            Name = "CocainePaper";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class GHB : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public GHB()
+        {
+            Id = 47;
+            Name = "GHB";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class CocaineSeed : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public CocaineSeed()
+        {
+            Id = 48;
+            Name = "CocaineSeed";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class WeedSeed : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public WeedSeed()
+        {
+            Id = 49;
+            Name = "WeedSeed";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class CocainePouch : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public CocainePouch()
+        {
+            Id = 50;
+            Name = "CocainePouch";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class WeedPouch : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public WeedPouch()
+        {
+            Id = 51;
+            Name = "WeedPouch";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Weed : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Weed()
+        {
+            Id = 52;
+            Name = "Weed";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Doliprane : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Doliprane()
+        {
+            Id = 53;
+            Name = "Doliprane";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Seringue : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Seringue()
+        {
+            Id = 54;
+            Name = "Seringue";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Cocktail : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Cocktail()
+        {
+            Id = 55;
+            Name = "Cocktail";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Frite : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public Frite()
+        {
+            Id = 56;
+            Name = "Frite";
+            ModelName = "ng_proc_cigarette01a";
+        }
+
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+
+    [JsonObject]
+    public class EarRing : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public EarRing()
+        {
+            Id = 57;
+            Name = "EarRing";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Bracelet : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Bracelet()
+        {
+            Id = 58;
+            Name = "Bracelet";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Collier : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Collier()
+        {
+            Id = 59;
+            Name = "Collier";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Costume : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Costume()
+        {
+            Id = 60;
+            Name = "EarRing";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Gants : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Gants()
+        {
+            Id = 61;
+            Name = "Gants";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Lunette : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Lunette()
+        {
+            Id = 62;
+            Name = "Lunette";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Montre : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Montre()
+        {
+            Id = 63;
+            Name = "Montre";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Bag : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Bag()
+        {
+            Id = 64;
+            Name = "Bag";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MaillotDeBain : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MaillotDeBain()
+        {
+            Id = 65;
+            Name = "MaillotDeBain";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Pantalon : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Pantalon()
+        {
+            Id = 66;
+            Name = "Pantalon";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Shorts : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Shorts()
+        {
+            Id = 67;
+            Name = "Shorts";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class SousVetement : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public SousVetement()
+        {
+            Id = 68;
+            Name = "SousVetement";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Basket : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[4] { -1, -1, 6, 0 };
+
+        public Basket()
+        {
+            Id = 69;
+            Name = "Basket";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Bikini : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Bikini()
+        {
+            Id = 70;
+            Name = "Bikini";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Bonnet : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Bonnet()
+        {
+            Id = 71;
+            Name = "Bonnet";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Cam : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Cam()
+        {
+            Id = 72;
+            Name = "Cam";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class CarKey : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public CarKey()
+        {
+            Id = 73;
+            Name = "CarKey";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Casquette : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Casquette()
+        {
+            Id = 74;
+            Name = "Casquette";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Chapeau : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Chapeau()
+        {
+            Id = 75;
+            Name = "Chapeau";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class ClassicShoes : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public ClassicShoes()
+        {
+            Id = 76;
+            Name = "ClassicShoes";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Chemise : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Chemise()
+        {
+            Id = 77;
+            Name = "Chemise";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Claquette : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Claquette()
+        {
+            Id = 78;
+            Name = "Claquette";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Cravatte : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Cravatte()
+        {
+            Id = 79;
+            Name = "Cravatte";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Echarpe : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Echarpe()
+        {
+            Id = 80;
+            Name = "Echarpe";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MancheCourt : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MancheCourt()
+        {
+            Id = 81;
+            Name = "MancheCourt";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MancheLong : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MancheLong()
+        {
+            Id = 82;
+            Name = "MancheLong";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Manteau : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Manteau()
+        {
+            Id = 83;
+            Name = "Manteau";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Masque : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Masque()
+        {
+            Id = 84;
+            Name = "Masque";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Micro : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Micro()
+        {
+            Id = 85;
+            Name = "Micro";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class ShoesMontant : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public ShoesMontant()
+        {
+            Id = 86;
+            Name = "ShoesMontant";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class NoeudPapillon : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public NoeudPapillon()
+        {
+            Id = 87;
+            Name = "NoeudPapillon";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Perche : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Perche()
+        {
+            Id = 88;
+            Name = "Perche";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class Veste : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public Veste()
+        {
+            Id = 89;
+            Name = "Veste";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class VesteDeCostume : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public VesteDeCostume()
+        {
+            Id = 90;
+            Name = "VesteDeCostume";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class VesteSansManche : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public VesteSansManche()
+        {
+            Id = 91;
+            Name = "VesteSansManche";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MBody : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MBody()
+        {
+            Id = 92;
+            Name = "MBody";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MBoucle : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MBoucle()
+        {
+            Id = 93;
+            Name = "MBoucle";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MChapeau : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MChapeau()
+        {
+            Id = 94;
+            Name = "MChapeau";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MGants : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MGants()
+        {
+            Id = 95;
+            Name = "MGants";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MJummelle : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MJummelle()
+        {
+            Id = 96;
+            Name = "MJummelle";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MLeg : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MLeg()
+        {
+            Id = 97;
+            Name = "MLeg";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MMasque : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MMasque()
+        {
+            Id = 98;
+            Name = "EarRing";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MBag : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MBag()
+        {
+            Id = 99;
+            Name = "MBag";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MShirt : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MShirt()
+        {
+            Id = 100;
+            Name = "MShirt";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MShoes : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MShoes()
+        {
+            Id = 101;
+            Name = "MShoes";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MTie : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MTie()
+        {
+            Id = 102;
+            Name = "MTie";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class MTShirt : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public MTShirt()
+        {
+            Id = 103;
+            Name = "MTShirt";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }
+    [JsonObject]
+    public class DriverLicense : Iitem
+    {
+        public virtual int Id { get; set; }
+        public virtual long Hashcode { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string ModelName { get; set; }
+        public Type CastType { get => typeof(Billet); }
+        public Constant.Constant.ItemHash Type { get => Constant.Constant.ItemHash.COFFEE; }
+        [JsonIgnore]
+        public Use UseFunction { get => EventItem.UseNormaly; }
+
+        [JsonIgnore]
+        public Drop DropFunction { get => EventItem.DropNormaly; }
+
+        [JsonIgnore]
+        public Give GiveFunction { get => EventItem.GiveNormaly; }
+
+        public int[] component = new int[2];
+
+        public DriverLicense()
+        {
+            Id = 104;
+            Name = "DriverLicense";
+            ModelName = "bkr_prop_coke_powderbottle_01";
+            component[0] = -1;
+            component[1] = -1;
+        }
+        public Inventory.ITEMCEFCOMMAND ConvertItem()
+        {
+            Inventory.ITEMCEFCOMMAND data = new Inventory.ITEMCEFCOMMAND();
+            data.hashcode = Hashcode;
+            data.id = Id;
+            data.description = "";
+            return data;
+        }
+    }

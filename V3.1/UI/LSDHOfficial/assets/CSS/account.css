@@ -1,0 +1,95 @@
+.add_button {
+    position: absolute;
+    left: 280px;
+    top: 200px;
+    width: 250px;
+    height: 60px;
+    font-family: CaviarDreams;
+    font-size: 35px;
+    background-color: #FFFFFF34;
+    color: black;
+    border-radius: 30px;
+    border: 0px;
+    transition: 100ms;
+}
+
+.account {
+    position: relative;
+    margin: 10px 0 10px 0;
+    width: 1715px;
+    height: 80px;
+    border-radius: 50px;
+    pointer-events: all;
+    background-color: #33333380;
+}
+
+.account:hover {
+    background-color: #55555580;
+    
+}
+
+.listaccount {
+    position: absolute;
+    margin: 0px;
+    top: 100px;
+    left: 280px;
+    width: 1715px;
+    height: 80%;
+    background-color: #7B85FF00;
+    overflow: auto;
+}
+
+.add_button:hover {
+    background-color: #000000FF;
+    color: white;
+    transition: 100ms;
+}
+
+.owner {
+    padding: 15px;
+    margin: 0px;
+    float: left;
+    color: white;
+    font-size: 40px;
+    pointer-events: none;
+    font-family: CaviarDreams;
+}
+
+
+.id_account {
+    padding: 15px;
+    margin: 0px;
+    float: left;
+    color: white;
+    font-size: 40px;
+    pointer-events: none;
+    font-family: CaviarDreams;
+}
+
+
+.open {
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    left: 1500px;
+    float: left;
+    font-size: 40px;
+    pointer-events: all;
+    color: white;
+    border-radius: 40px;
+    margin: 5px;
+    border: 0px;
+    background-color: #333333AA;
+    font-family: CaviarDreams;
+    transition: 200ms;
+}
+
+.open:hover {
+    color: black;
+    background-color: white;
+    transition: 200ms;
+}
+
+.open:focus {
+    outline-style: none;
+}

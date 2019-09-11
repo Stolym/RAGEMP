@@ -4,17 +4,18 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <button id="rand">Random</button>
     <div class="environment">
         <img class="img_back" src="image/pc.png">
     <div class="computer">
         <img class="img_back" src="image/boke-city.png">
         <img class="logo" src="image/mazebnk.png">
         <div class="menu">
-            <button data-id="3" class="selector">Bourses
+            <button data-id="3" class="selector">Bourse
                 <img class="img_selector" src="image/world.svg">
             </button>
             
-            <button data-id="10" class="selector">Vos parts
+            <button data-id="10" class="selector">Actions
                 <img class="img_selector" style="top: 58px;" src="image/wallet.svg">
             </button>
         </div>
@@ -80,7 +81,7 @@
                 </div>
             </div>
             <div data-id="3" data-active="false" class="submenu">
-                <p class="window_name" style="left: 300px; margin: 20px 0px 20px 0px;">Bourses</p>
+                <p class="window_name" style="left: 300px; margin: 20px 0px 20px 0px;">Bourse</p>
                 <div class="sinteract">
                 
                 </div>
@@ -250,27 +251,9 @@
             <div data-id="10" data-active="false" class="submenu">
                 <p class="window_name">Historique du compte</p>
                 <p class="transactionsolde" style="color: white">Gain Potentiel : </p>
-                <p class="transactionsolde" style="color: #52c495; left: 260;">5 000 000 $</p>
+                <p class="transactionsolde" id="solde" style="color: #52c495; left: 260;">5 000 000 $</p>
                 <div class="historyspace">
-                      
-                    <div class="transacttest">
-                        <div class="transactionhistoryspace">
-                            <p class="transactionhistoryname" style="position: absolute; float: left;">Brink's</p>
-                            <p class="transactionhistoryname" style="position: absolute; left: 200px; float: left;">20/08/2019 10:47</p>
-                            <p class="transactionhistoryname" style="position: absolute; float: left; left: 430px; color: white">10 parts</p>
-                            <button class="sellparttrade">$</button>
-                        </div>
-                        <p class="transactobject" style="position: absolute; float: left; left: 22px; margin-top: 20px; margin-right: 0px">Acheter</p>
-                        <p class="transactobject" style="position: absolute; float: left; left: 205px; margin-top: 20px;">20/08/2019 08:47</p>
-                        <p class="transactobject" style="position: absolute; left: 460px; margin-top: 20px; color: #FA2200">546 $</p>
-                        
-                        <p class="transactobject" style="position: absolute; float: left; left: 22px; margin-top: 60px; margin-right: 0px">Vente</p>
-                        <p class="transactobject" style="position: absolute; float: left; left: 245px; margin-top: 60px; color: #52c495">+ 6.33%</p>
-                        <p class="transactobject" style="position: absolute; left: 460px; margin-top: 60px; color: #52c495">646 $</p>
-                    </div>
-                    
-                    
-                
+                     
                 </div>
                 
             </div>

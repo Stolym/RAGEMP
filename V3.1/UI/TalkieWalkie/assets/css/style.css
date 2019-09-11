@@ -1,0 +1,81 @@
+.space {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.fnum {
+    position: absolute;
+    top: 390px;
+    left: 345px;
+    width: 35px;
+    height: 20px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #4848d8;
+    transition: 100ms;
+}
+
+.fnum:hover {
+    transition: 100ms;
+    background-color: #6868d8;
+}
+
+.frequencies {
+    position: absolute;
+    font-size: 18px;
+    color: #494949;
+    top: 325px;
+    left: 360px;
+
+}
+
+.fnum:focus { outline-style: none; }
+.fbutton:focus { outline-style: none; }
+.fonoff:focus { outline-style: none; }
+
+.fbutton {
+    position: absolute;
+    background-color: #4848d8;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    border: 0px;
+    font-size: 15px;
+}
+
+.backgroundimg {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+}
+
+.fbutton:hover {
+    transition: 100ms;
+    background-color: #FFFFFF;
+    color: black;
+
+}
+
+
+.fonoff {
+    position: absolute;
+    background-color: #4848d8;
+    margin: 0px;
+    padding: 0px;
+    border: 5px;
+    width: 100px;
+    height: 40px;
+    transition: 100ms;  
+}
+
+.fonoff:hover {
+    transition: 100ms;
+    background-color: #6868d8;
+
+}

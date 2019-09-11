@@ -1,0 +1,28 @@
+
+.finder {
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    top: 200px;
+    left: 1200px;
+}
+
+.search_input {
+    position: absolute;
+    width: 800px;
+    height: 60px;
+    padding: 20px;
+    font-size: 40px;
+    color: #333333;
+    border: 0px;
+    border-radius: 55px;
+}
+
+.icon_search {
+    position: absolute;
+    top: 5px;
+    left: 720px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}

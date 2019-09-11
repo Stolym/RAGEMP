@@ -1,0 +1,309 @@
+.shop_background {
+    position: absolute;
+    top: 0px;
+    left: 0px;;
+    background-color: #00000000;
+    width: 2000px;
+    height: 1600px;
+}
+
+.shop_background:hover {
+    transition: 1000ms;
+    
+}
+
+.title {
+    position: absolute;    
+    width: 800px;
+    height: 40px;
+    background-color: #494949;
+    font-size: 42px;
+    margin: 0px;
+    text-align: justify;
+    background-color: #494949;
+    border-top: 10px solid #4848D8;
+    color: white;
+    font-family: CaviarDreams;
+    text-align: center;
+   
+}
+
+.panier {
+    position: absolute;
+    left: 400px;
+    top: -300px;
+    width: 800px;
+    height: 600px;
+    background-color: #494949;
+    perspective: 50px;
+    float: left;
+    border: 1px solid #AC89FF;
+    box-shadow: 0px 0px 0px 0px #9900ff; 
+    transform: perspective(100px) rotateY(0deg);
+    transition: 1000ms;
+}
+
+.slider_ {
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 80%;
+    -webkit-appearance: none;
+    background: #EEE8F1CC;
+    outline: none;
+    opacity: 0.7;
+}
+
+.pointer {
+    pointer-events: none;
+    margin: 7px;
+    padding: 0px;
+    left: 5px;
+    top: 5px;
+    font-size: 14;
+    position: absolute;
+    color: black;
+    font-family: CaviarDreams;
+
+}
+
+.slider_::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #9900ff;
+  cursor: pointer;
+    
+}
+
+.slider_::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #AC89FF;
+  cursor: pointer;
+}
+
+.buy {
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    width: 800px;
+    height: 200px;
+    padding: 10px;
+    margin: 0px;
+    text-align: left;
+    font-family: CaviarDreams;
+    font-size: 42px;
+    color: white;
+    background-color: #4848D82A;
+    border: 0;
+    border-top: 3px solid #4848D8;
+    transition: 200ms;
+}
+
+.add {
+    
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    font-family: CaviarDreams;
+    font-size: 42px;
+    color: white;
+    background-color: #4848D82A;
+    border: 0;
+    border-right: 3px solid #4848D8;
+    
+    transition: 200ms;
+}
+
+.clear:focus {
+    outline-style: none;
+}
+.buy:focus {
+    outline-style: none;
+}
+.add:focus {
+    outline-style: none;
+}
+
+.clear {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    font-family: CaviarDreams;
+    font-size: 42px;
+    color: white;
+    background-color: #4848D82A;
+    border: 0px;
+    transition: 200ms;
+}
+
+.add:hover {
+    transition: 200ms;
+    background-color: #FFD700DD;
+}
+
+.clear:hover {
+    transition: 200ms;
+    background-color: #990000FF;
+}
+
+
+.buy:hover {
+    transition: 200ms;
+    background-color: #6868E8;
+}
+
+
+.icon_a {
+    pointer-events: none;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.ptext {
+    margin: 0px;
+    font-size: 20px;
+    font-family: CaviarDreams;
+    text-align: center
+    
+}
+
+
+.icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 650px;
+    top: 450px;
+    pointer-events: none;
+}
+
+.slot {
+    pointer-events: auto;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: 4%;
+    background-color: #494949DA;
+    float: left;
+    border: 5px solid #4848D8;
+    box-shadow: 0px 0px 40px #4848D8;
+    transform: perspective(500px) rotateY(10deg);
+}
+
+.slot:hover {
+    border: 5px solid #99FF7F;
+    transition: 800ms;
+}
+
+
+.currentbuylisttitle {
+    font-size: 42px;
+    text-align: center;
+    color: white;
+    font-family: CaviarDreams;
+    padding: 5px 0px 5px 10px;
+    margin: 0px 0px 0px 0px;
+    background-color: #494949;
+    border-top: 10px solid #4848D8;
+}
+
+.currentitembuy {
+    position: relative;
+    top: 20px;
+    margin: 20px 10px 20px 10px;
+    width: 780px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #888888F0;
+    border: 2px solid #4848D8;
+}
+
+.currentitemname {
+    position: absolute;
+    top: -24px;
+    left: 90px;
+    color: white;
+    font-family: CaviarDreams;
+    font-size: 42px;
+}
+
+.currentitemnumber {
+    position: absolute;
+    top: -24px;
+    left: 390px;
+    color: white;
+    font-family: CaviarDreams;
+    font-size: 42px;
+}
+
+.currentitemprice {
+    position: absolute;
+    top: -12px;
+    left: 550px;
+    color: #FF1111;
+    font-family: CaviarDreams;
+    font-size: 36px;
+}
+
+.currentitemicon {
+    position: absolute;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.removeitembuy {
+    position: absolute;
+    left: 700px;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    font-family: CaviarDreams;
+    border: 0px; 
+    font-size: 42px;
+    color: white;
+    background-color: #33333380;
+    transition: 100ms;
+}
+
+.removeitembuy:hover {
+    background-color: #FFFFFF;
+    color: #333333;
+    transition: 100ms;
+}
+
+.currentbuylist {
+    position: absolute;
+    top: 340px;
+    left: 400px;
+    width: 800px;
+    height: 600px;
+    background-color: #494949;
+    transform: perspective(100px) rotateY(0deg);
+    border: 1px solid #4848D8;
+}
+
+body {
+}
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../font/CaviarDreams.ttf) format("opentype");
+}
+

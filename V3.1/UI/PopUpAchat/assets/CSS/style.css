@@ -1,0 +1,102 @@
+.Contain {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 1200px;
+    border-top: 20px solid #4848D8;
+    border-radius: 20px;
+    background-color: #00041180;
+}
+
+.ContainTitle {
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: 1160px;
+    height: 50px;
+
+    margin: 0px;
+    padding: 20px;
+
+    background-color: #49494980;
+    color: white;
+    font-size: 50px;
+    font-family: CaviarDreams;
+    pointer-events: none;
+}
+
+
+.ContainObject {
+    position: absolute;
+
+    top: 260px;
+    left: 50px;
+
+    width: 1160px;
+    height: 50px;
+
+    color: white;
+    font-size: 50px;
+    font-family: CaviarDreams;
+    pointer-events: none;
+}
+
+.ContainButton {
+    position: absolute;
+
+    width: 1140px;
+    height: 60px;
+    margin: 30px;
+    padding: 10px;
+
+    top: 720px;
+
+    color: white;
+    font-size: 38px;
+    font-family: CaviarDreams; 
+    background-color: #00041120;  
+
+    border: 2px solid #4848D8;
+    border-radius: 40px;
+    transition: 200ms;
+}
+
+.ContainButton:focus {
+    outline-style: none;
+}
+
+.ContainButton:hover {
+    transition: 200ms;
+    background-color: #6868D8;
+    border: 0px;
+}
+
+.ContainCheck {
+    -webkit-appearance:none;
+
+    position: absolute;
+    top: 1118px;
+    left: 790px;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid #4848D8;
+    background-color: #00041120;
+    
+}
+
+
+.ContainCheck:checked {
+    border: 2px solid #4848D8;
+    background-color: #58FA89;
+    
+}
+
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../Font/CaviarDreams.ttf) format("opentype");
+}

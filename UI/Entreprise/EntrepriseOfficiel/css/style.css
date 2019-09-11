@@ -708,18 +708,22 @@
 
 #a0 {
     top: 80%;
+    z-index: 2;
+    pointer-events: all;
 }
 
 .text {
     position: absolute;
     font-family: textFont;
     font-size: 14px;
-    color: white;
+    color: black;
 }
 
 #a1 {
     top: 80%;
     left: 30%;
+    z-index: 2;
+    pointer-events: all;
 }
 
 

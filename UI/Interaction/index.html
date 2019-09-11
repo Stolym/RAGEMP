@@ -5,60 +5,74 @@
         <link rel="stylesheet" href="resources/style.css">
 	</head>
 	<body>
-        <div id="wheelMenu" width="450px">
-            <svg width="400px" viewBox="10.600918 9.611651 161.2622 161.6471">
-                <foreignobject x=0 y=0 width="182.464" height="180.8704">
-                    <img id="dotsimg" src="assets/dots.png"></img>
-                    <div id="middletext"></div>
-                </foreignobject>
+        <div class="contain">
+            
+                <img id="dotsimg" src="assets/dots.png"></img>
+                <div id="middletext"></div>
+                <svg class="svg_box" viewBox="10.600918 9.611651 161.2622 161.6471">
+                        <filter id="dropshadow" height="130%" >
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="0.1"/> <!-- stdDeviation is how much to blur -->
+                        <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.75"/> <!-- slope is the opacity of the shadow -->
+                        </feComponentTransfer>
+                        <feMerge> 
+                            <feMergeNode/> <!-- this contains the offset blurred image -->
+                            <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+                        </feMerge>
+                        </filter>
+                        <g id="c1" data-disabled=true>
+                            <path class="g_box" id="co1"  d="m 87.892052,13.684871 a 76.729163,76.729163 0 0 0 -23.431648,4.752681 l 9.083167,21.92941 a 52.981513,52.981513 0 0 1 35.391639,-0.03307 l 9.07231,-21.903054 A 76.729163,76.729163 0 0 0 87.892052,13.684874 Z"/>
+                            <image class="icon" id="i1" x="82.427452" y="16.858021" width="17.432774" height="17.432774"/>
+                        </g>
+        
+                        <g id="c2" data-disabled=true>
+                            <path class="g_box" id="co2" d="M 34.735727,38.469867 A 76.729163,76.729163 0 0 0 21.527699,58.399182 l 21.929204,9.083676 A 52.981513,52.981513 0 0 1 68.459165,42.433786 l -9.0727,-21.902891 A 76.729163,76.729163 0 0 0 34.735701,38.469856 Z"/>
+                            <image class="icon" id="i2" x="35.716084" y="36.541512" width="17.432774" height="17.432774"/>
+                        </g>
+        
+                        <g id="c3" data-disabled=true>
+                            <path class="g_box"  id="co3" d="M 143.00488,33.746433 A 76.729163,76.729163 0 0 0 123.07555,20.538411 l -9.08366,21.929204 a 52.981513,52.981513 0 0 1 25.04905,25.00228 l 21.90289,-9.072702 a 76.729163,76.729163 0 0 0 -17.93895,-24.65076 z"/>
+                            <image class="icon" id="i3" x="129.09541" y="36.541512" width="17.432774" height="17.432774"/>
+                        </g>
+        
+                        <g id="c4" data-disabled=true>
+                            <path class="g_box"  id="co4" d="m 14.674168,93.582696 a 76.729163,76.729163 0 0 0 4.752668,23.431644 l 21.929418,-9.08316 a 52.981513,52.981513 0 0 1 -0.0331,-35.391642 l -21.90305,-9.072315 a 76.729163,76.729163 0 0 0 -4.745962,30.115483 z"/>
+                            <image class="icon" id="i4" x="17.934658" y="81.45565" width="17.4" height="17.4"/>
+                        </g>
+        
+                        <g id="c5" data-disabled=true>
+                            <path class="g_box"  id="co5" d="m 167.78987,86.902756 a 76.729163,76.729163 0 0 0 -4.75268,-23.431645 l -21.92941,9.083172 a 52.981513,52.981513 0 0 1 0.0331,35.391637 l 21.90305,9.07231 a 76.729163,76.729163 0 0 0 4.74597,-30.115474 z"/>
+                            <image class="icon" id="i5" x="147.48779" y="81.45565" width="17.432774" height="17.432774"/>
+                        </g>
+        
+                        <g id="c6" data-disabled=true>
+                            <path class="g_box"  id="co6" d="m 39.45916,146.73902 a 76.729163,76.729163 0 0 0 19.929317,13.20803 l 9.083671,-21.92921 A 52.981513,52.981513 0 0 1 43.42308,113.01558 l -21.902891,9.0727 a 76.729163,76.729163 0 0 0 17.938957,24.65076 z"/>
+                            <image class="icon" id="i6" x="36.222206" y="127.12897" width="17.432774" height="17.432774"/>
+                        </g>
+        
+                        <g id="c7" data-disabled=true>
+                            <path class="g_box"  id="co7" d="m 147.72831,142.01559 a 76.729163,76.729163 0 0 0 13.20802,-19.92932 l -21.92921,-9.08367 a 52.981513,52.981513 0 0 1 -25.00225,25.04907 l 9.0727,21.90289 a 76.729163,76.729163 0 0 0 24.65076,-17.93895 z"/>
+                            <image class="icon" id="i7" x="128.58929" y="127.12897" width="17.432774" height="17.432774"/>
+                        </g>
+        
+                        <g id="c8" data-disabled=true>
+                            <path id="co8" class="g_box" data-id="8" d="m 94.432592,167.18551 a 76.729163,76.729163 0 0 0 23.431628,-4.75268 l -9.08316,-21.92941 a 52.981513,52.981513 0 0 1 -35.39162,0.0331 l -9.072325,21.90305 a 76.729163,76.729163 0 0 0 30.115487,4.74596 z"/>
+                            <path class="expand" style="fill: #00000000;" d="m 80.668975,147.58639 v 3.04544 l 10.580037,6.46031 10.580028,-6.46031 -0.0133,-0.007 v -3.02927 l -10.566798,6.45246 z m 0,5.91079 v 3.04545 l 10.580037,6.4603 10.580028,-6.4603 -0.0133,-0.007 v -3.02927 l -10.566798,6.45223 z"/>
+                            <path class="collapse" style="fill: #00000000;" data-disabled=true d="m 80.668975,163.00293 v -3.04544 l 10.580037,-6.46031 10.580028,6.46031 -0.0133,0.007 v 3.02927 L 91.248942,156.5413 Z m 0,-5.91079 v -3.04545 l 10.580037,-6.4603 10.580028,6.4603 -0.0133,0.007 v 3.02927 l -10.566798,-6.45223 z"/>
+                            
+                            <image class="icon" id="i8" x="82.58929" y="146.82897" width="17.432774" height="17.432774"/>
+                        </g>
+                    </svg>
+                <div class="SubMenu">
+                    <div class="SubCollapsed">
+                        <img></img>
+                    </div>
 
-                <g id="c1" data-disabled=true>
-                    <path id="co1" d="m 87.892052,13.684871 a 76.729163,76.729163 0 0 0 -23.431648,4.752681 l 9.083167,21.92941 a 52.981513,52.981513 0 0 1 35.391639,-0.03307 l 9.07231,-21.903054 A 76.729163,76.729163 0 0 0 87.892052,13.684874 Z"/>
-                    <image class="icon" id="i1" x="82.427452" y="16.858021" width="17.432774" height="17.432774"/>
-                </g>
-
-                <g id="c2" data-disabled=true>
-                    <path id="co2" d="M 34.735727,38.469867 A 76.729163,76.729163 0 0 0 21.527699,58.399182 l 21.929204,9.083676 A 52.981513,52.981513 0 0 1 68.459165,42.433786 l -9.0727,-21.902891 A 76.729163,76.729163 0 0 0 34.735701,38.469856 Z"/>
-                    <image class="icon" id="i2" x="35.716084" y="36.541512" width="17.432774" height="17.432774"/>
-                </g>
-
-                <g id="c3" data-disabled=true>
-                    <path id="co3" d="M 143.00488,33.746433 A 76.729163,76.729163 0 0 0 123.07555,20.538411 l -9.08366,21.929204 a 52.981513,52.981513 0 0 1 25.04905,25.00228 l 21.90289,-9.072702 a 76.729163,76.729163 0 0 0 -17.93895,-24.65076 z"/>
-                    <image class="icon" id="i3" x="129.09541" y="36.541512" width="17.432774" height="17.432774"/>
-                </g>
-
-                <g id="c4" data-disabled=true>
-                    <path id="co4" d="m 14.674168,93.582696 a 76.729163,76.729163 0 0 0 4.752668,23.431644 l 21.929418,-9.08316 a 52.981513,52.981513 0 0 1 -0.0331,-35.391642 l -21.90305,-9.072315 a 76.729163,76.729163 0 0 0 -4.745962,30.115483 z"/>
-                    <image class="icon" id="i4" x="17.934658" y="81.45565" width="17.4" height="17.4"/>
-                </g>
-
-                <g id="c5" data-disabled=true>
-                    <path id="co5" d="m 167.78987,86.902756 a 76.729163,76.729163 0 0 0 -4.75268,-23.431645 l -21.92941,9.083172 a 52.981513,52.981513 0 0 1 0.0331,35.391637 l 21.90305,9.07231 a 76.729163,76.729163 0 0 0 4.74597,-30.115474 z"/>
-                    <image class="icon" id="i5" x="147.48779" y="81.45565" width="17.432774" height="17.432774"/>
-                </g>
-
-                <g id="c6" data-disabled=true>
-                    <path id="co6" d="m 39.45916,146.73902 a 76.729163,76.729163 0 0 0 19.929317,13.20803 l 9.083671,-21.92921 A 52.981513,52.981513 0 0 1 43.42308,113.01558 l -21.902891,9.0727 a 76.729163,76.729163 0 0 0 17.938957,24.65076 z"/>
-                    <image class="icon" id="i6" x="36.222206" y="127.12897" width="17.432774" height="17.432774"/>
-                </g>
-
-                <g id="c7" data-disabled=true>
-                    <path id="co7" d="m 147.72831,142.01559 a 76.729163,76.729163 0 0 0 13.20802,-19.92932 l -21.92921,-9.08367 a 52.981513,52.981513 0 0 1 -25.00225,25.04907 l 9.0727,21.90289 a 76.729163,76.729163 0 0 0 24.65076,-17.93895 z"/>
-                    <image class="icon" id="i7" x="128.58929" y="127.12897" width="17.432774" height="17.432774"/>
-                </g>
-
-                <g id="cl" data-disabled=true>
-                    <path id="bottom" style="fill: #00000050" d="m 94.432592,167.18551 a 76.729163,76.729163 0 0 0 23.431628,-4.75268 l -9.08316,-21.92941 a 52.981513,52.981513 0 0 1 -35.39162,0.0331 l -9.072325,21.90305 a 76.729163,76.729163 0 0 0 30.115487,4.74596 z"/>
-                    <path id="expand"   d="m 80.668975,147.58639 v 3.04544 l 10.580037,6.46031 10.580028,-6.46031 -0.0133,-0.007 v -3.02927 l -10.566798,6.45246 z m 0,5.91079 v 3.04545 l 10.580037,6.4603 10.580028,-6.4603 -0.0133,-0.007 v -3.02927 l -10.566798,6.45223 z"/>
-                    <path id="collapse" data-disabled=true d="m 80.668975,163.00293 v -3.04544 l 10.580037,-6.46031 10.580028,6.46031 -0.0133,0.007 v 3.02927 L 91.248942,156.5413 Z m 0,-5.91079 v -3.04545 l 10.580037,-6.4603 10.580028,6.4603 -0.0133,0.007 v 3.02927 l -10.566798,-6.45223 z"/>
-                    
-                    <image class="icon" id="i8" x="82.58929" y="146.82897" width="17.432774" height="17.432774"/>
-                </g>
-            </svg>
-            <div id="subMenu" class="collapsed"></div>
+                </div>
         </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script type="text/javascript" src="resources/main.js"></script>
         <script type="text/javascript" src="resources/resize.js"></script>
     </body>

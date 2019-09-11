@@ -1,0 +1,164 @@
+@font-face {font-family: titleFont; src: url(../assets/Arimo-Bold.ttf);}
+@font-face {font-family: bodyFont; src: url(../assets/Arimo-Regular.ttf);}
+
+html, body {
+	margin: 0;
+}
+
+.container {
+	background-color: #33333350;
+	border-top: 15px solid #4848d8;
+	width: 420px;
+}
+
+#panier {
+	position: absolute;
+	left: 500px;
+	top: 0;
+	width: 420px;
+}
+
+.containerTitle {
+	background-color: #333333;
+	color: #ffffffff;
+	padding: 15px 10px;
+	font: 15pt titleFont, sans-serif;
+}
+
+.containerContents {
+	padding: 20px;
+}
+
+.containerGrid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.slot {
+	background-color: #333333a0;
+	width: 70px;
+	height: 70px;
+	margin: 10px 5px;
+	color: #ffffffff;
+	padding: 15px;
+	font: 10pt titleFont, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transition: all 200ms;
+	transition-timing-function: linear;
+}
+
+.slot>img {
+	opacity: 0.5;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.slot:hover, .activeslot {
+	background-color: #333333;
+	cursor: pointer;
+}
+
+.activeslot {
+	box-shadow:  0 0 10px #4848d8;
+}
+
+.slot:hover>img, .activeslot>img {
+	opacity: 1;
+	cursor: pointer;
+}
+
+
+.box {
+	background-color: #333333;
+	margin: 10px 0;
+	padding: 10px;
+}
+
+.boxTitle {
+	color: #ffffffff;
+	font: 12pt titleFont, sans-serif;
+	margin-bottom: 10px;
+}
+
+.sliderBox {
+	display: flex;
+	flex-direction: row;
+	padding: 5px 2px;
+}
+
+.sliderValue {
+	color: #4848d8;
+	font: 12pt titleFont, sans-serif;
+	margin-right: 10px;
+}
+
+.slider {
+	width: 100%;
+	height: 5px;
+	background: #101010;
+	outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+	width: 15px;
+	height: 15px;
+	background: #4848d8;
+	border: none;
+	cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+	width: 15px;
+	height: 15px;
+	background: #4848d8;
+	cursor: pointer;
+	border: none;
+}
+
+.buttonBox {
+	color: #ffffff;
+	font: 15pt titleFont, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	transition: all 200ms;
+}
+
+.button {
+	flex: 1;
+	text-align: center;
+	cursor: pointer;
+	margin: 5px;
+	padding: 10px 0;
+	border: 2px solid #4848d8;
+}
+
+.button:hover {
+	background-color: #4848d8;
+}
+
+#acheterButtonBox {
+	cursor: pointer;
+}
+
+#acheterButtonBox:hover {
+	box-shadow:  0 0 10px #007006;
+}
+
+#titlePanier {
+	flex: 3;
+	text-align: center;
+	color: #3ECF1E;
+	font: 20pt titleFont, sans-serif;
+}
+
+#logoPanier {
+	flex: 1;
+	fill: #3ECF1E;
+	width: 50px;
+	height: 50px;
+}

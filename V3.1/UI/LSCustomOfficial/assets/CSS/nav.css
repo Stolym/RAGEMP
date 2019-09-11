@@ -1,0 +1,21 @@
+.NavButton {
+    position: relative;
+    width: 33%;
+    height: 100px;
+    background-color: #4949492C;
+    color: white;
+    font-size: 40px;
+    border: 0px;
+    
+    font-family: CaviarDreams;
+}
+
+.NavButton:hover {
+    transition: 200ms;
+    color: black;
+    background-color: #FFFFFFA2;
+}
+
+.NavButton:focus {
+    outline-style: none;
+}

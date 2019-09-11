@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Parametre</title>
+    <link type="text/css" rel="stylesheet" href="assets/CSS/style.css">
+    <link type="text/css" rel="stylesheet" href="assets/CSS/slider.css">
+    <link type="text/css" rel="stylesheet" href="assets/CSS/textarea.css">
+</head>
+<body>
+    <div class="Contain">
+        <p class="ContainTitle">Menu Paramètres</p>
+        <p class="ContainObject" style=" top: 120px; font-size: 32px;">Nombre de voitures que vous voulez affichez, faire attention ceci affectes vos performences donc voir avec son GPU et CPU.</p>
+        <input data-id="0" class="Slider" type="range" min="20" max="120" value="20">
+        <p class="ContainObject" data-id="0">Values : 120</p>
+
+        <p class="ContainObject" style=" top: 380px; font-size: 32px;">Distance d'affichages des voitures que vous voulez affichez, faire attention ceci affectes vos performences donc voir avec son GPU et CPU.</p>
+        <input data-id="1" class="Slider" style="top: 480px" type="range" min="20" max="120" value="20">
+        <p class="ContainObject" style="top: 530px" data-id="1">Values : 120</p>
+
+        <p class="ContainObject" style=" top: 650px; font-size: 32px;">Nombre de joueurs que vous voulez affichez, faire attention ceci affectes vos performences donc voir avec son GPU et CPU.</p>
+        <input data-id="2" class="Slider" style="top: 740px" type="range" min="20" max="120" value="20">
+        <p class="ContainObject" style="top: 800px" data-id="2">Values : 120</p>
+
+        <p class="ContainObject" style=" top: 900px; font-size: 32px;">Distance d'affichages des joueurs que vous voulez affichez, faire attention ceci affectes vos performences donc voir avec son GPU et CPU.</p>
+        <input data-id="3" class="Slider" style="top: 1000px" type="range" min="20" max="120" value="20">
+        <p class="ContainObject" style="top: 1060px" data-id="3">Values : 120</p>
+        <p class="ContainObject" style=" top: 1090px; left: 440px; font-size: 38px;">Afficher l'hud joueur.</p>
+
+        <input type="checkbox" class="ContainCheck">
+        <button class="ContainButton" style="top: 1090px; left: 835px; width: 300px;">Valider</button>
+    </div>
+    
+    <div class="Contain" style="left: 1250px; height: 830px;">
+        <p class="ContainTitle">Description du signalement</p>
+        <textarea class="TextAreaSignal" placeholder="Description"></textarea>
+        <button class="ContainButton">Signalez !</button>
+    </div>
+
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="assets/JS/main.js"></script>
+    <script src="assets/JS/resize.js"></script>
+    <script src="assets/JS/slider.js"></script>
+</html>
