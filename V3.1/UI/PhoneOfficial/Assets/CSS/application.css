@@ -1,0 +1,88 @@
+.all_application {
+    position: absolute;
+    margin: 0px;
+    border-radius: 40px;
+    width: 620px;
+    height: 1190px;
+}
+
+.application {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.ContainApplication
+{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 240px;
+    left: 40px;
+    border: 20px;
+}
+
+.appname {
+    position: absolute;
+    width: 100px;
+    left: -13px;
+    top: 98px;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFFDA;
+}
+
+.appicon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    transition: 200ms;
+}
+
+.appnotify {
+    position: absolute;
+    top: -15px;
+    left: 65px;
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    background-color: red;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    
+}
+
+.application:hover .appnotify {
+    
+}
+
+
+.application:hover .appicon {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+}
+
+.appname {
+    margin: 6px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.application:hover {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #4848D8;
+}

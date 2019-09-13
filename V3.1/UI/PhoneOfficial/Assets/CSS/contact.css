@@ -1,0 +1,91 @@
+.listcontact {
+    position: absolute;
+    top: 60px;
+    left: 9px;
+    height: 435px;
+    width: 249px;
+    background-color: #00000040;
+    overflow: auto;
+}
+
+.listcontact::-webkit-scrollbar {
+    display: none;
+}
+
+.addcontact {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 220px;
+    top: 20px;
+    border-radius: 20px;
+    border: 0px;
+    z-index: 3;
+    background-color: #FFFFFF;
+}
+
+.addcontact:hover {
+    transition: 200ms;
+    background-color: #333333;
+    color: white;
+}
+
+.cname {
+    position: absolute;
+    margin: 0px;
+    top: 4px;
+    left: 10px;
+    font-size: 18px;
+    color: #333333;
+    font-family: Quicksand;
+    color: white;
+    pointer-events: none;
+}
+
+.cbutton {
+    position: relative;
+    left: 168px;
+    top: 1px;
+    width: 22px;
+    height: 22px;
+    margin: 0px 2px 0px 2px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: white;
+    transition: 100ms;
+}
+
+.cbutton:hover {
+    background-color: black;
+    color: white;
+    transition: 100ms;
+}
+
+.lettercontact {
+    z-index: 3;
+    position: relative;
+    width: 249px;
+    height: 20px;
+    padding: 2px 0px 2px 0px;
+    background-color: #FFFFFF80;
+}
+
+.lcontact {
+    position: absolute;
+    pointer-events: none;
+    font-family: Quicksand;
+    color: white;
+    margin: 0px;
+    top: -1px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.ccontact {
+    position: relative;
+    z-index: 3;
+    padding: 2px 0px 2px 0px;
+    width: 249px;
+    height: 25px;
+    background-color: #00000040;
+}

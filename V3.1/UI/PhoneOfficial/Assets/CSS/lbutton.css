@@ -1,0 +1,17 @@
+.lbutton {
+    position: relative;
+    margin: 1px 0px 1px 0px;
+    left: 9px;
+    width: 620px;
+    height: 80px;
+    border-top: 1px solid #33333380;
+    border-bottom: 1px solid #33333380;
+    background-color: #EEEEEE80;
+    transition: 100ms;
+}
+
+.lbutton:hover {
+    height: 620px;
+    background-color: #EEEEEE80;
+    transition: 100ms;    
+}

@@ -1,0 +1,25 @@
+.screen {
+    position: absolute;
+    margin: 0px;
+    left: 90px;
+    top: 32px;
+    border-radius: 40px;
+    width: 620px;
+    height: 1190px;
+    background-color: black;
+}
+
+.screen_unlocked {
+    position: absolute;
+    border-radius: 40px;
+    width: 620px;
+    height: 1190px;
+}
+
+.screen_locked {
+    position: absolute;
+    border-radius: 40px;
+    width: 620px;
+    height: 1190px;
+}
+

@@ -1,0 +1,65 @@
+.setting_list {
+    position: absolute;
+    top: 140px;
+    width: 620px;
+    height: 890px;
+    border-radius: 10px;
+    background-color: #49494920;
+    border-top: 2px solid #00000020;
+    border-bottom: 2px solid #00000020;
+    z-index: 0;
+}
+
+
+.seticonobject {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    pointer-events: none;
+}
+
+.setobject {
+    position: absolute;
+    left: 80px;
+    top: 25px;
+    margin: 0px;
+    font-size: 42px;
+    pointer-events: none;
+}
+
+
+.setcobject {
+    position: absolute;
+    border: 0px;
+    left: 3px;
+    top: 90px;
+    width: 620px;
+    height: 80px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 42px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    transition: 200ms;
+}
+
+.lbutton:hover .setcobject {
+    position: absolute;
+    
+    pointer-events: auto;
+    opacity: 1;
+    transition: 200ms;
+}
+
+.settitle {
+    position: absolute;
+    color: white;
+    margin: 0px;
+    top: 70px;
+    left: 82px;
+    font-size: 42px;
+    text-align: center;
+    z-index: 1;
+}

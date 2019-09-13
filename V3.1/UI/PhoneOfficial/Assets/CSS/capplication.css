@@ -1,0 +1,16 @@
+.current_application {
+    position: absolute;
+    margin: 0px;
+    border-radius: 40px;
+    width: 620px;
+    height: 1190px;
+}
+
+.capplication {
+    position: absolute;
+    border-radius: 40px;
+    width: 620px;
+    height: 1190px;
+    background: rgb(9,9,9);
+    background: linear-gradient(0deg, rgba(9,9,9,1) 0%, rgba(71,71,200,1) 100%);
+}

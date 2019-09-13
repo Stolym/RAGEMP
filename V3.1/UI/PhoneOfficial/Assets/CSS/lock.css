@@ -1,0 +1,112 @@
+.lock {
+    position: absolute;
+    margin: 0px;
+    border-radius: 40px;
+    width: 620px;
+    height: 1190px;
+}
+
+.lock_clock {
+    position: absolute;
+    top: 80px;
+    width: 620px;
+    height: 60px;
+    text-align: left;
+    color: white;
+    font-size: 104px;
+    margin: 0px;
+    text-align: center;
+}
+
+.lock_space_notify {
+    position: relative;
+    width: 560px;
+    height: 160px;
+    margin: 20px 10px 20px 10px;
+    background-color: #FFFFFF80;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #4848d8;
+    transition: 500ms;
+    z-index: 3;
+}
+
+.lock_space_notify:hover {
+    box-shadow: 0px 0px 20px #4848d8;
+    background-color: #FFFFFFCF;
+    transition: 500ms;
+}
+
+.lock_notify_image {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: 40px 10px 40px 10px;
+}
+
+.lock_notify_apparence {
+    position: absolute;
+    top: 10px;
+    left: 115px;
+    height: 140px;
+    width: 2px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.lock_notify_text {
+    position: absolute;
+    left: 130px;
+    width: 330px;
+    height: 120px;
+    pointer-events: none;
+
+    color: black;
+    font-size: 32px;
+
+    margin: 10px;
+    padding: 0px;
+}
+
+.lock_notify {
+    position: absolute;
+    top: 220px;
+    width: 580px;
+    height: 760px;
+    margin: 20px;
+    border-radius: 40px;
+    overflow: auto;
+}
+
+
+.lock_notify::-webkit-scrollbar {
+    display: none;
+}
+
+.unlock_button {
+    position: absolute;
+    left: 260px;
+    top: 1040px;
+    width: 100px;
+    height: 100px;
+    border: 0px;
+    border-radius: 40px;
+    z-index: 9999;
+    background-color: #FFFFFF20;
+    box-shadow: 0px 0px 40px #4848d8;
+    transition: 500ms;
+}
+
+.unlock_button:focus {
+    outline-style: none;
+}
+
+.unlock_button:hover {
+    background-color: #FFFFFF80;
+    box-shadow: 0px 0px 280px #4848d8;
+    transition: 500ms;
+}
+
+.unlock_image {
+    pointer-events: none;
+}

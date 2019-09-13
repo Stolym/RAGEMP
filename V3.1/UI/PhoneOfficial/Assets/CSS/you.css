@@ -1,0 +1,13 @@
+.you {
+    position: absolute;
+    top: 60px;
+    left: 9px;
+    height: 435px;
+    width: 249px;
+    overflow: auto;
+    
+}
+
+.you::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,17 @@
+.background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 780px;
+    height: 1280px;
+}
+
+.phone_image {
+    position: absolute;
+    width: 780px;
+    height: 1280px;
+    pointer-events: none;
+    z-index: 1;
+}

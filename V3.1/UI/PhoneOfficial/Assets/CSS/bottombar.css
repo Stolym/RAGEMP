@@ -1,0 +1,62 @@
+.bottombar {
+    position: absolute;
+    top: 1100px;
+    left: 6px;
+    margin: 0px;
+    width: 620px;
+    height: 40px;
+    padding: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 2;
+}
+
+.libchar {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    
+    top: 30px;
+    left: 75px;
+
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 80px;
+    color: #4848D8;
+    pointer-events: none;
+}
+
+.bottomicon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 5px;
+    left: 40px;
+}
+
+.libutton {
+    position: relative;
+    width: 200px;
+    height: 80px;
+    padding: 0px;
+    float: left;
+    left: 0px;
+    color: white;
+    text-align: center;
+    list-style: none;
+    border: 0px;
+    background-color: #FFFFFF00;
+    transition: 250ms;
+}
+
+.libutton:hover {
+    transition: 250ms;
+    background-color: #00000000;
+}
+
+
+.libutton:hover .libchar {
+    transition: 250ms;
+    color: white;
+}
